@@ -1,2 +1,45 @@
 ---
 ---
+$green: #9cb069;
+
+nav.navbar-default {
+  border-bottom: none !important;
+  .navbar-nav {
+    margin: 0 -15px;
+  }
+  .navbar-header {
+    background-color: #fff;
+  }
+  .navbar-brand {
+    padding: 7px;
+  }
+  .nav-button {
+    font-family: Helvetica;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    float: right;
+    background-color: $green;
+    border: none;
+    padding: 15px 30px;
+  }
+  .navbar-collapse {
+    background-color: $green;
+    text-align: right;
+    border-color: #fff;
+    border-top: 1px solid #fff;
+    text-transform: uppercase;
+    li {
+      border-bottom: 1px dotted #fff;
+      &:last-of-type {
+        border-bottom: none;
+      }
+      a {
+        color: #fff;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
