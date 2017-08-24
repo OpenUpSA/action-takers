@@ -1,6 +1,11 @@
 ---
 ---
 $green: #9cb069;
+$blue: #3eb3c4;
+
+body {
+  font-family: Helvetica;
+}
 
 nav.navbar-default {
   border-bottom: none !important;
@@ -14,7 +19,6 @@ nav.navbar-default {
     padding: 7px;
   }
   .nav-button {
-    font-family: Helvetica;
     text-transform: uppercase;
     font-size: 16px;
     color: #fff;
@@ -42,4 +46,52 @@ nav.navbar-default {
       }
     }
   }
+}
+
+.navbar-margin {
+  margin-top: 53px;
+}
+
+.landing {
+  .weekly-spotlight {
+    padding-top: 30px;
+    position: relative;
+    color: #fff;
+    img {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+    }
+    .ws-header {
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 10px 20px;
+      background-color: $blue;
+      width: 80%;
+    }
+    .ws-content {
+      background-color: rgba(0,0,0,0.5);
+      background-position: center center;
+      width: 80%;
+      padding: 10px 20px 30px 20px;
+      .ws-title {
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+      .ws-text {
+        padding-bottom: 25px;
+        font-size: 16px;
+      }
+      .ws-button {
+        background-color: rgba(255, 255, 255, 0.2);
+        border: solid 0.5px #fff;
+        color: #fff;
+        padding: 7px 15px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+footer {
 }
