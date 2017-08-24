@@ -2,6 +2,7 @@
 ---
 $green: #9cb069;
 $blue: #3eb3c4;
+$dark-gray: #4a4a4a;
 
 body {
   font-family: Helvetica;
@@ -62,33 +63,49 @@ nav.navbar-default {
       z-index: -1;
       width: 100%;
     }
-    .ws-header {
+    .header {
       text-transform: uppercase;
       font-size: 16px;
       padding: 10px 20px;
       background-color: $blue;
       width: 80%;
     }
-    .ws-content {
+    .content {
       background-color: rgba(0,0,0,0.5);
       background-position: center center;
       width: 80%;
       padding: 10px 20px 30px 20px;
-      .ws-title {
+      .title {
         text-transform: uppercase;
         font-size: 20px;
       }
-      .ws-text {
+      .text {
         padding-bottom: 25px;
         font-size: 16px;
       }
-      .ws-button {
+      .button {
         background-color: rgba(255, 255, 255, 0.2);
         border: solid 0.5px #fff;
         color: #fff;
         padding: 7px 15px;
         font-size: 16px;
       }
+    }
+  }
+}
+
+.topic-page {
+  .title-bar {
+    padding-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    .back {
+      float: left;
+      cursor: pointer;
+    }
+    .title {
+      color: $dark-gray;
     }
   }
 }
