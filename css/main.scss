@@ -13,6 +13,7 @@ $dark-gray: #4a4a4a;
 
 body {
   font-family: 'Liberation Sans', sans-serif;
+  color: $dark-gray;
 }
 
 nav.navbar-default {
@@ -112,27 +113,45 @@ nav.navbar-default {
       float: left;
       cursor: pointer;
     }
-    .title {
-      color: $dark-gray;
-    }
+  }
+  .rating, .page-share {
+    display: inline-block;
+    width: 50%;
+    padding-top: 10px;
+    font-size: 15px;
   }
   .rating {
-    padding-top: 10px;
     float: left;
-    font-size: 15px;
-    color: $dark-gray;
     i {
       color: $yellow;
     }
   }
-  .social {
-    padding-top: 10px;
-    float: right;
-    font-size: 15px;
-    color: $dark-gray;
+  .page-share {
+    text-align: right;
     a {
       color: $blue;
     }
+  }
+  .did-you-know {
+    padding: 10px;
+    padding-top: 25px;
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      i {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.act {
+  color: $dark-gray;
+  i {
+    color: $orange;
+  }
+  &:hover {
+    color: $dark-gray;
   }
 }
 
