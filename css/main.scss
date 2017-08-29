@@ -26,6 +26,9 @@ nav.navbar-default {
   }
   .navbar-brand {
     padding: 7px;
+    img {
+      max-height: 45px;
+    }
   }
   .nav-button {
     text-transform: uppercase;
@@ -62,10 +65,26 @@ nav.navbar-default {
 }
 
 .landing {
+  .watch-latest {
+    display: block;
+    padding: 25px 10px;
+    img {
+      width: 75px;
+    }
+    .cta {
+      width: calc(100% - 85px);
+      float: right;
+      margin-left: 10px;
+      font-size: 20px;
+      color: $dark-gray;
+    }
+  }
   .weekly-spotlight {
-    padding-top: 30px;
     position: relative;
     color: #fff;
+    background-image: url("../img/education.jpg");
+    background-size: cover;
+    background-position: center;
     img {
       position: absolute;
       z-index: -1;
