@@ -235,7 +235,27 @@ nav.navbar-default {
         border-bottom: 3px solid $green;
       }    
     }
-  } 
+  }
+  .content-support-resources {
+    .header {
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .basic-info, .legal-info, .detailed-info {
+      padding: 5px 15px;
+      margin-top: 15px;
+      line-height: 22px;
+    }
+    .legal-info {
+      background-color: $orange;
+      color: #fff;
+    }
+    .detailed-info {
+      background-color: $green;
+      color: #fff;
+    }
+  }
 }
 
 footer {
