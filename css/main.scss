@@ -219,7 +219,7 @@ nav.navbar-default {
 .step-detail-page {
   .tabs {
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0;
     .btn-taking-action, .btn-support-resources {
       font-size: 15px;
       color: $dark-gray;
@@ -236,15 +236,15 @@ nav.navbar-default {
       }    
     }
   }
-  .content-support-resources {
-    .header {
-      margin: 10px 0;
-      font-size: 18px;
-      font-weight: bold;
-    }
+  .header {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .content-taking-action {
     .basic-info, .legal-info, .detailed-info {
       padding: 5px 15px;
-      margin-top: 15px;
+      margin-bottom: 15px;
       line-height: 22px;
     }
     .legal-info {
