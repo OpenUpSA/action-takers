@@ -102,7 +102,7 @@ nav.navbar-default {
   }
 }
 
-.topic-page {
+.topic-page, .step-detail-page {
   padding: 5px;
   .title-bar {
     padding-top: 15px;
@@ -114,27 +114,30 @@ nav.navbar-default {
       cursor: pointer;
     }
   }
+}
+
+.topic-page {
   .rating, .page-share {
     display: inline-block;
-    width: 50%;
     padding-top: 10px;
     font-size: 15px;
   }
   .rating {
+    width: 60%;
     float: left;
     i {
       color: $yellow;
     }
   }
   .page-share {
+    width: 40%;
     text-align: right;
     a {
       color: $blue;
     }
   }
   .did-you-know {
-    padding: 10px;
-    padding-top: 25px;
+    padding: 25px 10px;
     .title {
       font-size: 22px;
       font-weight: bold;
@@ -143,16 +146,96 @@ nav.navbar-default {
       }
     }
   }
+  .act {
+    color: $dark-gray;
+    i {
+      color: $orange;
+    }
+    &:hover {
+      color: $dark-gray;
+    }
+  }
+  .full-right-button {
+    background-color: $orange;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .guide {
+    background-color: $green;
+    padding: 5px;
+    color: #fff;
+    font-size: 16px;
+    .single-step {
+      background-color: #fff;
+      color: $dark-gray;
+      padding: 10px;
+      margin-top: 5px;
+      display: block;
+      &:hover {
+        text-decoration: none;
+      }
+      .circle, .content {
+        display: inline-block;
+      }
+      .circle {
+        background-color: $green;
+        height: 45px;
+        width: 45px;
+        border-radius: 100px;
+        text-align: center;
+        line-height: 45px;
+        color: #fff;
+        font-size: 20px;
+      }
+      .content {
+        font-weight: bold;
+        margin-left: 10px;
+        width: calc(100% - 60px);
+        vertical-align: middle; 
+      }
+      .cta {
+        text-align: right;
+        font-size: 12px;
+        text-decoration: underline;
+        padding-top: 10px;
+        i {
+          margin-left: 5px;
+        }
+      }
+    }
+    .comment {
+      padding: 10px;
+      font-size: 15px;
+    }
+  }
 }
 
-.act {
-  color: $dark-gray;
-  i {
-    color: $orange;
-  }
-  &:hover {
-    color: $dark-gray;
-  }
+.step-detail-page {
+  .tabs {
+    text-align: center;
+    padding-top: 20px;
+    .btn-taking-action, .btn-support-resources {
+      font-size: 15px;
+      color: $dark-gray;
+      border-bottom: 1px solid $dark-gray;
+      text-decoration: none;
+      padding: 0 5px;
+      margin: 0 5px;
+      &:hover {
+        color: $dark-gray;
+      }
+      &.active {
+        font-weight: bold;
+        border-bottom: 3px solid $green;
+      }    
+    }
+  } 
 }
 
 footer {
