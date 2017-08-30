@@ -1,19 +1,28 @@
 <head>
-
-  <title>Action Takers{% if page.title %} - {{ page.title }}{% endif %}</title>
-
-  <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Action Takers">
-  <meta name="author" content="OpenUp">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/img/favicon.png">
+  <title>{{ site.title | escape }}{% if page.title %} | {{ page.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}" />
 
-  <!-- Web Fonts -->
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@actiontakers">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:creator" content="@actiontakers">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.logo }}">
 
-  <!-- CSS Global Compulsory -->
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://actiontakers.co.za{{ page.url }}" />
+  <meta property="og:image" content="{{ site.url }}{{ site.logo }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet"  href="/css/main.css">
