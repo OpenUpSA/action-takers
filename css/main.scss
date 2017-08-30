@@ -11,12 +11,48 @@ $dark-gray: #4a4a4a;
   src: url('../fonts/LiberationSans.woff') format('woff');
 }
 
-body, h1, h2, h3, h4, h5 {
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Liberation Sans', sans-serif;
   color: $dark-gray;
+  min-height: calc(100% - 55px);
+  position: relative;
+  padding-bottom: 50px;
+}
+
+footer {
+  padding: 10px 5px;
+  height: 50x;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  a {
+    color: $dark-gray;
+    text-decoration: underline;
+    padding: 0 15px;
+    border-right: 1px solid $dark-gray;
+    font-size: 12px;
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:last-of-type {
+      padding-right: 0;
+      border-right-width: 0px;
+    }
+    &:hover {
+      color: $dark-gray;
+    }
+  }
 }
 
 h1, h2, h3, h4, h5 {
+  font-family: 'Liberation Sans', sans-serif;
   font-weight: bold;
   margin: 0;
 }
@@ -27,6 +63,10 @@ h1 {
 
 h2 {
   font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 nav.navbar-default {
@@ -337,24 +377,3 @@ nav.navbar-default {
   }
 }
 
-footer {
-  padding: 10px 5px;
-  text-align: center;
-  a {
-    color: $dark-gray;
-    text-decoration: underline;
-    padding: 0 15px;
-    border-right: 1px solid $dark-gray;
-    font-size: 12px;
-    &:first-of-type {
-      padding-left: 0;
-    }
-    &:last-of-type {
-      padding-right: 0;
-      border-right-width: 0px;
-    }
-    &:hover {
-      color: $dark-gray;
-    }
-  }
-}
