@@ -11,9 +11,22 @@ $dark-gray: #4a4a4a;
   src: url('../fonts/LiberationSans.woff') format('woff');
 }
 
-body {
+body, h1, h2, h3, h4, h5 {
   font-family: 'Liberation Sans', sans-serif;
   color: $dark-gray;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  margin: 0;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 18px;
 }
 
 nav.navbar-default {
@@ -62,6 +75,7 @@ nav.navbar-default {
 
 .navbar-margin {
   margin-top: 53px;
+  padding: 5px;
 }
 
 .landing {
@@ -110,27 +124,32 @@ nav.navbar-default {
         padding-bottom: 25px;
         font-size: 16px;
       }
-      .button {
+      .find-out {
         background-color: rgba(255, 255, 255, 0.2);
         border: solid 0.5px #fff;
         color: #fff;
         padding: 7px 15px;
         font-size: 16px;
+        text-decoration: underline;
+        i {
+          margin-left: 5px;
+        }
       }
     }
   }
 }
 
 .topic-page, .step-detail-page {
-  padding: 5px;
   .title-bar {
-    padding-top: 15px;
     text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+    margin-top: 10px;
     .back {
       float: left;
       cursor: pointer;
+      font-size: 16px;
+      line-height: 20px;
+      vertical-align: middle;
+      padding: 0 10px;
     }
   }
 }
@@ -142,7 +161,7 @@ nav.navbar-default {
     font-size: 15px;
   }
   .rating {
-    width: 60%;
+    width: 50%;
     float: left;
     i {
       color: $yellow;
@@ -156,37 +175,32 @@ nav.navbar-default {
     }
   }
   .did-you-know {
-    padding: 25px 10px;
+    padding: 25px 10px 0 10px;
     .title {
-      font-size: 22px;
-      font-weight: bold;
+      margin-bottom: 5px;
       i {
         color: $blue;
       }
     }
   }
-  .act {
-    color: $dark-gray;
-    i {
-      color: $orange;
-    }
-    &:hover {
-      color: $dark-gray;
-    }
-  }
   .full-right-button {
     background-color: $orange;
-    padding: 10px 15px;
+    padding: 10px;
     color: #fff;
     font-size: 16px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-top: 25px;
     &:hover {
       text-decoration: none;
     }
   }
+  .guide-summary {
+    padding: 0 10px;
+    margin-top: 25px;
+  }
   .guide {
     background-color: $green;
+    margin-top: 25px;
     padding: 5px;
     color: #fff;
     font-size: 16px;
@@ -233,12 +247,34 @@ nav.navbar-default {
       font-size: 15px;
     }
   }
+  .who-can-help {
+    background-color: $blue;
+    color: #fff;
+    text-decoration: underline;
+    text-align: right;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    display: block;
+    i {
+      margin-left: 10px;
+    }
+  }
+  .act {
+    color: $dark-gray;
+    i {
+      color: $orange;
+    }
+    &:hover {
+      color: $dark-gray;
+    }
+  }
 }
 
 .step-detail-page {
   .tabs {
     text-align: center;
-    padding: 20px 0;
+    padding-top: 20px;
     .btn-taking-action, .btn-support-resources {
       font-size: 15px;
       color: $dark-gray;
@@ -263,7 +299,7 @@ nav.navbar-default {
   .content-taking-action {
     .basic-info, .legal-info, .detailed-info {
       padding: 5px 15px;
-      margin-bottom: 15px;
+      margin-top: 15px;
       line-height: 22px;
     }
     .legal-info {
@@ -275,7 +311,50 @@ nav.navbar-default {
       color: #fff;
     }
   }
+  .content-support-resources {
+    .resources {
+      padding: 5px 15px;
+      margin-top: 15px;
+      line-height: 22px;
+      a {
+        color: $dark-gray;
+        text-decoration: underline;
+      }
+    }
+  }
+  .next-step {
+    background-color: $blue;
+    color: #fff;
+    text-decoration: underline;
+    text-align: right;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    display: block;
+    i {
+      margin-left: 10px;
+    }
+  }
 }
 
 footer {
+  padding: 10px 5px;
+  text-align: center;
+  a {
+    color: $dark-gray;
+    text-decoration: underline;
+    padding: 0 15px;
+    border-right: 1px solid $dark-gray;
+    font-size: 12px;
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:last-of-type {
+      padding-right: 0;
+      border-right-width: 0px;
+    }
+    &:hover {
+      color: $dark-gray;
+    }
+  }
 }
