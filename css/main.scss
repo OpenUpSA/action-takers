@@ -204,19 +204,19 @@ nav.navbar-default {
 .topic-page {
   .rating, .page-share {
     display: inline-block;
-    padding-top: 10px;
     font-size: 15px;
   }
   .rating {
-    width: 60%;
+    width: 50%;
     float: left;
     i {
       color: $yellow;
     }
   }
   .page-share {
-    width: 40%;
-    text-align: right;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
     a {
       color: $blue;
     }
