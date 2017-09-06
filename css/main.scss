@@ -4,6 +4,7 @@ $green: #9cb069;
 $blue: #3eb3c4;
 $yellow: #f6a623;
 $orange: #e77918;
+$light-gray: #efefef;
 $dark-gray: #4a4a4a;
 
 @font-face{ 
@@ -181,7 +182,7 @@ nav.navbar-default {
   }
 }
 
-.topic-page, .step-detail-page {
+.topic-page, .step-detail-page, .generic, .who-can-help {
   .title-bar {
     text-align: center;
     margin-top: 10px;
@@ -192,6 +193,10 @@ nav.navbar-default {
       line-height: 20px;
       vertical-align: middle;
       padding: 0 10px;
+      color: $dark-gray;
+      &:hover {
+        color: $dark-gray;
+      }
     }
   }
 }
@@ -246,6 +251,10 @@ nav.navbar-default {
     padding: 5px;
     color: #fff;
     font-size: 16px;
+    .description {
+      padding: 10px;
+      font-size: 17px;
+    }
     .single-step {
       background-color: #fff;
       color: $dark-gray;
@@ -391,5 +400,40 @@ nav.navbar-default {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+.who-can-help {
+  .subtitle {
+    margin-top: 25px;
+    text-align: center;
+  }
+  .logo {
+    img {
+      width: 100%;
+    }
+  }
+  .partners {
+    margin-top: 20px;
+    .single-partner {
+      margin-top: 5px;
+      background-color: $light-gray;
+      padding: 20px 10px;
+      .summary {
+        font-size: 15px;
+        i {
+          margin-right: 5px;
+        }
+        div {
+          margin-top: 5px;
+          &:first-of-type {
+            margin-top: 0;
+          }
+        }
+      }
+      .description {
+        margin-top: 15px;
+      }
+    }
   }
 }

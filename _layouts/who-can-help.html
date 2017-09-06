@@ -1,0 +1,29 @@
+---
+layout: base
+---
+<section class="who-can-help {{ page.simple-name }}">
+  <div class="title-bar">
+    <a href="../" class="back"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+    <span class="title"><h1>{{ page.title }}</h1></span>
+  </div>
+
+  <h2 class="subtitle">Who can help?</h2>
+
+  <div class="partners">
+    {% for partner in page.partners %}
+    <div class="single-partner">
+      <div class="row">
+        <div class="col-xs-5 logo">
+          <a target="_blank" href="{{ partner.url }}"><img src="{{ partner.image }}"></a>
+        </div>
+        <div class="col-xs-7 summary">
+          <div><a target="_blank" href="{{ partner.url }}"><i class="fa fa-fw fa-link" aria-hidden="true"></i>website</a></div>
+          <div><a href="tel:{{ partner.number }}"><i class="fa fa-fw fa-phone" aria-hidden="true"></i>{{ partner.number }}</a></div>
+          <div><a href="mailto:{{ partner.email }}"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i>{{ partner.email }}</a></div>
+        </div>
+      </div>
+      <div class="description">{{ partner.description }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
