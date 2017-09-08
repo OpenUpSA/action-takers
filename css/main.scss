@@ -73,10 +73,55 @@ h4 {
   font-size: 14px;
 }
 
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #fff;
+  background-color: $green;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+    background-color: $green;
+    text-align: right;
+  }
+}
+
 nav.navbar-default {
   border-bottom: none !important;
+  background-color: #fff;
   .navbar-nav {
     margin: 0 -15px;
+    @media (min-width: 767px) {
+      background-color: $green;
+      font-size: 17px;  
+      li a {
+        padding: 5px 10px;
+        margin: 10px;
+        &.active {
+          border-bottom: 5px solid #fff;
+        }
+      }
+      .dropdown.open a {
+        color: #fff;
+        background-color: $green;
+      }
+      .dropdown-menu {
+        background-color: $green;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        border-top: 1px solid #fff;
+        a {
+          padding: 5px;
+          margin: 5px 10px 0 10px;
+          border-bottom: 1px solid #fff;
+        }
+        a:first-of-type {
+          border-bottom-width: 0px;
+        }
+      }
+    }
   }
   .navbar-header {
     background-color: #fff;
@@ -97,20 +142,23 @@ nav.navbar-default {
     padding: 15px 30px;
   }
   .navbar-collapse {
-    background-color: $green;
+    @media (max-width: 767px) {
+      background-color: $green;
+    }
     text-align: right;
     border-color: #fff;
-    border-top: 1px solid #fff;
     text-transform: uppercase;
-    li {
-      border-bottom: 1px dotted #fff;
-      &:last-of-type {
-        border-bottom: none;
-      }
-      a {
+    a {
+      color: #fff;
+      &:hover {
         color: #fff;
-        &:hover {
-          color: #fff;
+      }
+    }
+    @media (max-width: 767px) {
+      li {
+        border-bottom: 1px dotted #fff;
+        &:last-of-type {
+          border-bottom: none;
         }
       }
     }
