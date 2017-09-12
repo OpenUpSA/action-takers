@@ -73,6 +73,12 @@ h4 {
   font-size: 14px;
 }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
   color: #fff;
   background-color: $green;
@@ -88,7 +94,7 @@ h4 {
 }
 
 nav.navbar-default {
-  border-bottom: none !important;
+  border-bottom: 5px solid #fff;
   background-color: #fff;
   .navbar-nav {
     margin: 0 -15px;
@@ -185,6 +191,7 @@ nav.navbar-default {
   .watch-latest {
     display: block;
     padding: 10px;
+    margin-top: 10px;
     img {
       width: 75px;
     }
@@ -197,11 +204,13 @@ nav.navbar-default {
     }
   }
   .weekly-spotlight {
+    margin-top: 10px;
     position: relative;
     color: #fff;
     background-image: url("../img/education.jpg");
     background-size: cover;
     background-position: center;
+    padding: 0;
     img {
       position: absolute;
       z-index: -1;
@@ -246,17 +255,25 @@ nav.navbar-default {
   .title-bar {
     text-align: center;
     margin-top: 10px;
-    .back {
-      float: left;
-      cursor: pointer;
-      font-size: 16px;
-      line-height: 20px;
-      vertical-align: middle;
-      padding: 0 10px;
+  }
+  .back {
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: middle;
+    padding: 0 10px;
+    margin-top: -30px;
+    position: absolute;
+    color: $dark-gray;
+    &:hover {
       color: $dark-gray;
-      &:hover {
-        color: $dark-gray;
+    }
+    .text {
+      @media (max-width: 992px) {
+        display: none;
       }
+    }
+    i {
+      margin-right: 5px;
     }
   }
 }
