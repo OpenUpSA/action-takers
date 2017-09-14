@@ -261,7 +261,7 @@ nav.navbar-default {
     line-height: 20px;
     vertical-align: middle;
     padding: 0 10px;
-    margin-top: -30px;
+    margin-top: -35px;
     position: absolute;
     color: $dark-gray;
     &:hover {
@@ -331,6 +331,10 @@ nav.navbar-default {
     .description {
       padding: 10px;
       font-size: 17px;
+    }
+    .click-suggestion {
+      font-weight: bold;
+      padding: 10px;
     }
     .single-step {
       background-color: #fff;
@@ -424,31 +428,36 @@ nav.navbar-default {
     font-size: 18px;
     font-weight: bold;
   }
-  .content-taking-action {
-    .basic-info, .legal-info, .detailed-info {
-      padding: 5px 15px;
-      margin-top: 15px;
-      line-height: 22px;
-    }
-    .legal-info {
-      background-color: $orange;
-      color: #fff;
-    }
-    .detailed-info {
-      background-color: $green;
-      color: #fff;
+  .title, .summary, .intro, .legal-info, .detailed-info, {
+    padding: 5px 15px;
+    margin-top: 15px;
+    line-height: 22px;
+    a {
+      text-decoration: underline;
     }
   }
-  .content-support-resources {
-    .resources {
-      padding: 5px 15px;
-      margin-top: 15px;
-      line-height: 22px;
-      a {
-        color: $dark-gray;
-        text-decoration: underline;
+  .summary {
+    background-color: $orange;
+    color: #fff;
+    ul {
+      li {
+        margin-bottom: 10px;
+        i {
+          margin-top: 2px;
+        }
+        a {
+          color: #fff;
+        }
       }
     }
+  }
+  .legal-info {
+    background-color: $orange;
+    color: #fff;
+  }
+  .detailed-info {
+    background-color: $green;
+    color: #fff;
   }
   .next-step {
     background-color: $blue;

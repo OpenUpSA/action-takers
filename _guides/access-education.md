@@ -7,10 +7,10 @@ guide-summary: We have compiled this guide to help you to get your child educate
 did-you-know: According to the <a class="act" target="_blank" href="https://www.acts.co.za/south-african-schools-act/index.html"> <i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Basic Education Laws Amendment Act, 2011</a> every child in South Africa has the right to an education. If your child has been denied access to education because they have special needs, you can challenge this.
 ---
 <div class="guide">
-  <div class="description">Follow this guide to overcome barriers to learning and get your child the education they deserve</div>
+  <div class="description">Follow this guide to overcome barriers to learning and get your child the education they deserve. <b>Click on a step for support and resources to help you take action</b>.</div>
   <a href="1" class="single-step">
     <div class="circle">1</div>
-    <div class="content">Obtain a letter from the school(s) stating the reasons why admission has been declined</div>
+    <div class="content">Get a letter from the school(s) stating the reasons why admission has been declined</div>
     <div class="cta">Haven't applied? Find schools now<i class="fa fa-fw fa-search" aria-hidden="true"></i></div>
   </a>
 
