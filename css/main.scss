@@ -23,6 +23,11 @@ body {
   min-height: calc(100% - 55px);
   position: relative;
   padding-bottom: 50px;
+  background-color: $light-gray;
+}
+
+.container {
+  background-color: #fff;
 }
 
 footer {
@@ -33,11 +38,13 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
+  background-color: $dark-gray;
+  color: #fff;
   a {
-    color: $dark-gray;
+    color: $light-gray;
     text-decoration: underline;
     padding: 0 15px;
-    border-right: 1px solid $dark-gray;
+    border-right: 1px solid $light-gray;
     font-size: 12px;
     &:first-of-type {
       padding-left: 0;
@@ -47,7 +54,7 @@ footer {
       border-right-width: 0px;
     }
     &:hover {
-      color: $dark-gray;
+      color: $light-gray;
     }
   }
 }
@@ -94,8 +101,11 @@ h4 {
 }
 
 nav.navbar-default {
-  border-bottom: 5px solid #fff;
-  background-color: #fff;
+  background-color: $light-gray;
+  border-bottom: 0px solid #fff;
+  .container {
+    border-bottom: 5px solid #fff;
+  }
   .navbar-nav {
     margin: 0 -15px;
     @media (min-width: 767px) {
