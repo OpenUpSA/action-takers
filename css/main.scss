@@ -69,10 +69,65 @@ h3 {
   font-size: 16px;
 }
 
+h4 {
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #fff;
+  background-color: $green;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #fff;
+    background-color: $green;
+    text-align: right;
+  }
+}
+
 nav.navbar-default {
-  border-bottom: none !important;
+  border-bottom: 5px solid #fff;
+  background-color: #fff;
   .navbar-nav {
     margin: 0 -15px;
+    @media (min-width: 767px) {
+      background-color: $green;
+      font-size: 17px;  
+      li a {
+        padding: 5px 10px;
+        margin: 10px;
+        &.active {
+          border-bottom: 5px solid #fff;
+        }
+      }
+      .dropdown.open a {
+        color: #fff;
+        background-color: $green;
+      }
+      .dropdown-menu {
+        background-color: $green;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        border-top: 1px solid #fff;
+        a {
+          padding: 5px;
+          margin: 5px 10px 0 10px;
+          border-bottom: 1px solid #fff;
+        }
+        a:first-of-type {
+          border-bottom-width: 0px;
+        }
+      }
+    }
   }
   .navbar-header {
     background-color: #fff;
@@ -93,20 +148,23 @@ nav.navbar-default {
     padding: 15px 30px;
   }
   .navbar-collapse {
-    background-color: $green;
+    @media (max-width: 767px) {
+      background-color: $green;
+    }
     text-align: right;
     border-color: #fff;
-    border-top: 1px solid #fff;
     text-transform: uppercase;
-    li {
-      border-bottom: 1px dotted #fff;
-      &:last-of-type {
-        border-bottom: none;
-      }
-      a {
+    a {
+      color: #fff;
+      &:hover {
         color: #fff;
-        &:hover {
-          color: #fff;
+      }
+    }
+    @media (max-width: 767px) {
+      li {
+        border-bottom: 1px dotted #fff;
+        &:last-of-type {
+          border-bottom: none;
         }
       }
     }
@@ -116,6 +174,14 @@ nav.navbar-default {
 .navbar-margin {
   margin-top: 53px;
   padding: 5px;
+  .row {
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+  .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 }
 
 .landing {
@@ -125,6 +191,7 @@ nav.navbar-default {
   .watch-latest {
     display: block;
     padding: 10px;
+    margin-top: 10px;
     img {
       width: 75px;
     }
@@ -137,11 +204,13 @@ nav.navbar-default {
     }
   }
   .weekly-spotlight {
+    margin-top: 10px;
     position: relative;
     color: #fff;
     background-image: url("../img/education.jpg");
     background-size: cover;
     background-position: center;
+    padding: 0;
     img {
       position: absolute;
       z-index: -1;
@@ -186,17 +255,25 @@ nav.navbar-default {
   .title-bar {
     text-align: center;
     margin-top: 10px;
-    .back {
-      float: left;
-      cursor: pointer;
-      font-size: 16px;
-      line-height: 20px;
-      vertical-align: middle;
-      padding: 0 10px;
+  }
+  .back {
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: middle;
+    padding: 0 10px;
+    margin-top: -30px;
+    position: absolute;
+    color: $dark-gray;
+    &:hover {
       color: $dark-gray;
-      &:hover {
-        color: $dark-gray;
+    }
+    .text {
+      @media (max-width: 992px) {
+        display: none;
       }
+    }
+    i {
+      margin-right: 5px;
     }
   }
 }
@@ -433,6 +510,41 @@ nav.navbar-default {
       }
       .description {
         margin-top: 15px;
+      }
+    }
+  }
+}
+
+.legal-terms {
+  @media (min-width: 992px) {
+    .privacy-policy {
+      border-left: 1px solid #ccc;
+    }
+  }
+  .table-of-content {
+    a {
+      font-size: 14px;
+      display: block;
+    }
+  }
+  .anchor {
+    display: block;
+    position: relative;
+    top: -55px;
+    visibility: hidden;
+  }
+}
+
+.about {
+  .partners {
+    text-align: center;
+    .single-partner {
+      padding-bottom: 20px;
+      img {
+        padding: 15px;
+        border: 1px solid $light-gray;
+        width: 100%;
+        margin-bottom: 5px;
       }
     }
   }
