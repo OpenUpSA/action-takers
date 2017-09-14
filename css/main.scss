@@ -344,6 +344,7 @@ nav.navbar-default {
       display: block;
       &:hover {
         text-decoration: none;
+        background-color: $light-gray;
       }
       .circle, .content {
         display: inline-block;
@@ -428,7 +429,11 @@ nav.navbar-default {
     font-size: 18px;
     font-weight: bold;
   }
-  .title, .summary, .intro, .legal-info, .detailed-info, {
+  hr {
+    margin: 10px -15px;
+    border-top: 2px dotted #fff;
+  }
+  .title, .summary, .intro, .resources, .legal-info, {
     padding: 5px 15px;
     margin-top: 15px;
     line-height: 22px;
@@ -451,13 +456,19 @@ nav.navbar-default {
       }
     }
   }
+  .resources {
+    background-color: $green;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
   .legal-info {
     background-color: $orange;
     color: #fff;
-  }
-  .detailed-info {
-    background-color: $green;
-    color: #fff;
+    a {
+      color: #fff;
+    }
   }
   .next-step {
     background-color: $blue;
