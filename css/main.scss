@@ -20,9 +20,9 @@ html {
 body {
   font-family: 'Liberation Sans', sans-serif;
   color: $dark-gray;
-  min-height: calc(100% - 55px);
+  min-height: calc(100% - 53px);
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   background-color: $light-gray;
 }
 
@@ -31,8 +31,8 @@ body {
 }
 
 footer {
-  padding: 10px 5px;
-  height: 50px;
+  padding: 20px 5px;
+  height: 60px;
   text-align: center;
   position: absolute;
   right: 0;
@@ -86,11 +86,12 @@ h4 {
   }
 }
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
   color: #fff;
   background-color: $green;
   text-align: right;
 }
+
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
@@ -108,6 +109,9 @@ nav.navbar-default {
   }
   .navbar-nav {
     margin: 0 -15px;
+    @media (min-width: 750px) {
+      margin: 0 15px;
+    }
     @media (min-width: 767px) {
       background-color: $green;
       font-size: 17px;  
@@ -144,6 +148,9 @@ nav.navbar-default {
   }
   .navbar-brand {
     padding: 7px;
+    @media (min-width: 750px) {
+      padding: 7px 30px;
+    }
     img {
       max-height: 45px;
     }
@@ -184,6 +191,11 @@ nav.navbar-default {
 .navbar-margin {
   margin-top: 53px;
   padding: 5px;
+  padding-bottom: 40px;
+  min-height: calc(100vh - 113px);
+  @media (min-width: 750px) {
+    padding: 20px 30px 40px 30px;
+  }
   .row {
     margin-right: -5px;
     margin-left: -5px;
@@ -464,6 +476,13 @@ nav.navbar-default {
           color: #fff;
         }
       }
+    }
+  }
+  .intro {
+    background-color: $dark-gray;
+    color: #fff;
+    a {
+      color: #fff;
     }
   }
   .resources {
