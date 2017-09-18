@@ -11,8 +11,16 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
   <a href="1" class="single-step">
     <div class="circle">1</div>
     <div class="content">Get a letter from the school(s) stating the reasons why admission has been declined</div>
-    <div class="cta">Haven't applied? Find schools now<i class="fa fa-fw fa-search" aria-hidden="true"></i></div>
+    <div class="cta hidden-print">Haven't applied? Find schools now<i class="fa fa-fw fa-search" aria-hidden="true"></i></div>
   </a>
+
+  <div class="visible-print-block">
+    {% for step in site.steps %}
+    {% if forloop.index == 1 %}
+    {{ step.content }}
+    {% endif %}
+    {% endfor %}
+  </div>
 
   <div class="comment"><b>If all schools reject your application</b>, follow this appeal process:</div>
 

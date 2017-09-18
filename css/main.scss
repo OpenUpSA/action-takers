@@ -277,6 +277,9 @@ nav.navbar-default {
   .title-bar {
     text-align: center;
     margin-top: 10px;
+    @media print {
+      text-align: left;
+    }
   }
   .back {
     font-size: 16px;
@@ -364,6 +367,11 @@ nav.navbar-default {
       padding: 10px;
       margin-top: 5px;
       display: block;
+      &::after {
+        @media print {
+          display: none;
+        }
+      }
       &:hover {
         text-decoration: none;
         background-color: $light-gray;
@@ -380,6 +388,9 @@ nav.navbar-default {
         line-height: 45px;
         color: #fff;
         font-size: 20px;
+        @media print {
+          border: 1px solid #000;
+        }
       }
       .content {
         font-weight: bold;
@@ -427,25 +438,6 @@ nav.navbar-default {
 }
 
 .step-detail-page {
-  .tabs {
-    text-align: center;
-    padding-top: 20px;
-    .btn-taking-action, .btn-support-resources {
-      font-size: 15px;
-      color: $dark-gray;
-      border-bottom: 1px solid $dark-gray;
-      text-decoration: none;
-      padding: 0 5px;
-      margin: 0 5px;
-      &:hover {
-        color: $dark-gray;
-      }
-      &.active {
-        font-weight: bold;
-        border-bottom: 3px solid $green;
-      }    
-    }
-  }
   .header {
     margin: 10px 0;
     font-size: 18px;

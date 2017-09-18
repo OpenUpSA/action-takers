@@ -5,7 +5,7 @@ layout: base
   <div class="title-bar">
     <span class="title"><h1>{{ page.title }}</h1></span>
   </div>
-  <a href="../" class="back">
+  <a href="../" class="back hidden-print">
     <i class="fa fa-chevron-left" aria-hidden="true"></i><span class="text">Back</span>
   </a>
 
@@ -19,7 +19,7 @@ layout: base
     <a class="email" href=""><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
   </div>
 
-  <div class="row">
+  <div class="row hidden-print">
     <div class="col-md-6">
       <div class="did-you-know">
         <h2 class="title"><i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?</h2>
@@ -38,13 +38,13 @@ layout: base
     </div>
   </div>
   
-  <div class="guide-summary">
+  <div class="guide-summary hidden-print">
     {{ page.guide-summary }}
   </div>
 
 
   {{ page.content }}
 
-  <a href="who-can-help/" class="who-can-help">Who can help?<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+  <a href="who-can-help/" class="who-can-help hidden-print">Who can help?<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
 
 </section>
