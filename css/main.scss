@@ -633,3 +633,10 @@ nav.navbar-default {
     }
   }
 }
+
+@media print {
+  hr {
+    display: none;
+  }
+}
+
