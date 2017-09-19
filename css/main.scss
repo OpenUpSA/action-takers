@@ -584,6 +584,9 @@ nav.navbar-default {
 }
 
 @media print {
+  body, h1, h2, h3, h4 {
+    font-family: sans-serif;
+  }
   h1 {
     font-size: 30px;
   }
