@@ -81,24 +81,6 @@ h4 {
   font-size: 14px;
 }
 
-@media print {
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  h3 {
-    font-size: 22px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-}
-
 @media (min-width: 1200px) {
   .container {
     width: 1000px;
@@ -215,9 +197,6 @@ nav.navbar-default {
   @media (min-width: 750px) {
     padding: 20px 30px 40px 30px;
   }
-  @media print {
-    padding: 30px 50px;
-  }
   .row {
     margin-right: -5px;
     margin-left: -5px;
@@ -299,10 +278,6 @@ nav.navbar-default {
   .title-bar {
     text-align: center;
     margin-top: 10px;
-    @media print {
-      text-align: left;
-      font-weight: bold;
-    }
   }
   .back {
     font-size: 16px;
@@ -381,11 +356,6 @@ nav.navbar-default {
       font-size: 17px;
     }
     .step-wrap {
-      @media print {
-        border: 1px solid #000;
-        padding: 15px;
-        margin-top: 10px;
-      }
       .click-suggestion {
         font-weight: bold;
         padding: 10px;
@@ -396,11 +366,6 @@ nav.navbar-default {
         padding: 10px;
         margin-top: 5px;
         display: block;
-        &::after {
-          @media print {
-            display: none;
-          }
-        }
         &:hover {
           text-decoration: none;
           background-color: $light-gray;
@@ -417,18 +382,12 @@ nav.navbar-default {
           line-height: 45px;
           color: #fff;
           font-size: 20px;
-          @media print {
-            border: 1px solid #000;
-          }
         }
         .content {
           font-weight: bold;
           margin-left: 10px;
           width: calc(100% - 60px);
           vertical-align: middle; 
-          @media print {
-            font-size: 26px;
-          }
         }
         .cta {
           text-align: right;
@@ -438,16 +397,6 @@ nav.navbar-default {
           i {
             margin-left: 5px;
           }
-          @media print {
-            display: none;
-          }
-        }
-      }
-      .header {
-        @media print {
-          font-weight: bold;
-          margin-top: 30px;
-          font-size: 26px;
         }
       }
     }
@@ -635,8 +584,79 @@ nav.navbar-default {
 }
 
 @media print {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
   hr {
     display: none;
   }
+  .circle {
+    border: 1px solid #000;
+  }
+  .content {
+    font-size: 26px;
+  }
+  .navbar-margin {
+    padding: 30px 50px;
+  }
+  .topic-page, .step-detail-page, .generic, .who-can-help {
+    .title-bar {
+      text-align: left;
+      font-weight: bold;
+    }
+  }
+  .guide {
+    .step-wrap {
+      border: 1px solid #000;
+      padding: 15px;
+      margin-top: 20px;
+      .cta {
+        display: none;
+      }
+      .header {
+        font-weight: bold;
+        margin-top: 30px;
+        font-size: 26px;
+      }
+      .title {
+        display: none;
+      }
+      // page-break-inside: avoid !important;
+    }
+    .comment {
+      margin-top: 20px;
+    }
+    .single-step {
+      &::after {
+        display: none;
+      }
+    }
+    .description {
+      padding: 0 !important;
+    }
+  }
+  .summary, .intro, .resources {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+  }
+  .intro, .summary, .legal-info {
+    .header {
+      margin-bottom: 20px;
+    }
+  }
+  img {
+    filter: grayscale(100%);
+  }
 }
-

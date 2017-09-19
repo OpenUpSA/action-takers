@@ -12,7 +12,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a class="{% if page.simple-name == "home" %}active{% endif %}" href="/">Home</a></li>
         <li class="dropdown">
-          <a class="{% if page.layout == "guide" or page.layout == "step" %}active{% endif %} href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Guides <span class="caret"></span></a>
+          <a class="dropdown-toggle {% if page.layout == "guide" or page.layout == "step" %}active{% endif %} href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Guides <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/access-education">Access to education</a></li>
           </ul>
