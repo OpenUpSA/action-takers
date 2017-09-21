@@ -608,9 +608,6 @@ nav.navbar-default {
   hr {
     display: none;
   }
-  .circle {
-    border: 1px solid #000;
-  }
   .navbar-margin {
     padding: 30px 50px;
   }
@@ -621,7 +618,10 @@ nav.navbar-default {
     }
   }
   .guide {
-    .step-wrap {
+    .description {
+      padding: 0 !important;
+    }
+    .single-step {
       border: 1px solid #000;
       padding: 15px;
       margin-top: 20px;
@@ -633,24 +633,38 @@ nav.navbar-default {
         margin-top: 30px;
         font-size: 26px;
       }
+      .circle {
+        border: 1px solid #000;
+      }
       .title {
         font-size: 26px;
       }
       .step-title {
         display: none;
       }
-      // page-break-inside: avoid !important;
+      .content {
+        display: block !important;
+      }
+      .title-box {
+        &::after {
+          display: none;
+        }
+        .title {
+          width: 90% !important;
+        }
+      }
     }
     .comment {
       margin-top: 20px;
     }
-    .title-box {
-      &::after {
-        display: none;
+    .summary, .intro, .resources, .legal-info, {
+      padding-bottom: 30px;
+      a {
+        text-decoration: none;
       }
-    }
-    .description {
-      padding: 0 !important;
+      .header, p {
+        page-break-inside: avoid !important;
+      }
     }
   }
   .summary, .intro, .resources {
