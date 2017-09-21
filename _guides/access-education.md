@@ -9,8 +9,8 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
 <div class="guide">
   <div class="description">Follow this guide to overcome barriers to learning and get your child the education they deserve. <b>Click on a step for support and resources to help you take action</b>.</div>
 
-  <div class="step-wrap">
-    <a href="1" class="single-step">
+  <div class="single-step">
+    <a href="1" class="title-box">
       <div class="circle">1</div>
       <div class="title">Get a letter from the school(s) stating the reasons why admission has been declined</div>
       <div class="cta">Haven't applied? Find schools now<i class="fa fa-fw fa-search" aria-hidden="true"></i></div>
@@ -26,8 +26,8 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
 
   <div class="comment"><b>If all schools reject your application</b>, follow this appeal process:</div>
 
-  <div class="step-wrap">
-    <a href="2-1" class="single-step">
+  <div class="single-step">
+    <a href="2-1" class="title-box">
       <div class="circle">2.1</div>
       <div class="title">Write a letter of appeal to the MEC for education</div>
       <div class="cta">Get an appeal letter template <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i></div>
@@ -41,8 +41,8 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
     </div>
   </div>
 
-  <div class="step-wrap">
-    <a href="2-2" class="single-step">
+  <div class="single-step">
+    <a href="2-2" class="title-box">
       <div class="circle">2.2</div>
       <div class="title">Alternatively, write a letter of appeal to the District Director</div>
       <div class="cta">Get an appeal letter template <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i></div>
@@ -56,8 +56,8 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
     </div>
   </div>
 
-  <div class="step-wrap">
-    <a href="3" class="single-step">
+  <div class="single-step">
+    <a href="3" class="title-box">
       <div class="circle">3</div>
       <div class="title">The MEC will launch an investigation into your case</div>
     </a>
@@ -70,8 +70,8 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
     </div>
   </div>
 
-  <div class="step-wrap">
-    <a href="4" class="single-step">
+  <div class="single-step">
+    <a href="4" class="title-box">
       <div class="circle">4</div>
       <div class="title">A meeting will be set up to discuss your child's needs</div>
       <div class="cta">Checklist of how to prepare for this meeting<i class="fa fa-fw fa-list-ul" aria-hidden="true"></i></div>

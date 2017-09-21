@@ -274,7 +274,7 @@ nav.navbar-default {
   }
 }
 
-.topic-page, .step-detail-page, .generic, .who-can-help {
+.single-guide-page, .step-detail-page, .generic, .who-can-help {
   .title-bar {
     text-align: center;
     margin-top: 10px;
@@ -301,7 +301,7 @@ nav.navbar-default {
   }
 }
 
-.topic-page {
+.single-guide-page {
   .rating, .page-share {
     display: inline-block;
     font-size: 15px;
@@ -330,7 +330,7 @@ nav.navbar-default {
       }
     }
   }
-  .full-right-button {
+  .full-rights {
     background-color: $orange;
     padding: 10px;
     color: #fff;
@@ -341,7 +341,7 @@ nav.navbar-default {
       text-decoration: none;
     }
   }
-  .guide-summary {
+  .summary {
     padding: 0 10px;
     margin-top: 25px;
   }
@@ -355,12 +355,8 @@ nav.navbar-default {
       padding: 10px;
       font-size: 17px;
     }
-    .step-wrap {
-      .click-suggestion {
-        font-weight: bold;
-        padding: 10px;
-      }
-      .single-step {
+    .single-step {
+      .title-box {
         background-color: #fff;
         color: $dark-gray;
         padding: 10px;
@@ -446,7 +442,7 @@ nav.navbar-default {
     margin: 10px -15px;
     border-top: 2px dotted #fff;
   }
-  .title, .summary, .intro, .resources, .legal-info, {
+  > .title, .summary, .intro, .resources, .legal-info, {
     padding: 5px 15px;
     margin-top: 15px;
     line-height: 22px;
@@ -618,7 +614,7 @@ nav.navbar-default {
   .navbar-margin {
     padding: 30px 50px;
   }
-  .topic-page, .step-detail-page, .generic, .who-can-help {
+  .single-guide-page, .step-detail-page, .generic, .who-can-help {
     .title-bar {
       text-align: left;
       font-weight: bold;
@@ -648,7 +644,7 @@ nav.navbar-default {
     .comment {
       margin-top: 20px;
     }
-    .single-step {
+    .title-box {
       &::after {
         display: none;
       }

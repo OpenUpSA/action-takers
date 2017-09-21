@@ -1,5 +1,5 @@
 if (window.innerWidth > 992) {
-  $("a.single-step").on("click", function(e) {
+  $(".single-guide-page a.title-box").on("click", function(e) {
     e.preventDefault();
     $(this).next().slideToggle(600);
   });
