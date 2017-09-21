@@ -366,11 +366,10 @@ nav.navbar-default {
         padding: 10px;
         margin-top: 5px;
         display: block;
-        &:hover {
+        &:hover, &:active, &:focus {
           text-decoration: none;
-          background-color: $light-gray;
         }
-        .circle, .content {
+        .circle, .title {
           display: inline-block;
         }
         .circle {
@@ -383,7 +382,7 @@ nav.navbar-default {
           color: #fff;
           font-size: 20px;
         }
-        .content {
+        .title {
           font-weight: bold;
           margin-left: 10px;
           width: calc(100% - 60px);
@@ -397,6 +396,14 @@ nav.navbar-default {
           i {
             margin-left: 5px;
           }
+        }
+      }
+      .content {
+        background-color: #fff;
+        padding: 15px;
+        display: none;
+        .step-title {
+          display: none;
         }
       }
     }
@@ -429,7 +436,7 @@ nav.navbar-default {
   }
 }
 
-.step-detail-page {
+.step-detail-page, .guide {
   .header {
     margin: 10px 0;
     font-size: 18px;
@@ -608,9 +615,6 @@ nav.navbar-default {
   .circle {
     border: 1px solid #000;
   }
-  .content {
-    font-size: 26px;
-  }
   .navbar-margin {
     padding: 30px 50px;
   }
@@ -634,6 +638,9 @@ nav.navbar-default {
         font-size: 26px;
       }
       .title {
+        font-size: 26px;
+      }
+      .step-title {
         display: none;
       }
       // page-break-inside: avoid !important;

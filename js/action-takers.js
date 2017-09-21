@@ -1,3 +1,10 @@
+if (window.innerWidth > 992) {
+  $("a.single-step").on("click", function(e) {
+    e.preventDefault();
+    $(this).next().slideToggle(600);
+  });
+}
+
 $(".page-share .facebook").on("click", function(e) {
   e.preventDefault();
   window.open("https://www.facebook.com/sharer/sharer.php?u="+window.location.href,

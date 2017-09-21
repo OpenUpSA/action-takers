@@ -12,10 +12,10 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
   <div class="step-wrap">
     <a href="1" class="single-step">
       <div class="circle">1</div>
-      <div class="content">Get a letter from the school(s) stating the reasons why admission has been declined</div>
+      <div class="title">Get a letter from the school(s) stating the reasons why admission has been declined</div>
       <div class="cta">Haven't applied? Find schools now<i class="fa fa-fw fa-search" aria-hidden="true"></i></div>
     </a>
-    <div class="visible-print-block">
+    <div class="content">
       {% for step in site.steps %}
         {% if forloop.index == 1 %}
           {{ step.content }}
@@ -29,10 +29,10 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
   <div class="step-wrap">
     <a href="2-1" class="single-step">
       <div class="circle">2.1</div>
-      <div class="content">Write a letter of appeal to the MEC for education</div>
+      <div class="title">Write a letter of appeal to the MEC for education</div>
       <div class="cta">Get an appeal letter template <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i></div>
     </a>
-    <div class="visible-print-block">
+    <div class="content">
       {% for step in site.steps %}
         {% if forloop.index == 2 %}
           {{ step.content }}
@@ -44,10 +44,10 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
   <div class="step-wrap">
     <a href="2-2" class="single-step">
       <div class="circle">2.2</div>
-      <div class="content">Alternatively, write a letter of appeal to the District Director</div>
+      <div class="title">Alternatively, write a letter of appeal to the District Director</div>
       <div class="cta">Get an appeal letter template <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i></div>
     </a>
-    <div class="visible-print-block">
+    <div class="content">
       {% for step in site.steps %}
         {% if forloop.index == 3 %}
           {{ step.content }}
@@ -59,9 +59,9 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
   <div class="step-wrap">
     <a href="3" class="single-step">
       <div class="circle">3</div>
-      <div class="content">The MEC will launch an investigation into your case</div>
+      <div class="title">The MEC will launch an investigation into your case</div>
     </a>
-    <div class="visible-print-block">
+    <div class="content">
       {% for step in site.steps %}
         {% if forloop.index == 4 %}
           {{ step.content }}
@@ -73,10 +73,10 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
   <div class="step-wrap">
     <a href="4" class="single-step">
       <div class="circle">4</div>
-      <div class="content">A meeting will be set up to discuss your child's needs</div>
+      <div class="title">A meeting will be set up to discuss your child's needs</div>
       <div class="cta">Checklist of how to prepare for this meeting<i class="fa fa-fw fa-list-ul" aria-hidden="true"></i></div>
     </a>
-    <div class="visible-print-block">
+    <div class="content">
       {% for step in site.steps %}
         {% if forloop.index == 5 %}
           {{ step.content }}
