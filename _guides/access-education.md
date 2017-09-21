@@ -13,7 +13,6 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
     <a href="1" class="title-box">
       <div class="circle">1</div>
       <div class="title">Get a letter from the school(s) stating the reasons why admission has been declined</div>
-      <div class="cta">Haven't applied? Find schools now<i class="fa fa-fw fa-search" aria-hidden="true"></i></div>
     </a>
     <div class="content">
       {% for step in site.steps %}
@@ -30,7 +29,6 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
     <a href="2-1" class="title-box">
       <div class="circle">2.1</div>
       <div class="title">Write a letter of appeal to the MEC for education</div>
-      <div class="cta">Get an appeal letter template <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i></div>
     </a>
     <div class="content">
       {% for step in site.steps %}
@@ -45,7 +43,6 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
     <a href="2-2" class="title-box">
       <div class="circle">2.2</div>
       <div class="title">Alternatively, write a letter of appeal to the District Director</div>
-      <div class="cta">Get an appeal letter template <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i></div>
     </a>
     <div class="content">
       {% for step in site.steps %}
@@ -74,7 +71,6 @@ did-you-know: According to the <a class="act" target="_blank" href="https://www.
     <a href="4" class="title-box">
       <div class="circle">4</div>
       <div class="title">A meeting will be set up to discuss your child's needs</div>
-      <div class="cta">Checklist of how to prepare for this meeting<i class="fa fa-fw fa-list-ul" aria-hidden="true"></i></div>
     </a>
     <div class="content">
       {% for step in site.steps %}
