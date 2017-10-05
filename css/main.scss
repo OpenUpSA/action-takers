@@ -680,3 +680,40 @@ nav.navbar-default {
     filter: grayscale(100%);
   }
 }
+
+#school-search_wrapper {
+  #school-search {
+    padding-top: 25px;
+    td {
+      font-size: 12px;
+    }
+  }
+  #school-search_filter {
+    input {
+      border: none;
+      border-bottom: 1px solid $dark-gray;
+    }
+  }
+  #school-search_paginate {
+    .paginate_button {
+      background-color: $green;
+      border-radius: 0;
+      color: #fff !important;
+      border: none;
+      &:hover, &.current {
+        background: none !important;
+        background-color: $dark-gray !important;
+      }
+      &.disabled {
+        background-color: $light-gray !important;
+        color: $dark-gray !important;
+      }
+      &.previous {
+
+      }
+      &.next {
+
+      }
+    }
+  }
+}
