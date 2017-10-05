@@ -2,7 +2,7 @@
 layout: generic
 simple-name: home
 ---
-<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="/js/dataTables.min.js"></script>
 
 <script>
   $(document).ready(function(){
@@ -14,7 +14,12 @@ simple-name: home
           "sPrevious": '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
         },
       },
-      "ordering": false
+      "ordering": false,
+      "bLengthChange": false
+    });
+    $("#school-search, #school-search_info, #school-search_paginate").hide();
+    $("#school-search_filter input").keypress(function(){
+      $("#school-search, #school-search_info, #school-search_paginate").show();
     });
   });
 </script>

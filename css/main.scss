@@ -689,9 +689,14 @@ nav.navbar-default {
     }
   }
   #school-search_filter {
-    input {
-      border: none;
-      border-bottom: 1px solid $dark-gray;
+    float: left;
+    text-align: left;
+    label {
+      color: $dark-gray;
+      input {
+        border: none;
+        border-bottom: 1px solid $dark-gray;
+      }
     }
   }
   #school-search_paginate {
