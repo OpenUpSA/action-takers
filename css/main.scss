@@ -81,6 +81,14 @@ h4 {
   font-size: 14px;
 }
 
+.alert {
+  border-radius: 0;
+  &.alert-search {
+    border-color: $light-gray;
+    background-color: $light-gray;
+  }
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1000px;
