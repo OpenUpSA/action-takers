@@ -1,0 +1,998 @@
+---
+layout: generic
+simple-name: home
+---
+<script src="/js/dataTables.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $("#school-search").DataTable( {
+      "oLanguage": {
+        "sSearch": "Search by school name or suburb",
+        "oPaginate": {
+          "sNext": '<i class="fa fa-arrow-right" aria-hidden="true"></i>',
+          "sPrevious": '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
+        },
+      },
+      "ordering": false,
+      "bLengthChange": false
+    });
+    $("#school-search, #school-search_info, #school-search_paginate").hide();
+    $("#school-search_filter input").keypress(function(){
+      $("#school-search, #school-search_info, #school-search_paginate").show();
+    });
+  });
+</script>
+
+<table id="school-search" class="table table-condensed table-hover">
+  <thead>
+    <tr class="tableizer-firstrow"><th>School name</th><th>Suburb</th><th>District</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>GAIA WALDORF SCHOOL</td><td>PINELANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>DARUN-NA'IM GIRLS HS</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>ATLANTIC BEACH COLLEGE</td><td>MELBOSSTRAND</td><td>METRO NORTH</td></tr>
+    <tr><td>EAGLE'S NEST CHRISTIAN PRIM.</td><td>WALLACEDENE</td><td>METRO EAST</td></tr>
+    <tr><td>SILVERMINE ACADEMY</td><td>SUN VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>ACADEMY PRIVATE SCHOOL</td><td>KUILS RIVER</td><td>METRO EAST</td></tr>
+    <tr><td>CLAREMONT HS</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WESTLAKE PRIM</td><td>WESTLAKE</td><td>METRO SOUTH</td></tr>
+    <tr><td>REDDAM HOUSE ATLANTIC SEABOARD</td><td>GREEN POINT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>INTERNATIONAL SCHOOL OF HELDERBERG</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>DISA PRIM. (HOUT BAY)</td><td>HOUT BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ECOLE FRANCOISE LE VAILLANT</td><td>GARDENS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>NORTHPINE TECHNICAL HS</td><td>NORTHPINE</td><td>METRO EAST</td></tr>
+    <tr><td>DELFT TECHNICAL HS</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>MELKBOS HIGH SCHOOL</td><td>MELKBOSSTRAND</td><td>METRO NORTH</td></tr>
+    <tr><td>FISANTEKRAAL HS</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>GATEWAY PRIM</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>ROUXVILLE PRIM</td><td>KUILS RIVER</td><td>METRO EAST</td></tr>
+    <tr><td>HOPE AND LIGHT PRIM.</td><td>SIR LOWRY'S PASS</td><td>METRO EAST</td></tr>
+    <tr><td>SILIKAMVA HIGH SCHOOL</td><td>HOUT BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>AL-AZHAR HIGH SCHOOL</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HYDE PARK COLLEGE</td><td>MITCHELL'S PLAIN</td><td>METRO SOUTH</td></tr>
+    <tr><td>CRESCENT PRIMARY SCHOOL</td><td>ELFINDALE</td><td>METRO SOUTH</td></tr>
+    <tr><td>CHRISTMAS TINTO PRIM</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>SUNNINGDALE PRIM</td><td>SUNNINGDALE</td><td>METRO NORTH</td></tr>
+    <tr><td>DESTINATUS PRIVAATSKOOL</td><td>BRACKENFELL</td><td>METRO EAST</td></tr>
+    <tr><td>A.Z. BERMAN HIGH SCHOOL</td><td>TAFELSIG</td><td>METRO SOUTH</td></tr>
+    <tr><td>CAPELLA HOUSE</td><td>SUNNYDALE</td><td>METRO SOUTH</td></tr>
+    <tr><td>SONEIKE HIGH SCHOOL</td><td>KUILS RIVER</td><td>METRO EAST</td></tr>
+    <tr><td>IMHOFF WALDORF HIGH SCHOOL</td><td>NOORDHOEK</td><td>METRO SOUTH</td></tr>
+    <tr><td>FOCUS COLLEGE</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>BLUE MOON MONTESSORI SCHOOL</td><td>HEATHFIELD</td><td>METRO SOUTH</td></tr>
+    <tr><td>ABEILE RUCHE SCHOOL (CENTURY CITY)</td><td>MONTE VISTA</td><td>METRO NORTH</td></tr>
+    <tr><td>STONEFOUNTAIN COLLEGE - BELLVILLE</td><td>BELLVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>MERIDIAN PINEHURST PRIVATE SCHOOL</td><td>PINEHURST</td><td>METRO NORTH</td></tr>
+    <tr><td>IMHOFF WALDORF PRIMARY SCHOOL</td><td>KOMMETJIE</td><td>METRO SOUTH</td></tr>
+    <tr><td>CURRO CENTURY CITY PRIVATE SCHOOL</td><td>CENTURY CITY</td><td>METRO NORTH</td></tr>
+    <tr><td>GULDEREN SULTAN CAPE GIRLS' HIGH SCHOO</td><td>CAPE TOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>STONEFOUNTAIN COLLEGE - KENILWORTH</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CHESTERHOUSE INTERNATIONAL SCHOOL</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>SCHOOL OF BUSINESS AND COMMERCE</td><td>MOWBRAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>NOMZAMO PRIM.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>NOMZAMO HS</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>ADVANCED LEARNING ACADEMY</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>THE SINAI ACADEMY</td><td>BLOUBERG RISE</td><td>METRO NORTH</td></tr>
+    <tr><td>PROTEA HEIGHTS ACADEMY</td><td>PROTEA HEIGHTS</td><td>METRO EAST</td></tr>
+    <tr><td>IMMANUEL PRIVATE SCHOOL</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>GRACE PRIMARY SCHOOL</td><td>PINELANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>EL MARINE PRIMARY SCHOOL</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>CAPE TOWN TORAH HIGH SCHOOL</td><td>CAPE TOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BIG BAY ACADEMY</td><td>PARKLANDS</td><td>METRO NORTH</td></tr>
+    <tr><td>THE LEADERSHIP COLLEGE OBSERVATORY</td><td>OBSERVATORY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>JEQ PREPARATORY SCHOOL</td><td>PHILIPPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>RISING STARS ACADEMY</td><td>TABLE VIEW</td><td>METRO NORTH</td></tr>
+    <tr><td>HIGHBURY PRIMARY SCHOOL</td><td>KUILS RIVER</td><td>METRO EAST</td></tr>
+    <tr><td>FOREST VILLAGE LEADERSHIP ACADEMY</td><td>BLUE DOWNS</td><td>METRO EAST</td></tr>
+    <tr><td>HAPPY VALLEY PRIMARY SCHOOL</td><td>BLUE DOWNS</td><td>METRO EAST</td></tr>
+    <tr><td>STAR COLLEGE - BRIDGETOWN</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>AL-HIDAAYAH COLLEGE</td><td>KRAAIFONTEIN</td><td>METRO EAST</td></tr>
+    <tr><td>PROTEA HEIGHTS PRIMARY SCHOOL</td><td>PROTEA HEIGHTS</td><td>METRO EAST</td></tr>
+    <tr><td>CURRO BRACKENFELL</td><td>BURGUNDY</td><td>METRO EAST</td></tr>
+    <tr><td>PARLIAMENT STREET PRIMARY SCHOOL</td><td>FAIRDALE</td><td>METRO NORTH</td></tr>
+    <tr><td>THE ROCK ACADEMY</td><td>SUNNYDALE</td><td>METRO SOUTH</td></tr>
+    <tr><td>MONTESSORI CONNECT-THE CHILDREN'S WORKS</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>KINGSWAY COLLEGE</td><td>CAPE TOWN CITY CENTRE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ITHEMBA LABANTU PRIMARY SCHOOL</td><td>PHILIPPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>JUNIOR CAMPUS PRIVATE SCHOOL</td><td>BOSONIA</td><td>METRO EAST</td></tr>
+    <tr><td>REDDAM HOUSE - SOMERSET LAKES</td><td>ONVERWACHT VILLAGE</td><td>METRO EAST</td></tr>
+    <tr><td>SILVERLEAF PRIMARY SCHOOL</td><td>DUNOON</td><td>METRO NORTH</td></tr>
+    <tr><td>GENERATION SCHOOL</td><td>SUNNINGDALE</td><td>METRO NORTH</td></tr>
+    <tr><td>ALTENA PRIMARY SCHOOL</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>CAPE SPORTS ACADEMY</td><td>LANSDOWNE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SUMMIT HOUSE - GARDENS</td><td>GARDENS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BIZWENI PRIMARY SCHOOL</td><td>BIZWENI</td><td>METRO EAST</td></tr>
+    <tr><td>TRINITY CHILDREN'S CENTRE</td><td>BEACON VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>DANIEL ACADEMY</td><td>GORDONS BAY</td><td>METRO EAST</td></tr>
+    <tr><td>LA VIGNE EDUCATIONAL HOUSE</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>EKUKHANYISELWENI CHRISTIAN SCHOOL</td><td>NOMZAMO</td><td>METRO EAST</td></tr>
+    <tr><td>MOUNTAIN VIEW ACADEMY - MONTE VISTA</td><td>MONTE VISTA</td><td>METRO NORTH</td></tr>
+    <tr><td>UBUNTU FOOTBALL ACADEMY</td><td>FISH HOEK</td><td>METRO SOUTH</td></tr>
+    <tr><td>GEREFORMEERDE LS.</td><td>STELLENBERG</td><td>METRO EAST</td></tr>
+    <tr><td>HOLY CROSS SISTERS' SCHOOL.(B)</td><td>OAKDALE</td><td>METRO EAST</td></tr>
+    <tr><td>EL SHADDAI CHRISTIAN SCHOOL</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>BELHAR ISLAMIC PRIM.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>HEBRON CHRISTENSKOOL</td><td>BELLVILLE</td><td>METRO EAST</td></tr>
+    <tr><td>BOSTON PRIVATE SCHOOL</td><td>BELLVILLE</td><td>METRO EAST</td></tr>
+    <tr><td>CURRO DURBANVILLE</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>IQRA ACADEMY</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>CHRIST GENERATION CHRISTIAN SCHOOL</td><td>PAROW CENTRAL</td><td>METRO NORTH</td></tr>
+    <tr><td>SHILOH CENTRE OF LEARNING</td><td>PAROW</td><td>METRO NORTH</td></tr>
+    <tr><td>RAINBOW MONTESSORI SCHOOL</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>NATURAL LEARNING ACADEMY</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>BELLVILLE CHRISTIAN ACADEMY</td><td>OAKDALE</td><td>METRO EAST</td></tr>
+    <tr><td>BELLVILLE PREPARATORY SCHOOL</td><td>SANLAM HOF</td><td>METRO NORTH</td></tr>
+    <tr><td>RENLYN'S MODERN MONTESORRI</td><td>RAVENSMEAD</td><td>METRO NORTH</td></tr>
+    <tr><td>BELLVILLE HTS.</td><td>LABIANCE</td><td>METRO EAST</td></tr>
+    <tr><td>DURBANVILLE VOORB.</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>PAROW INKLUSIEWE SKOOL</td><td>GLEN LILY</td><td>METRO NORTH</td></tr>
+    <tr><td>PAROWVALLEI PRIMÊRE SKOOL</td><td>PAROW VALLEY</td><td>METRO NORTH</td></tr>
+    <tr><td>RUYTERWACHT VOORB.</td><td>RUYTERWACHT</td><td>METRO NORTH</td></tr>
+    <tr><td>ARISTEA PRIM.</td><td>WINDSOR ESTATE</td><td>METRO EAST</td></tr>
+    <tr><td>BELLPARK PRIM.</td><td>OAKDALE</td><td>METRO EAST</td></tr>
+    <tr><td>BELLVILLE PRIM.</td><td>OAKDALE</td><td>METRO EAST</td></tr>
+    <tr><td>BELLVILLE-NOORD PRIM.</td><td>OAKDALE</td><td>METRO EAST</td></tr>
+    <tr><td>BOSTON PRIM.</td><td>BOSTON</td><td>METRO NORTH</td></tr>
+    <tr><td>DE TYGER LAERSKOOL</td><td>FAIRFIELD</td><td>METRO NORTH</td></tr>
+    <tr><td>DURBANVILLE PRIM.</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>EVERSDAL PRIM.</td><td>EVERSDAL</td><td>METRO NORTH</td></tr>
+    <tr><td>EXCELSIOR PRIM. (BELLVILLE)</td><td>THALMAN/DE LA HAYE</td><td>METRO EAST</td></tr>
+    <tr><td>FANIE THERON PRIM.</td><td>PEERLESS PARK</td><td>METRO EAST</td></tr>
+    <tr><td>GENE LOUW PRIM.</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>KENRIDGE PRIM.</td><td>KENRIDGE</td><td>METRO NORTH</td></tr>
+    <tr><td>LABIANCE PRIM.</td><td>LABIANCE</td><td>METRO EAST</td></tr>
+    <tr><td>PANORAMA LS.</td><td>WELGELEGEN</td><td>METRO NORTH</td></tr>
+    <tr><td>PAROW-NOORD PRIM.</td><td>PAROW NORTH</td><td>METRO NORTH</td></tr>
+    <tr><td>PAROW-WES PRIM.</td><td>GLEN LILY</td><td>METRO NORTH</td></tr>
+    <tr><td>PAROW-OOS LS.</td><td>GLEN LILY</td><td>METRO NORTH</td></tr>
+    <tr><td>SAFFIER PRIM.</td><td>PAROW VALLEY</td><td>METRO NORTH</td></tr>
+    <tr><td>SIMONSBERG PRIM.</td><td>BELMONT PARK</td><td>METRO EAST</td></tr>
+    <tr><td>TOTIUS PRIM.</td><td>BOSTON</td><td>METRO NORTH</td></tr>
+    <tr><td>VREDELUST PRIM.</td><td>BOSTON</td><td>METRO NORTH</td></tr>
+    <tr><td>WELGEMOED PRIM.</td><td>WELGEMOED</td><td>METRO NORTH</td></tr>
+    <tr><td>DE WAVEREN PRIM.</td><td>RUYTERWACHT</td><td>METRO NORTH</td></tr>
+    <tr><td>BELLVILLE HS.</td><td>DE LA HAYE</td><td>METRO EAST</td></tr>
+    <tr><td>D.F. MALAN HS.</td><td>BELLVILLE CENTRAL</td><td>METRO NORTH</td></tr>
+    <tr><td>DURBANVILLE HS.</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>EBEN DONGES HS.</td><td>BELMONT PARK</td><td>METRO EAST</td></tr>
+    <tr><td>FAIRMONT HS.</td><td>DURBANVILLE HILLS</td><td>METRO NORTH</td></tr>
+    <tr><td>MONUMENT PARK HS.</td><td>WINDSOR PARK ESTATE</td><td>METRO EAST</td></tr>
+    <tr><td>PAROW HS.</td><td>OOSTERZEE</td><td>METRO NORTH</td></tr>
+    <tr><td>THE SETTLERS HS.</td><td>BELLVILLE CENTRAL</td><td>METRO NORTH</td></tr>
+    <tr><td>TYGERBERG HS.</td><td>FAIRFIELD</td><td>METRO NORTH</td></tr>
+    <tr><td>STELLENBERG HS.</td><td>STELLENBERG</td><td>METRO NORTH</td></tr>
+    <tr><td>NORTHWAY PRIM.</td><td>RAVENSMEAD</td><td>METRO NORTH</td></tr>
+    <tr><td>BELLVILLE-SUID PRIM.</td><td>BELLVILLE SOUTH</td><td>METRO NORTH</td></tr>
+    <tr><td>GOEIE HOOP PRIM.</td><td>BELLVILLE SOUTH</td><td>METRO NORTH</td></tr>
+    <tr><td>NEBO PRIM.</td><td>RAVENSMEAD</td><td>METRO NORTH</td></tr>
+    <tr><td>WEBNERSTRAAT PRIM.</td><td>RAVENSMEAD</td><td>METRO NORTH</td></tr>
+    <tr><td>KASSELSVLEI PRIM.</td><td>BELLVILLE SOUTH</td><td>METRO NORTH</td></tr>
+    <tr><td>PINEDENE PRIM.</td><td>RAVENSMEAD</td><td>METRO NORTH</td></tr>
+    <tr><td>VORENTOE PRIM.</td><td>RAVENSMEAD</td><td>METRO NORTH</td></tr>
+    <tr><td>ALPHA PRIM.</td><td>MORNING STAR</td><td>METRO NORTH</td></tr>
+    <tr><td>PARKDENE PRIM. (Bellville)</td><td>SCOTTSDENE</td><td>METRO EAST</td></tr>
+    <tr><td>CAVALLERIA PRIM</td><td>SCOTTSDENE</td><td>METRO EAST</td></tr>
+    <tr><td>WINSLEY PRIM.</td><td>BELLVILLE SOUTH</td><td>METRO NORTH</td></tr>
+    <tr><td>ERICA PRIM.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>BELHAR PRIM.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>GARDENIA PRIM.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>EIKENDAL PRIM.</td><td>EIKENDAL</td><td>METRO EAST</td></tr>
+    <tr><td>BELVUE PRIM.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>SYMPHONY PRIM.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>ACCORDIONSTRAAT PRIM.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>WATSONIA PRIM.</td><td>SCOTTSDENE</td><td>METRO EAST</td></tr>
+    <tr><td>MATROOSBERGWEG PRIM.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>THE VALLEY PRIM.</td><td>KENRIDGE</td><td>METRO NORTH</td></tr>
+    <tr><td>DR. VAN DER ROSS PRIM.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>RIEBEECKSTRAAT PRIM.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>SCOTTSDENE SEK.</td><td>SCOTTSDENE</td><td>METRO EAST</td></tr>
+    <tr><td>BELLVILLE-SUID SEK.</td><td>BELLVILLE SOUTH</td><td>METRO NORTH</td></tr>
+    <tr><td>FLORIDA SEK.</td><td>RAVENSMEAD</td><td>METRO NORTH</td></tr>
+    <tr><td>BELHAR SEK.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>KASSELSVLEI KOMPREHENSIEWE HS</td><td>BELLVILLE SOUTH</td><td>METRO NORTH</td></tr>
+    <tr><td>EXCELSIOR SEK.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>RAVENSMEAD SEK.</td><td>RAVENSMEAD</td><td>METRO NORTH</td></tr>
+    <tr><td>SCOTTSVILLE SEK.</td><td>SCOTTSVILLE</td><td>METRO EAST</td></tr>
+    <tr><td>SYMPHONY SEK.</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>BERNADINO HEIGHTS SEK.</td><td>SCOTTSDENE</td><td>METRO EAST</td></tr>
+    <tr><td>PERSEVERANCE SEK</td><td>BELHAR</td><td>METRO NORTH</td></tr>
+    <tr><td>ST. AUGUSTINE'S RC PRIM. PAROW</td><td>PAROW VALLEY</td><td>METRO NORTH</td></tr>
+    <tr><td>KRAAIFONTEIN AME PRIM.</td><td>EIKENDAL</td><td>METRO EAST</td></tr>
+    <tr><td>TREVOR MANUEL PRIM.</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>VISSERSHOK PRIM.</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>BLUE MOUNTAINS PRIM.</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>ATTIE VAN WYK VGK PRIM.</td><td>DURBANVILLE</td><td>METRO NORTH</td></tr>
+    <tr><td>LOFDAL CHRISTIAN ACADEMY</td><td>KRAAIFONTEIN</td><td>METRO EAST</td></tr>
+    <tr><td>AKASIAPARK LS.</td><td>AKASIA PARK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CANNONS CREEK SCHOOL</td><td>PINELANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>EMMANUEL CHRISTIAN ACADEMY</td><td>GOODWOOD ESTATE</td><td>METRO NORTH</td></tr>
+    <tr><td>KING'S SCHOOL</td><td>RICHMOND ESTATE</td><td>METRO NORTH</td></tr>
+    <tr><td>ABEILLE RUCHE SCHOOL</td><td>MONTE VISTA</td><td>METRO NORTH</td></tr>
+    <tr><td>HOPE OF AFRICA JUNIOR CHRISTIAN COLLEGE</td><td>GOODWOOD</td><td>METRO NORTH</td></tr>
+    <tr><td>MOUNTAIN VIEW ACADEMY</td><td>MONTE VISTA</td><td>METRO NORTH</td></tr>
+    <tr><td>IKAMVALETHU SEC.</td><td>LANGA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SIGCAWU PUBLIC PRIM.</td><td>OLD CROSSROADS</td><td>METRO SOUTH</td></tr>
+    <tr><td>LANGA SEC.</td><td>LANGA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ISILIMELA SEC</td><td>LANGA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>KULANI SEC</td><td>LANGA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MOKONE PRIM.</td><td>LANGA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MOSHESH PRIM.</td><td>LANGA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SIYABULELA PRIM.</td><td>LANGA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>THEMBANI PRIM.</td><td>LANGA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ZIMASA PRIM.</td><td>LANGA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CRAVENBY SEC</td><td>CRAVENBY</td><td>METRO NORTH</td></tr>
+    <tr><td>VRIJZEE VOORB.</td><td>VASCO ESTATE</td><td>METRO NORTH</td></tr>
+    <tr><td>BOSMANSDAM PRIM.</td><td>BOTHASIG</td><td>METRO NORTH</td></tr>
+    <tr><td>DE VRIJE ZEE PRIM.</td><td>RICHMOND ESTATE</td><td>METRO NORTH</td></tr>
+    <tr><td>EDGEMEAD PRIM.</td><td>EDGEMEAD</td><td>METRO NORTH</td></tr>
+    <tr><td>GOODWOOD PARK PRIM.</td><td>TOWNSEND ESTATE</td><td>METRO NORTH</td></tr>
+    <tr><td>KOOS SADIE PRIM.</td><td>GOODWOOD ESTATE</td><td>METRO NORTH</td></tr>
+    <tr><td>MONTE VISTA PRIM.</td><td>MONTE VISTA</td><td>METRO NORTH</td></tr>
+    <tr><td>PINEHURST PRIM.</td><td>PINELANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>THE PINELANDS PRIM.</td><td>PINELANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PINELANDS NORTH PRIM.</td><td>PINELANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>THORNTON PRIM.</td><td>THORNTON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WOLRAAD WOLTEMADE PRIM.</td><td>BOTHASIG</td><td>METRO NORTH</td></tr>
+    <tr><td>BOSMANSDAM HS.</td><td>BOTHASIG</td><td>METRO NORTH</td></tr>
+    <tr><td>GOODWOOD KOLLEGE</td><td>RUYTERWACHT</td><td>METRO NORTH</td></tr>
+    <tr><td>EDGEMEAD HS.</td><td>EDGEMEAD</td><td>METRO NORTH</td></tr>
+    <tr><td>FAIRBAIRN COLLEGE</td><td>RICHMOND ESTATE</td><td>METRO NORTH</td></tr>
+    <tr><td>J.G. MEIRING HS.</td><td>GOODWOOD ESTATE</td><td>METRO NORTH</td></tr>
+    <tr><td>PINELANDS HS.</td><td>PINELANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PRESIDENT HS.</td><td>GOODWOOD ESTATE</td><td>METRO NORTH</td></tr>
+    <tr><td>EURECON PRIM.</td><td>CONNAUGHT</td><td>METRO NORTH</td></tr>
+    <tr><td>ESANGWENI SEC.</td><td>KHAYELITSHA-SECTION</td><td>METRO EAST</td></tr>
+    <tr><td>ARCADIA PRIM.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BALVENIE PRIM.</td><td>BALVENIE</td><td>METRO NORTH</td></tr>
+    <tr><td>BERGSIG PRIM</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BERGVILLE PRIM.</td><td>BISHOP LAVIS</td><td>METRO NORTH</td></tr>
+    <tr><td>BISHOP LAVIS PRIM.</td><td>BISHOP LAVIS</td><td>METRO NORTH</td></tr>
+    <tr><td>BRAMBLE WAY PRIM.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BOUNDARY PRIM.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CEDAR PRIM.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CENTRAL PARK PRIM.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CLARKE PRIM.</td><td>CLARKES ESTATE</td><td>METRO NORTH</td></tr>
+    <tr><td>C.L. WILMOT PRIM.</td><td>UITSIG</td><td>METRO NORTH</td></tr>
+    <tr><td>DISA PRIM.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>EDWARD PRIM.</td><td>MATROOSFONTEIN</td><td>METRO NORTH</td></tr>
+    <tr><td>ELNOR PRIM.</td><td>ELSIES RIVER</td><td>METRO NORTH</td></tr>
+    <tr><td>ELSBURY PRIM.</td><td>MATROOSFONTEIN</td><td>METRO NORTH</td></tr>
+    <tr><td>ELDENE PRIM.</td><td>AVONWOOD</td><td>METRO NORTH</td></tr>
+    <tr><td>ELSWOOD PRIM.</td><td>LEONSDALE</td><td>METRO NORTH</td></tr>
+    <tr><td>EUREKA PRIM.</td><td>EUREKA</td><td>METRO NORTH</td></tr>
+    <tr><td>GREENLANDS PRIM.</td><td>BISHOP LAVIS</td><td>METRO NORTH</td></tr>
+    <tr><td>HELDERBERG PRIM.</td><td>BISHOP LAVIS</td><td>METRO NORTH</td></tr>
+    <tr><td>HILLSIDE PRIM.</td><td>BISHOP LAVIS</td><td>METRO NORTH</td></tr>
+    <tr><td>J.S. KLOPPER PRIM.</td><td>BALVENIE</td><td>METRO NORTH</td></tr>
+    <tr><td>KALKSTEENFONTEIN PRIM.</td><td>KALKSTEENFONTEIN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>VALPARK PRIM.</td><td>VALHALLA PARK</td><td>METRO NORTH</td></tr>
+    <tr><td>PARKVALE PRIM.</td><td>VALHALLA PARK</td><td>METRO NORTH</td></tr>
+    <tr><td>KLIPFONTEIN PRIM.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>LAVISRYLAAN PRIM.</td><td>BISHOP LAVIS</td><td>METRO NORTH</td></tr>
+    <tr><td>LEONSDALE PRIM.</td><td>LEONSDALE</td><td>METRO NORTH</td></tr>
+    <tr><td>MATROOSFONTEIN PRIM.</td><td>MATROOSFONTEIN</td><td>METRO NORTH</td></tr>
+    <tr><td>MIMOSA PRIM.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MONTANA PRIM.</td><td>KALKSTEENFONTEIN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>NERINA PRIM.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>NOOITGEDACHT PRIM.</td><td>NOOITGEDACHT</td><td>METRO NORTH</td></tr>
+    <tr><td>NORWOOD SENTRAAL PRIM.</td><td>NORWOOD</td><td>METRO NORTH</td></tr>
+    <tr><td>PROTEA PRIM. (BONTEH.)</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RANGE PRIM.</td><td>THE RANGE</td><td>METRO NORTH</td></tr>
+    <tr><td>RIVERTON PRIM.</td><td>BISHOP LAVIS</td><td>METRO NORTH</td></tr>
+    <tr><td>ROSEWOOD PRIM.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>TYGERSIG PRIM.</td><td>UITSIG</td><td>METRO NORTH</td></tr>
+    <tr><td>UITSIG PRIM.</td><td>UITSIG</td><td>METRO NORTH</td></tr>
+    <tr><td>VALHALLA PRIM.</td><td>VALHALLA PARK</td><td>METRO NORTH</td></tr>
+    <tr><td>MONTEVIDEO PRIM.</td><td>MONTANA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ARCADIA SEN. SEK.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BEAUVALLON SEK.</td><td>VALHALLA PARK</td><td>METRO NORTH</td></tr>
+    <tr><td>BISHOP LAVIS SEK.</td><td>BISHOP LAVIS</td><td>METRO NORTH</td></tr>
+    <tr><td>BONTEHEUWEL SEK.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ELSIESRIVIER SEK.</td><td>NORWOOD</td><td>METRO NORTH</td></tr>
+    <tr><td>ELSWOOD SEK.</td><td>LEONSDALE</td><td>METRO NORTH</td></tr>
+    <tr><td>JOHN RAMSAY HS.</td><td>BISHOP LAVIS</td><td>METRO NORTH</td></tr>
+    <tr><td>MODDERDAM SEK.</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RANGE SEK.</td><td>THE RANGE</td><td>METRO NORTH</td></tr>
+    <tr><td>UITZIG SEK.</td><td>UITSIG</td><td>METRO NORTH</td></tr>
+    <tr><td>VALHALLA SEK</td><td>VALHALLA PARK</td><td>METRO NORTH</td></tr>
+    <tr><td>ST. ANDREW'S SEK.</td><td>CONNAUGHT</td><td>METRO NORTH</td></tr>
+    <tr><td>ZOLA SENIOR SEC</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>MATROOS. HOLY TRINITY RC PRIM.</td><td>ADRIAANSE</td><td>METRO NORTH</td></tr>
+    <tr><td>MARIAN RC SEC.</td><td>ADRIAANSE</td><td>METRO NORTH</td></tr>
+    <tr><td>CBC ST. JOHN'S PARKLANDS</td><td>BLOUBERGRANT</td><td>METRO NORTH</td></tr>
+    <tr><td>DEUTSCHE INTERNATIONALE SCHULE KAPSTADT</td><td>TAMBOERSKLOOF</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HERZLIA HS.</td><td>VREDEHOEK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HERZLIA HIGHLANDS PRIM.</td><td>VREDEHOEK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HILLCREST SCHOOL.</td><td>MOWBRAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HOLY CROSS HIGH SCHOOL (MAITLAND)</td><td>MAITLAND</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HOLY CROSS CONVENT (BROOKLYN)</td><td>BROOKLYN</td><td>METRO NORTH</td></tr>
+    <tr><td>HERZLIA WEIZMANN PRIM.</td><td>SEA POINT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. CYPRIAN'S SCHOOL.</td><td>ORANJEZICHT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. GEORGE'S GRAMMAR SCHOOL.</td><td>MOWBRAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>STEPPING STONES MONTESSORI SCHOOL</td><td>ORANJEZICHT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ICRA COMPREHENSIVE SCHOOL</td><td>CAPE CENTRAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WEST COAST CHRISTIAN SCHOOL</td><td>BLOUBERG SANDS</td><td>METRO NORTH</td></tr>
+    <tr><td>SOPHAKAMA PRIM.</td><td>MILNERTON</td><td>METRO NORTH</td></tr>
+    <tr><td>PARKLANDS COLLEGE</td><td>TABLE VIEW</td><td>METRO NORTH</td></tr>
+    <tr><td>ELKANAH HOUSE</td><td>BLOUBERG SANDS</td><td>METRO NORTH</td></tr>
+    <tr><td>ABBOTTS COLLEGE, MILNERTON</td><td>MILNERTON</td><td>METRO NORTH</td></tr>
+    <tr><td>HIDAYATUL ISLAM COLLEGE</td><td>CAPE TOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>Y2K COLLEGE</td><td>WOODSTOCK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>DU NOON PRIM</td><td>DU NOON</td><td>METRO NORTH</td></tr>
+    <tr><td>BLOUBERGRANT SEC</td><td>BLOUBERGRANT</td><td>METRO NORTH</td></tr>
+    <tr><td>WEST RIDING PRIM</td><td>TABLE VIEW</td><td>METRO NORTH</td></tr>
+    <tr><td>INTERNATIONAL SCHOOL OF HOUT BAY</td><td>HOUTBAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BLOUBERG INTERNATIONAL ACADEMY</td><td>PARKLANDS</td><td>METRO NORTH</td></tr>
+    <tr><td>CAPE TOWN STUDIES AND TOURS</td><td>TABLE VIEW</td><td>METRO NORTH</td></tr>
+    <tr><td>RIVERSIDE COLLEGE</td><td>PLATTEKLOOF</td><td>METRO NORTH</td></tr>
+    <tr><td>PHYLLIS JOWELL JEWISH DAY SCHOOL</td><td>CAMPS BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>OUDE MOLEN HTS.</td><td>PINELANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. AGNES'S PRIM.</td><td>WOODSTOCK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. MARY'S PRIM. (GARDENS)</td><td>GARDENS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>GARDENS COMMERCIAL HS.</td><td>GARDENS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>YSTERPLAAT JUNIOR PRIM.</td><td>YSTERPLAAT</td><td>METRO NORTH</td></tr>
+    <tr><td>BLOUBERG RIDGE PRIM.</td><td>BLOUBERGRANT</td><td>METRO NORTH</td></tr>
+    <tr><td>CAMPS BAY PRIM.</td><td>CAMPS BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ELLERTON PRIM.</td><td>THREE ANCHOR BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>GOOD HOPE SEMINARY JUNIOR</td><td>VREDEHOEK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>JAN VAN RIEBEECK PRIM.</td><td>TAMBOERSKLOOF</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MILNERTON PRIM.</td><td>MILNERTON</td><td>METRO NORTH</td></tr>
+    <tr><td>MOUNTAIN ROAD PRIM.</td><td>WOODSTOCK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>OBSERVATORY JUNIOR</td><td>OBSERVATORY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>KOEBERG PRIM.</td><td>MAITLAND</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SEA POINT PRIM.</td><td>SEA POINT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SEAMOUNT PRIMARY</td><td>MILNERTON</td><td>METRO NORTH</td></tr>
+    <tr><td>TABLE VIEW PRIM.</td><td>TABLE VIEW</td><td>METRO NORTH</td></tr>
+    <tr><td>TAMBOERSKLOOF PRIM.</td><td>TAMBOERSKLOOF</td><td>METRO CENTRAL</td></tr>
+    <tr><td>TYGERHOF PRIM.</td><td>MILNERTON</td><td>METRO NORTH</td></tr>
+    <tr><td>YSTERPLAAT PRIM.</td><td>YSTERPLAAT</td><td>METRO NORTH</td></tr>
+    <tr><td>WOODBRIDGE PRIM.</td><td>MILNERTON</td><td>METRO NORTH</td></tr>
+    <tr><td>CHAPEL STREET PRIM.</td><td>CAPE CENTRAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PRESTWICH STREET PRIM.</td><td>CAPE CENTRAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CECIL ROAD PRIM.</td><td>SALT RIVER</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BUREN HS.</td><td>YSTERPLAAT</td><td>METRO NORTH</td></tr>
+    <tr><td>CAPE TOWN HS.</td><td>GARDENS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>GOOD HOPE SEMINARY HS.</td><td>GARDENS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>JAN VAN RIEBEECK HS.</td><td>GARDENS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MILNERTON HS.</td><td>MILNERTON</td><td>METRO NORTH</td></tr>
+    <tr><td>QUEEN'S PARK HS.</td><td>WOODSTOCK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SEA POINT HS.</td><td>SEA POINT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>DRYDEN STREET PRIM</td><td>SALT RIVER</td><td>METRO CENTRAL</td></tr>
+    <tr><td>TABLE VIEW HS.</td><td>TABLE VIEW</td><td>METRO NORTH</td></tr>
+    <tr><td>CAMPS BAY HS.</td><td>CAMPS BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ZONNEBLOEM NEST SENIOR SCHOOL</td><td>WOODSTOCK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WALMER ESTATE PRIM.</td><td>WOODSTOCK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. PAUL'S PRIM. (WYNB)</td><td>CAPE CENTRAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WALMER SEC.</td><td>WOODSTOCK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>TRAFALGAR SEC.</td><td>CAPE CENTRAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HAROLD CRESSY HS.</td><td>CAPE CENTRAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>VISTA HS.</td><td>CAPE CENTRAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SALT RIVER SEC</td><td>SALT RIVER</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MASIBAMBISANE SEC.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>THEMBELIHLE HS.</td><td>KHAYELITSHA-TOWN2</td><td>METRO EAST</td></tr>
+    <tr><td>RAHMANIYEH PRIM.</td><td>CAPE TOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HOLY CROSS RC PRIM.</td><td>CAPE CENTRAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>GARDEN VILLAGE PRIM.</td><td>MAITLAND GARDEN VILLAGE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SCHOTSCHEKLOOF MOS PRIM.</td><td>SCHOTSCHEKLOOF</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WESLEY MET. PRACTISING SCHOOL</td><td>SALT RIVER</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ZONNEBLOEM BOYS PRIM.</td><td>WOODSTOCK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ZONNEBLOEM GIRLS PRAC. SCH.</td><td>WOODSTOCK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>FACTRETON PRIM.</td><td>FACTRETON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>H.J. KRONEBERG JUN. PRIM.</td><td>KENSINGTON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>KENMERE PRIM.</td><td>KENSINGTON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SUNDERLAND PRIM.</td><td>FACTRETON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>W.D. HENDRICKS PRIM.</td><td>KENSINGTON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WINDERMERE PRIM.</td><td>KENSINGTON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WINGFIELD PRIM.</td><td>FACTRETON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MARCONI BEAM PRIM</td><td>MILNERTON</td><td>METRO NORTH</td></tr>
+    <tr><td>KENSINGTON SEC.</td><td>KENSINGTON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MAITLAND SEK.</td><td>MAITLAND</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WINDERMERE SEK.</td><td>FACTRETON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HARRY GWALA SEC.</td><td>KHAYELITSHA-MACASSAR</td><td>METRO EAST</td></tr>
+    <tr><td>USASAZO SEC.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>ST. JOHN'S RC PRIM.</td><td>KENSINGTON</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SINENJONGO HS</td><td>MILNERTON</td><td>METRO NORTH</td></tr>
+    <tr><td>INKWENKWEZI SEC</td><td>MILNERTON</td><td>METRO NORTH</td></tr>
+    <tr><td>EASTRIDGE CHRISTIAN ACADEMY</td><td>MITCHELL'S PLAIN</td><td>METRO SOUTH</td></tr>
+    <tr><td>UKHANYO PRIM.</td><td>MASIPHUMELELE</td><td>METRO SOUTH</td></tr>
+    <tr><td>STAR OF THE SEA CONVENT PRIM.</td><td>ST JAMES</td><td>METRO SOUTH</td></tr>
+    <tr><td>FISH HOEK PRIM.</td><td>FISH HOEK</td><td>METRO SOUTH</td></tr>
+    <tr><td>BAY PRIM.</td><td>KALK BAY</td><td>METRO SOUTH</td></tr>
+    <tr><td>KOMMETJIE PRIM.</td><td>KOMMETJIE</td><td>METRO SOUTH</td></tr>
+    <tr><td>MUIZENBERG JUNIOR</td><td>MUIZENBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>PAUL GREYLING PRIM.</td><td>FISH HOEK</td><td>METRO SOUTH</td></tr>
+    <tr><td>SUN VALLEY PRIM.</td><td>SUN VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>MUIZENBERG HS.</td><td>MUIZENBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>KLEINBERG PRIM.</td><td>OCEAN VIEW</td><td>METRO SOUTH</td></tr>
+    <tr><td>MARINE PRIM.</td><td>OCEAN VIEW</td><td>METRO SOUTH</td></tr>
+    <tr><td>SIMON'S TOWN SCHOOL</td><td>SIMONS TOWN</td><td>METRO SOUTH</td></tr>
+    <tr><td>OCEAN VIEW SEC.</td><td>OCEAN VIEW</td><td>METRO SOUTH</td></tr>
+    <tr><td>FISH HOEK HS.</td><td>FISH HOEK</td><td>METRO SOUTH</td></tr>
+    <tr><td>ST. JAMES RC PRIM.</td><td>KALK BAY</td><td>METRO SOUTH</td></tr>
+    <tr><td>CAPRICORN PRIM</td><td>MUIZENBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>MASIPHUMELELE HS</td><td>MASIPHUMELELE</td><td>METRO SOUTH</td></tr>
+    <tr><td>ABBOTT'S COLLEGE</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>FORRES PRIM.</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HERZLIA PRIM. (SOUTHERN SUB.)</td><td>CONSTANTIA</td><td>METRO SOUTH</td></tr>
+    <tr><td>MICHAEL OAK WALDORF SCHOOL.</td><td>KENILWORTH</td><td>METRO SOUTH</td></tr>
+    <tr><td>MICKLEFIELD SCHOOL.</td><td>CAPE TOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PROGRESS COLLEGE.</td><td>ROSEBANK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ROSEBANK PROGRESS COLLEGE</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. JOSEPH'S COLLEGE.</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CONSTANTIA WALDORF SCHOOL</td><td>CONSTANTIA</td><td>METRO SOUTH</td></tr>
+    <tr><td>WESTERN PROVINCE PREP.</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HERSCHEL GIRLS SCHOOL</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BISHOPS</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SPRINGFIELD CONVENT OF THE HOLY ROSARY</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>AMBLESIDE SCHOOL OF HOUT BAY</td><td>HOUT BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ISLAMIA COLLEGE SEC.</td><td>RYLANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RIVERSIDE PRIM.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>THE VINE SCHOOL NPC</td><td>WYNBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>AL-AZHAR PRIMARY SCHOOL</td><td>LOTUS RIVER</td><td>METRO SOUTH</td></tr>
+    <tr><td>AUBURN HOUSE SCHOOL</td><td>KENILWORTH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>DARUL ISLAM ISLAMIC HS.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CEDAR HOUSE SCHOOL</td><td>KENILWORTH</td><td>METRO SOUTH</td></tr>
+    <tr><td>THE ARK CHRISTIAN SCHOOL</td><td>FAURE</td><td>METRO EAST</td></tr>
+    <tr><td>INTERNATIONAL SCHOOL CAPE TOWN</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>YESHUA CHRISTIAN PRIM.</td><td>HEATHFIELD</td><td>METRO SOUTH</td></tr>
+    <tr><td>STAR COLLEGE CAPE TOWN</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>REDDAM HOUSE</td><td>CONSTANTIA</td><td>METRO SOUTH</td></tr>
+    <tr><td>JUNIOR COLLEGE</td><td>OTTERY</td><td>METRO SOUTH</td></tr>
+    <tr><td>SHILOAH CHRISTIAN SCHOOL</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>LEAP SCIENCE AND MATHS SCHOOL</td><td>PINELANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PREMIER COLLEGE</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>AMERICAN INTERNATIONAL SCHOOL OF CAPE T</td><td>CONSTANTIA</td><td>METRO SOUTH</td></tr>
+    <tr><td>MADRASSA - TU - TARBIYYAH ISLAMIC SCHOO</td><td>LOTUS RIVER</td><td>METRO SOUTH</td></tr>
+    <tr><td>ATHLONE CHRISTIAN SCHOOL</td><td>SILVERTOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CITY MISSION EDUCATIONAL SERVICES</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SILVERSANDS SEC.</td><td>KUILS RIVER</td><td>METRO EAST</td></tr>
+    <tr><td>STONEFOUNTAIN COLLEGE - ATHLONE</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CHRISTEL HOUSE SOUTH AFRICA</td><td>ATHLONE</td><td>METRO SOUTH</td></tr>
+    <tr><td>THE ORACLE ACADEMY</td><td>OTTERY</td><td>METRO SOUTH</td></tr>
+    <tr><td>THE LEADERSHIP COLLEGE</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>THANDOKHULU SEC</td><td>MOWBRAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>STARLING PRIM</td><td>RYLANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RYLANDS PRIM.</td><td>RYLANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PELICAN PARK PRIMARY</td><td>PELICAN PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>PELICAN PARK HIGH SCHOOL</td><td>PELICAN PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>RYLANDS HS.</td><td>GATESVILLE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. JOSEPH'S MARIST JUNIOR</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. ANNE'S PRIM.</td><td>PLUMSTEAD</td><td>METRO SOUTH</td></tr>
+    <tr><td>PLUMSTEAD PREP.</td><td>PLUMSTEAD</td><td>METRO SOUTH</td></tr>
+    <tr><td>WINDSOR PREP.</td><td>LANSDOWNE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BERGVLIET PRIM.</td><td>BERGVLIET</td><td>METRO SOUTH</td></tr>
+    <tr><td>CLAREMONT PRIM.</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>FERNDALE PRIM.</td><td>OTTERY</td><td>METRO SOUTH</td></tr>
+    <tr><td>GOLDEN GROVE PRIM.</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>GREENFIELD GIRLS' PRIM.</td><td>KENILWORTH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>GROOTE SCHUUR PRIM.</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>GROVE PRIM.</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>JOHN GRAHAM PRIM.</td><td>PLUMSTEAD</td><td>METRO SOUTH</td></tr>
+    <tr><td>KIRSTENHOF PRIM.</td><td>KIRSTENHOF</td><td>METRO SOUTH</td></tr>
+    <tr><td>KRONENDAL PRIM.</td><td>HOUT BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>LLANDUDNO PRIM.</td><td>LLANDUDNO</td><td>METRO CENTRAL</td></tr>
+    <tr><td>OAKHURST GIRLS' PRIM.</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RONDEBOSCH BOYS' PREP.</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RONDEBOSCH EAST PRIM.</td><td>RONDEBOSCH EAST</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ROSEBANK JUNIOR</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RUSTENBURG GIRLS' JUNIOR.</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>S.A. COLLEGE JUNIOR.</td><td>NEWLANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SIMON VAN DER STEL PRIM.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>SOUTHFIELD PRIM.</td><td>SOUTHFIELD</td><td>METRO SOUTH</td></tr>
+    <tr><td>SUNLANDS PRIM.</td><td>LANSDOWNE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SWEET VALLEY PRIM.</td><td>BERGVLIET</td><td>METRO SOUTH</td></tr>
+    <tr><td>TIMOUR HALL PRIM.</td><td>PLUMSTEAD</td><td>METRO SOUTH</td></tr>
+    <tr><td>WESTCOTT PRIM.</td><td>DIEP RIVER</td><td>METRO SOUTH</td></tr>
+    <tr><td>KENWYN PRIM.</td><td>KENWYN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WYNBERG BOYS' JUNIOR</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>WYNBERG GIRLS' JUNIOR.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>ZWAANSWYK ACADEMY/AKADEMIE</td><td>RETREAT</td><td>METRO SOUTH</td></tr>
+    <tr><td>ROSMEAD CENTRAL PRIM.</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CONSTANTIA PRIM.</td><td>CONSTANTIA</td><td>METRO SOUTH</td></tr>
+    <tr><td>LOTUS RIVER PRIM.</td><td>LOTUS RIVER</td><td>METRO SOUTH</td></tr>
+    <tr><td>BERGVLIET HS.</td><td>BERGVLIET</td><td>METRO SOUTH</td></tr>
+    <tr><td>DOUGLAS ROAD PRIM.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>GROOTE SCHUUR HS.</td><td>NEWLANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>NORMAN HENSHILWOOD HS.</td><td>CONSTANTIA</td><td>METRO SOUTH</td></tr>
+    <tr><td>PLUMSTEAD HS.</td><td>PLUMSTEAD</td><td>METRO SOUTH</td></tr>
+    <tr><td>RHODES HS.</td><td>MOWBRAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RONDEBOSCH BOYS' HS.</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RUSTENBURG GIRLS' HS.</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>S.A. COLLEGE HS.</td><td>NEWLANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SANS SOUCI GIRLS' HS.</td><td>NEWLANDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>STEENBERG PRIMARY</td><td>STEENBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>VOORTREKKER HS.</td><td>KENILWORTH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WESTERFORD HS.</td><td>RONDEBOSCH</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WINDSOR HS.</td><td>RONDEBOSCH EAST</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WYNBERG BOYS' HS.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>WYNBERG GIRLS' HS.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>ZWAANSWYK HS.</td><td>TOKAI</td><td>METRO SOUTH</td></tr>
+    <tr><td>THOMAS WILDSCHUTT JUN. PRIM.</td><td>RETREAT</td><td>METRO SOUTH</td></tr>
+    <tr><td>HAZENDAL PRIM.</td><td>HAZENDAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HARMONY PRIM.</td><td>STEENBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>KANNEMEYER PRIM.</td><td>GRASSY PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>SID G. RULE PRIM.</td><td>GRASSY PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>PARKWOOD PRIM.</td><td>PARKWOOD</td><td>METRO SOUTH</td></tr>
+    <tr><td>SULLIVAN PRIM.</td><td>STEENBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>DELTA PRIM.</td><td>STEENBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>PERIVALE PRIM.</td><td>LOTUS RIVER</td><td>METRO SOUTH</td></tr>
+    <tr><td>FLOREAT PRIM.</td><td>STEENBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>LOURIER PRIM.</td><td>RETREAT</td><td>METRO SOUTH</td></tr>
+    <tr><td>SQUARE HILL PRIM.</td><td>RETREAT</td><td>METRO SOUTH</td></tr>
+    <tr><td>THOMAS WILDSCHUTT PRIM.</td><td>RETREAT</td><td>METRO SOUTH</td></tr>
+    <tr><td>MONTAGU'S GIFT PRIM.</td><td>MONTAGU'S GIFT</td><td>METRO SOUTH</td></tr>
+    <tr><td>HEATHFIELD PRIM.</td><td>ELFINDALE</td><td>METRO SOUTH</td></tr>
+    <tr><td>ATHWOOD PRIM.</td><td>PINATI</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BLOMVLEI PRIM.</td><td>PENLYN ESTATE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PLANTATION PRIM.</td><td>GRASSY PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>HYDE PARK PRIM.</td><td>MONTAGU'S GIFT</td><td>METRO SOUTH</td></tr>
+    <tr><td>PARKFIELDS PRIM.</td><td>HANOVER PARK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SUMMIT PRIM.</td><td>HANOVER PARK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>FAIRVIEW PRIM.</td><td>PARKWOOD</td><td>METRO SOUTH</td></tr>
+    <tr><td>VOORSPOED PRIM.</td><td>HANOVER PARK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MORGENSON PRIM.</td><td>PENLYN ESTATE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HILLWOOD PRIM.</td><td>LAVENDER HILL</td><td>METRO SOUTH</td></tr>
+    <tr><td>LEVANA PRIM.</td><td>LAVENDER HILL</td><td>METRO SOUTH</td></tr>
+    <tr><td>BELMOR PRIM.</td><td>HANOVER PARK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PRINCE GEORGE PRIM.</td><td>LAVENDER HILL</td><td>METRO SOUTH</td></tr>
+    <tr><td>ZERILDA PARK PRIM.</td><td>ZERILDA PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>SENTINEL PRIM.</td><td>HOUT BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SIBELIUS HS.</td><td>RETREAT</td><td>METRO SOUTH</td></tr>
+    <tr><td>LIVINGSTONE HS.</td><td>CLAREMONT</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SOUTH PENINSULA HS.</td><td>PLUMSTEAD</td><td>METRO SOUTH</td></tr>
+    <tr><td>GRASSY PARK SEC.</td><td>GRASSY PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>WITTEBOME HS.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>OAKLANDS SEK.</td><td>LANSDOWNE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HEATHFIELD HS</td><td>HEATHFIELD</td><td>METRO SOUTH</td></tr>
+    <tr><td>STEENBERG SEC.</td><td>STEENBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>CRESTWAY SEC.</td><td>RETREAT</td><td>METRO SOUTH</td></tr>
+    <tr><td>CRYSTAL SEK.</td><td>HANOVER PARK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MOUNT VIEW SEC.</td><td>HANOVER PARK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>LAVENDER HILL HIGH SCHOOL</td><td>LAVENDER HILL</td><td>METRO SOUTH</td></tr>
+    <tr><td>WYNBERG SEK.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>FAIRMOUNT SEC.</td><td>PARKWOOD</td><td>METRO SOUTH</td></tr>
+    <tr><td>GRASSDALE HOeR</td><td>GRASSY PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>ZEEKOEVLEI SEC.</td><td>LOTUS RIVER</td><td>METRO SOUTH</td></tr>
+    <tr><td>HOUTBAAI SEK.</td><td>HOUT BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MUHAMMADEYAH MOS PRIM.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>ST. ANTHONY'S RC PRIM.</td><td>HEATHFIELD</td><td>METRO SOUTH</td></tr>
+    <tr><td>GRASSY PARK EC PRIM.</td><td>GRASSY PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>ST. AUGUSTINE'S RC PRIM.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>OTTERY ROAD (METH.) PRIM.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>ST. MARY'S RC PRIM.(RETREAT)</td><td>RETREAT</td><td>METRO SOUTH</td></tr>
+    <tr><td>CHRISTIAN DAVID MOR PRIM.</td><td>ZERILDA PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>ORANJEKLOOF MOR PRIM.</td><td>HOUT BAY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. CLEMENTS RC PRIM.</td><td>LOTUS RIVER</td><td>METRO SOUTH</td></tr>
+    <tr><td>BATTSWOOD OEFEN NGK PRIM.</td><td>OTTERY</td><td>METRO SOUTH</td></tr>
+    <tr><td>IMMACULATA RK SEC.</td><td>WYNBERG</td><td>METRO SOUTH</td></tr>
+    <tr><td>ALICEDALE PRIM.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ATHLONE NORTH PRIM.</td><td>KEW TOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BELTHORN PRIM.</td><td>CRAWFORD</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BLOSSOM STREET PRIM.</td><td>SILVERTOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BRIDGEVILLE PRIM.</td><td>BRIDGETOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CYPRESS PRIM.</td><td>BRIDGETOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>DAGBREEK PRIM.</td><td>HEIDEVELD</td><td>METRO CENTRAL</td></tr>
+    <tr><td>DOWNEVILLE PRIM.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>EASTER PEAK PRIM.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>EDENDALE PRIM.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>GARLANDALE PRIM.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HEATHERDALE PRIM.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HEIDEVELD PRIM.</td><td>HEIDEVELD</td><td>METRO CENTRAL</td></tr>
+    <tr><td>KEWTOWN PRIM.</td><td>KEW TOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MANENBERG PRIM.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>NORMA ROAD PRIM.</td><td>SILVERTOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>E. A. JANARI PRIM</td><td>BONTEHEUWEL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PORTIA PRIM.</td><td>LANSDOWNE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PRIMROSE PARK PRIM.</td><td>PRIMROSE PARK</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RED RIVER PRIM.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>RIO GRANDE PRIM.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SAAMBOU PRIM.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>TALFALAH PRIM.</td><td>SHERWOOD</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SILVERLEA PRIM.</td><td>SILVERTOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SILVERSTREAM PRIM.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SONDEREND PRIM.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SUNNYSIDE PRIM.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SURREY PRIM.</td><td>SURREY</td><td>METRO CENTRAL</td></tr>
+    <tr><td>THORNTONWEG PRIM.</td><td>CRAWFORD</td><td>METRO CENTRAL</td></tr>
+    <tr><td>TURFHALL PRIM.</td><td>PENLYN ESTATE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>VANGUARD PRIM.</td><td>VANGUARD ESTATE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WELCOME PRIM.</td><td>WELCOME ESTATE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WILLOWS PRIM.</td><td>HEIDEVELD</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WOODLANDS PRIM.</td><td>HEIDEVELD</td><td>METRO CENTRAL</td></tr>
+    <tr><td>YORK ROAD PRIM.</td><td>LANSDOWNE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>NEWFIELDS PRIM.</td><td>NEWFIELDS</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BOKMAKIERIE PRIM.</td><td>HAZENDAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PORTAVUE PRIM.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ALEXANDER SINTON SEC.</td><td>CRAWFORD</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ATHLONE SEC.</td><td>SILVERTOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BELGRAVIA SEC.</td><td>BELGRAVIA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BRIDGETOWN SEC.</td><td>BRIDGETOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CATHKIN SEC.</td><td>HEIDEVELD</td><td>METRO CENTRAL</td></tr>
+    <tr><td>GARLANDALE SEK.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>GROENVLEI SEC.</td><td>LANSDOWNE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HEIDEVELD SEK.</td><td>HEIDEVELD</td><td>METRO CENTRAL</td></tr>
+    <tr><td>MANENBERG SEK.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PHOENIX SEK.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>NED DOMAN HS.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>PEAK VIEW SEK.</td><td>BRIDGETOWN</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SPES BONA HS.</td><td>HAZENDAL</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SILVERSTREAM SEK.</td><td>MANENBERG</td><td>METRO CENTRAL</td></tr>
+    <tr><td>CAPE ACADEMY FOR MATHS, SCIENCE AND TEC</td><td>TOKAI</td><td>METRO SOUTH</td></tr>
+    <tr><td>HABIBIA PRIM.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>REGINA COELI RC PRIM.</td><td>BELGRAVIA</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. RAPHAEL'S RC PRIM.</td><td>ATHLONE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ST. THERESA R.C. PRIM.</td><td>WELCOME ESTATE</td><td>METRO CENTRAL</td></tr>
+    <tr><td>BUCK ROAD PRIM.</td><td>PELICAN PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>STEPHENWEG PRIM.</td><td>MONTAGU'S GIFT</td><td>METRO SOUTH</td></tr>
+    <tr><td>ZEEKOEVLEI PRIM.</td><td>LOTUS RIVER</td><td>METRO SOUTH</td></tr>
+    <tr><td>DIE DUINE PRIM.</td><td>LOTUS RIVER</td><td>METRO SOUTH</td></tr>
+    <tr><td>LOTUS SEK.</td><td>GRASSY PARK</td><td>METRO SOUTH</td></tr>
+    <tr><td>DARUL ARQAM ISLAMIC HS.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>MVULA PRIM.</td><td>NYANGA</td><td>METRO SOUTH</td></tr>
+    <tr><td>STORMONT MADUBELA PRIM.</td><td>NYANGA-KTC</td><td>METRO SOUTH</td></tr>
+    <tr><td>ENTSHONA PRIM</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>BONGOLETHU PRIM.(NYANGA)</td><td>BROWNS FARM</td><td>METRO SOUTH</td></tr>
+    <tr><td>IEGLAASI NIEYAH SCHOOL</td><td>BEACON VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>NAL'UXULO PRIM.</td><td>WELTEVREDEN VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>WELTEVREDEN VALLEY CORE PRIM.</td><td>WELTEVREDEN VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>SOPHUMELELA SEC</td><td>WELTEVREDEN VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>MASIVUKE PRIM.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>ZISUKHANYO SEC.</td><td>WELTEVREDEN VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>VUKANI PRIM.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>MITCHELL HEIGHTS PRIM.</td><td>TAFELSIG</td><td>METRO SOUTH</td></tr>
+    <tr><td>PHANDULWAZI HS.</td><td>PHILLIPI EAST</td><td>METRO SOUTH</td></tr>
+    <tr><td>CENTRE OF SCIENCE AND TECHNOLOGY</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>EAGLES WINGS CHRISTIAN SCHOOL</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>PHILLIPI SEC</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>NOXOLO XAUKA PRIM</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>LUDWE NGAMLANA PRIMARY SCHOOL</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>ZENZELENI SCHOOL FOR CREATIVE EDUCATION</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>ST. MICHAELS PRIM.(KHAYELITSHA)</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>LUHLAZA SEC</td><td>KHAYELITSHA-SECTE</td><td>METRO EAST</td></tr>
+    <tr><td>MATTHEW GONIWE MEMORIAL HS.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>MASIYILE SENIOR SEC</td><td>KHAYELITSHA-SECTG</td><td>METRO EAST</td></tr>
+    <tr><td>BULUMKO SEC</td><td>KHAYELITSHA-SECTF</td><td>METRO EAST</td></tr>
+    <tr><td>HOMBA PRIM.</td><td>KHAYELITSHA-SECTD</td><td>METRO EAST</td></tr>
+    <tr><td>INJONGO PRIM.</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>KUKHANYILE PUBL. PRIM.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>LWANDLE PRIM.</td><td>KHAYELITSHA-SECTJ</td><td>METRO EAST</td></tr>
+    <tr><td>SAKUMLANDELA PRIM.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>SOBAMBISANA PRIM.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>SOYISILE PRIM.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>UMMANGALISO PRIM.</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>VUZAMANZI PUBL. PRIM.</td><td>KHAYELITSHA-SITE C</td><td>METRO EAST</td></tr>
+    <tr><td>VUSELELA PRIM.</td><td>KHAYELITSHA-SITE C</td><td>METRO EAST</td></tr>
+    <tr><td>IKHWEZI leSIZWE PRIM.</td><td>KHAYELITSHA-SECTE</td><td>METRO EAST</td></tr>
+    <tr><td>YOMELELA PRIM.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>ELUXOLWENI PRIM.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>CHUMISA PRIM.</td><td>NONKQUBELA</td><td>METRO EAST</td></tr>
+    <tr><td>NTWASAHLOBO PRIM.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>JOE SLOVO SEC.</td><td>KHAYELITSHA-SECTC</td><td>METRO EAST</td></tr>
+    <tr><td>IKHUSI PRIM.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>SOSEBENZA PRIM.</td><td>KHAYELITSHA-SITE B</td><td>METRO EAST</td></tr>
+    <tr><td>IMPENDULO PUBL. PRIM.</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>SIVILE PRIM.</td><td>IKWEZI PARK</td><td>METRO EAST</td></tr>
+    <tr><td>MZAMOMHLE PRIM.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>NOMSA MAPONGWANA PRIM.</td><td>KHAYELITSHA-MAKHAYA</td><td>METRO EAST</td></tr>
+    <tr><td>SINETHEMBA SEC.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>KUYAKHANYA PRIMARY</td><td>OLD CROSSROADS</td><td>METRO SOUTH</td></tr>
+    <tr><td>HOPOLANG PRIM.</td><td>KHAYELITSHA-TOWN2</td><td>METRO EAST</td></tr>
+    <tr><td>INTLANGANISO SEC</td><td>KHAYELITSHA-SITE C</td><td>METRO EAST</td></tr>
+    <tr><td>CHUMA PUBL. PRIM.</td><td>KHAYELITSHA-TOWN2</td><td>METRO EAST</td></tr>
+    <tr><td>NKAZIMLO PRIM.</td><td>KHAYELITSHA-MACASSAR</td><td>METRO EAST</td></tr>
+    <tr><td>SIYAZAKHA PRIM.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>UMTHAWELANGA PRIM.</td><td>KHAYELITSHA-EKUPHUMLENI</td><td>METRO EAST</td></tr>
+    <tr><td>LULEKA PRIM.</td><td>KHAYELITSHA-HARARI</td><td>METRO EAST</td></tr>
+    <tr><td>CHRIS HANI SEC</td><td>KHAYELITSHA-MACASSAR</td><td>METRO EAST</td></tr>
+    <tr><td>SIVUYISENI PUBL. PRIM.</td><td>KHAYELITSHA-MAKHAYA</td><td>METRO EAST</td></tr>
+    <tr><td>INTSHAYELELO PRIM.</td><td>KHAYELITSHA-ILITHA PARK</td><td>METRO EAST</td></tr>
+    <tr><td>UXOLO HS.</td><td>KHAYELITSHA-MAKHAYA</td><td>METRO EAST</td></tr>
+    <tr><td>VUYISEKA SEC.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>SITHEMBELE MATISO SEC</td><td>GUGULETHU</td><td>METRO SOUTH</td></tr>
+    <tr><td>LWAZI PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>NOBANTU PRIM.</td><td>GUGULETHU</td><td>METRO SOUTH</td></tr>
+    <tr><td>NOMLINGANISELO PRIM.</td><td>NEW CROSSROADS</td><td>METRO SOUTH</td></tr>
+    <tr><td>SONWABO PRIM.</td><td>GUGULETHU</td><td>METRO SOUTH</td></tr>
+    <tr><td>VUKUKHANYE PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>INTSHUKUMO SEC.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>FEZEKA SEC</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>OSCAR MPETHA HS</td><td>NYANGA</td><td>METRO SOUTH</td></tr>
+    <tr><td>BONGA LOWER PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>HLENGISA PRIM.</td><td>NYANGA</td><td>METRO SOUTH</td></tr>
+    <tr><td>INTSHINGA PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>JOHN PAMA PRIM.</td><td>NYANGA</td><td>METRO SOUTH</td></tr>
+    <tr><td>LEHLOHONOLO PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>LINGE PRIM.</td><td>NYANGA</td><td>METRO SOUTH</td></tr>
+    <tr><td>MSEKI PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SIYAZINGISA PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SOKHANYO PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>WALTER TEKA PUB. PRIM.</td><td>NYANGA</td><td>METRO SOUTH</td></tr>
+    <tr><td>IMBASA PRIM.</td><td>OLD CROSSROADS</td><td>METRO SOUTH</td></tr>
+    <tr><td>I. D. MKIZE SEN SEC</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>ANDILE PRIM.</td><td>NEW CROSSROADS</td><td>METRO SOUTH</td></tr>
+    <tr><td>LITHA PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>LIWA PRIM.</td><td>NYANGA</td><td>METRO SOUTH</td></tr>
+    <tr><td>LUZUKO PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>SIKELELA IMIZAMO PRIM.</td><td>OLD CROSSROADS</td><td>METRO SOUTH</td></tr>
+    <tr><td>MKHANYISELI PRIM.</td><td>NYANGA</td><td>METRO SOUTH</td></tr>
+    <tr><td>VUYANI PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>XOLANI PRIM.</td><td>GUGULETHU</td><td>METRO CENTRAL</td></tr>
+    <tr><td>DR. NELSON R. MANDELA HS.</td><td>OLD CROSSROADS</td><td>METRO SOUTH</td></tr>
+    <tr><td>KHANYA PRIM</td><td>MITCHELL'S PLAIN</td><td>METRO SOUTH</td></tr>
+    <tr><td>HEINZ PARK PRIM.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>SAMORA MACHEL PRIM</td><td>WELTEVREDEN VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>PHAKAMA SEC.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>ISIKHOKELO PRIM.</td><td>KHAYELITSHA-SITE C</td><td>METRO EAST</td></tr>
+    <tr><td>ISIPHIWO PRIM.</td><td>KHAYELITSHA-HARARI</td><td>METRO EAST</td></tr>
+    <tr><td>ENCOTSHENI PRIM.</td><td>KHAYELITSHA-SITE C</td><td>METRO EAST</td></tr>
+    <tr><td>KWAMFUNDO SEC.</td><td>KHAYELITSHA-HARARE</td><td>METRO EAST</td></tr>
+    <tr><td>SIZIMISELE SEC.</td><td>MANDELA PARK</td><td>METRO EAST</td></tr>
+    <tr><td>INTSEBENZISWANO SEC</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>SIPHAMANDLA SEC.</td><td>KHAYELITSHA-SECTH</td><td>METRO EAST</td></tr>
+    <tr><td>IQHAYIYA SEC</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>KWA-FAKU PRIM</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>ZANEMFUNDO PRIM.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>MANYANO HS</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>KUYASA PRIM</td><td>KHAYELITSHA-HARARI</td><td>METRO EAST</td></tr>
+    <tr><td>NOLUNGILE PRIM.</td><td>KHAYELITSHA-SITE C</td><td>METRO EAST</td></tr>
+    <tr><td>MZAMOMTSHA PRIM.</td><td>DRIFTSANDS</td><td>METRO NORTH</td></tr>
+    <tr><td>DIETRICH MOR PRIM.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>ALOE JUN. HS</td><td>LENTEGEUR</td><td>METRO SOUTH</td></tr>
+    <tr><td>EASTVILLE PRIM.</td><td>EASTRIDGE</td><td>METRO SOUTH</td></tr>
+    <tr><td>CASCADE PRIM.</td><td>EASTRIDGE</td><td>METRO SOUTH</td></tr>
+    <tr><td>CARADALE PRIM.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>CARAVELLE PRIM.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>CORNFLOWER PRIM.</td><td>LENTEGEUR</td><td>METRO SOUTH</td></tr>
+    <tr><td>DUNESIDE PRIM.</td><td>WESTRIDGE</td><td>METRO SOUTH</td></tr>
+    <tr><td>EISLEBEN ROAD PRIM.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>HARVESTER PRIM.</td><td>WESTRIDGE</td><td>METRO SOUTH</td></tr>
+    <tr><td>HAZELDENE PRIM</td><td>PORTLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>HIGHLANDS PRIM.</td><td>WOODLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>HILLSIDE PRIM. (M/PLAIN)</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>HUGUENOT PRIM.</td><td>TAFELSIG</td><td>METRO SOUTH</td></tr>
+    <tr><td>HYACINTH PRIM.</td><td>LENTEGEUR</td><td>METRO SOUTH</td></tr>
+    <tr><td>JAMAICAWEG PRIM.</td><td>PORTLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>LANTANA PRIM.</td><td>LENTEGEUR</td><td>METRO SOUTH</td></tr>
+    <tr><td>LIESBEECK PRIM.</td><td>PORTLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>MEADOWRIDGE PRIM.</td><td>LENTEGEUR</td><td>METRO SOUTH</td></tr>
+    <tr><td>MERRYDALE PRIM.</td><td>LENTEGEUR</td><td>METRO SOUTH</td></tr>
+    <tr><td>MITCHELL'S PLAIN PRIM</td><td>WESTRIDGE</td><td>METRO SOUTH</td></tr>
+    <tr><td>MONTAGU DRIVE PRIM.</td><td>PORTLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>NORTHWOOD PRIM.</td><td>WOODLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>TAFELSIG PRIM.</td><td>TAFELSIG</td><td>METRO SOUTH</td></tr>
+    <tr><td>PARKHURST PRIM.</td><td>WESTRIDGE</td><td>METRO SOUTH</td></tr>
+    <tr><td>PORTLAND PRIM.</td><td>PORTLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>RIDGEVILLE PRIM.</td><td>WESTRIDGE</td><td>METRO SOUTH</td></tr>
+    <tr><td>ROCKLANDS PRIM</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>SEAVIEW PRIM.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>YELLOWWOOD PRIM.</td><td>TAFELSIG</td><td>METRO SOUTH</td></tr>
+    <tr><td>SPINE VIEW PRIM.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>SPRINGDALE PRIM.</td><td>LENTEGEUR</td><td>METRO SOUTH</td></tr>
+    <tr><td>LITTLEWOOD PRIM.</td><td>EASTRIDGE</td><td>METRO SOUTH</td></tr>
+    <tr><td>STRANDFONTEIN PRIM.</td><td>STRANDFONTEIN</td><td>METRO SOUTH</td></tr>
+    <tr><td>WESPOORT PRIM.</td><td>PORTLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>WAVECREST PRIM.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>WEST END PRIM.</td><td>LENTEGEUR</td><td>METRO SOUTH</td></tr>
+    <tr><td>WESTVILLE PRIM.</td><td>WESTRIDGE</td><td>METRO SOUTH</td></tr>
+    <tr><td>WOODVILLE PRIM.</td><td>WOODLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>IMPERIAL PRIM.</td><td>BEACON VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>BEACON VIEW PRIM.</td><td>BEACON VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>ALPINE PRIM.</td><td>BEACON VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>DENNEGEUR PRIM.</td><td>STRANDFONTEIN</td><td>METRO SOUTH</td></tr>
+    <tr><td>A.Z. BERMAN PRIM.</td><td>BEACON VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>SEARIDGE PARK PRIM.</td><td>TAFELSIG</td><td>METRO SOUTH</td></tr>
+    <tr><td>MANDALAY PRIM.</td><td>MANDALAY</td><td>METRO SOUTH</td></tr>
+    <tr><td>ST. MARY'S (RC) PRIM (NYANGA)</td><td>NYANGA</td><td>METRO SOUTH</td></tr>
+    <tr><td>ALOE SEC.</td><td>LENTEGEUR</td><td>METRO SOUTH</td></tr>
+    <tr><td>BEACON HILL SEK.</td><td>BEACON VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>CEDAR SEC.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>MONDALE HS.</td><td>PORTLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>PORTLAND SEC.</td><td>PORTLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>ROCKLANDS SEC.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>LENTEGEUR SEC.</td><td>LENTEGEUR</td><td>METRO SOUTH</td></tr>
+    <tr><td>STRANDFONTEIN SEK.</td><td>STRANDFONTEIN</td><td>METRO SOUTH</td></tr>
+    <tr><td>TAFELSIG SEK.</td><td>TAFELSIG</td><td>METRO SOUTH</td></tr>
+    <tr><td>SPINE ROAD HIGH SCHOOL.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>GLENDALE SEC.</td><td>ROCKLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>WESTRIDGE SEC.</td><td>WESTRIDGE</td><td>METRO SOUTH</td></tr>
+    <tr><td>WOODLANDS SEC.</td><td>WOODLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>PRINCETON SEC.</td><td>WOODLANDS</td><td>METRO SOUTH</td></tr>
+    <tr><td>OVAL NORTH SEC.</td><td>BEACON VALLEY</td><td>METRO SOUTH</td></tr>
+    <tr><td>NEW EISLEBEN SEC</td><td>NYANGA</td><td>METRO SOUTH</td></tr>
+    <tr><td>KLIPFONTEIN MET PRIM.</td><td>PHILLIPI</td><td>METRO SOUTH</td></tr>
+    <tr><td>GOOD HOPE PRIM.</td><td>KUILSRIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>GOOD HOPE HS</td><td>KUILSRIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>SIMUNYE SEK.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>SUNRAY PRIM</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>DELFT-SOUTH PRIM</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>YOUNG EAGLES CHRISTIAN ACADEMY</td><td>KUILSRIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>HEBRON CHRISTIAN ACADEMY</td><td>KUILSRIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>OOSTENBERG GOOD HOPE CHRISTIAN SCHOOL</td><td>BLUE DOWNS</td><td>METRO EAST</td></tr>
+    <tr><td>BLOEKOMBOS SEC</td><td>BLOEKOMBOS</td><td>METRO EAST</td></tr>
+    <tr><td>BLUE DOWNS PRIM</td><td>BLUE DOWNS</td><td>METRO EAST</td></tr>
+    <tr><td>LEIDEN SEC.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>WALLACEDENE PRIM</td><td>WALLACEDENE</td><td>METRO EAST</td></tr>
+    <tr><td>WALLACEDENE SEC</td><td>WALLACEDENE</td><td>METRO EAST</td></tr>
+    <tr><td>LEIDEN PRIM.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>LEIDEN AVENUE PRIM.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>KALKFONTEIN PRIM</td><td>KUILSRIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>MFULENI SEC</td><td>MFULENI</td><td>METRO NORTH</td></tr>
+    <tr><td>GIHON CHRISTIAN SCHOOL</td><td>FOREST HEIGHTS</td><td>METRO EAST</td></tr>
+    <tr><td>ITSITSA PRIM.</td><td>MFULENI</td><td>METRO NORTH</td></tr>
+    <tr><td>WESTERN CAPE SPORT SCHOOL</td><td>KUILSRIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>HINDLE HS</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>HINDLE ROAD WEST PRIM</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>ABEDARE PRIM</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>BARDALE PRIM.</td><td>MFULENI</td><td>METRO NORTH</td></tr>
+    <tr><td>BARDALE SEC</td><td>MFULENI</td><td>METRO NORTH</td></tr>
+    <tr><td>MFULENI PRIM.</td><td>MFULENI</td><td>METRO NORTH</td></tr>
+    <tr><td>BASTION PRIM.</td><td>PROTEA HOOGTE</td><td>METRO EAST</td></tr>
+    <tr><td>BRACKENFELL PRIM.</td><td>BRACKENFELL CENTRAL</td><td>METRO EAST</td></tr>
+    <tr><td>DE KUILEN PRIM.</td><td>KUILSRIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>MIKRO LS</td><td>KUILSRIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>BRACKENFELL HS.</td><td>BRACKENFELL CENTRAL</td><td>METRO EAST</td></tr>
+    <tr><td>DE KUILEN HS.</td><td>KUILSRIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>WEST BANK NO. 1 PRIM.</td><td>DELFT</td><td>METRO EAST</td></tr>
+    <tr><td>KUILS RIVER PRIM.</td><td>SAREPTA</td><td>METRO EAST</td></tr>
+    <tr><td>SAREPTA PRIM.</td><td>SAREPTA</td><td>METRO EAST</td></tr>
+    <tr><td>R.R. FRANKS PRIM.</td><td>KLEINVLEI</td><td>METRO EAST</td></tr>
+    <tr><td>SCOTTSVILLE PRIM.</td><td>SCOTTSVILLE</td><td>METRO EAST</td></tr>
+    <tr><td>MELTON PRIM.</td><td>KLEINVLEI</td><td>METRO EAST</td></tr>
+    <tr><td>PETUNIA PRIM.</td><td>SCOTTSVILLE</td><td>METRO EAST</td></tr>
+    <tr><td>IRISTA PRIM.</td><td>SAREPTA</td><td>METRO EAST</td></tr>
+    <tr><td>BLACKHEATH PRIM.</td><td>GAYLEE</td><td>METRO EAST</td></tr>
+    <tr><td>HELDERKRUIN PRIM.</td><td>KLEINVLEI</td><td>METRO EAST</td></tr>
+    <tr><td>NORTHPINE PRIMARY SCHOOL.</td><td>NORTH PINE</td><td>METRO EAST</td></tr>
+    <tr><td>FOREST HEIGHTS PRIM.</td><td>FOREST VILLAGE</td><td>METRO EAST</td></tr>
+    <tr><td>TUSCANY GLEN PRIM.</td><td>TUSCANY GLEN</td><td>METRO EAST</td></tr>
+    <tr><td>DELFT PRIM.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>STRATFORD PRIM.</td><td>KLEINVLEI</td><td>METRO EAST</td></tr>
+    <tr><td>DENNEMERE PRIM.</td><td>DENNEMERE</td><td>METRO EAST</td></tr>
+    <tr><td>BEVERLEY PARK PRIM.</td><td>EERSTE RIVER SOUTH</td><td>METRO EAST</td></tr>
+    <tr><td>VERGENOEGD PRIM.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>ROSENDAL LAER.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>SPURWING PRIM.</td><td>ELECTRIC CITY</td><td>METRO EAST</td></tr>
+    <tr><td>EINDHOVEN PRIM.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>SILVERSANDS PRIM</td><td>SILVERSANDS</td><td>METRO EAST</td></tr>
+    <tr><td>BROOKLANDS PRIM.</td><td>NORTH PINE</td><td>METRO EAST</td></tr>
+    <tr><td>THE HAGUE PRIM.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>ENKULULEKWENI PRIM.</td><td>WALLACEDENE</td><td>METRO EAST</td></tr>
+    <tr><td>PALM PARK PRIM</td><td>EERSTERIVER</td><td>METRO EAST</td></tr>
+    <tr><td>MASONWABE PRIM</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>EKUTHULENI PRIM.</td><td>KRAAIFONTEIN</td><td>METRO EAST</td></tr>
+    <tr><td>IMVUMELWANO PRIM.</td><td>WALLACEDENE</td><td>METRO EAST</td></tr>
+    <tr><td>KAIROS PRIM.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>NYAMEKO PRIM</td><td>MFULENI</td><td>METRO NORTH</td></tr>
+    <tr><td>ROSENDAAL SEK.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>HECTOR PETERSON SEC.</td><td>WALLACEDENE</td><td>METRO EAST</td></tr>
+    <tr><td>TUSCANY GLEN SEC.</td><td>EERSTERIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>KLEINVLEI SEK.</td><td>KLEINVLEI</td><td>METRO EAST</td></tr>
+    <tr><td>SAREPTA SEK.</td><td>SAREPTA</td><td>METRO EAST</td></tr>
+    <tr><td>MALIBU SEK.</td><td>MALIBU VILLAGE</td><td>METRO EAST</td></tr>
+    <tr><td>VOORBRUG SEK.</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>FOREST HEIGHTS HS.</td><td>FOREST VILLAGE</td><td>METRO EAST</td></tr>
+    <tr><td>EERSTERIVIER SEK.</td><td>EERSTERIVER SOUTH</td><td>METRO EAST</td></tr>
+    <tr><td>BLACKHEATH SEK.</td><td>DENNEMERE</td><td>METRO EAST</td></tr>
+    <tr><td>KUILS RIVER TECHNICAL SEC</td><td>KUILSRIVIER</td><td>METRO EAST</td></tr>
+    <tr><td>WEST BANK HS</td><td>DELFT</td><td>METRO EAST</td></tr>
+    <tr><td>BOTTELARY PRIM.</td><td>KUILSRIVIER NU</td><td>METRO EAST</td></tr>
+    <tr><td>BLOEKOMBOS PRIM</td><td>BLOEKOMBOS</td><td>METRO EAST</td></tr>
+    <tr><td>RAINBOW PRIM.</td><td>DELFT</td><td>METRO EAST</td></tr>
+    <tr><td>HOOFWEG PRIM</td><td>DELFT</td><td>METRO EAST</td></tr>
+    <tr><td>NAL'IKAMVA PRIM</td><td>MFULENI</td><td>METRO NORTH</td></tr>
+    <tr><td>WELWITSCIHA PRIM</td><td>DELFT</td><td>METRO NORTH</td></tr>
+    <tr><td>MASIBAMBANE SEC</td><td>BLOEKOMBOS</td><td>METRO EAST</td></tr>
+    <tr><td>KERSBOSLAAGTE SSKV PRIM.</td><td>PAARL</td><td>CAPE WINELANDS</td></tr>
+    <tr><td>ACADEMIA PRIM.</td><td>FAURE</td><td>METRO EAST</td></tr>
+    <tr><td>ST. PAUL'S PRIM.</td><td>FAURE</td><td>METRO EAST</td></tr>
+    <tr><td>HELDERBERG HIGH SCHOOL.</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>HELDERBERG LS</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>SOMERSET HOUSE PREP.</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>ST. PETER'S ACADEMY</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>SINAKO HIGH SCHOOL</td><td>KHAYELITSHA-MACASSAR</td><td>METRO EAST</td></tr>
+    <tr><td>VALSBAAI HS.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>SOMERSET WEST PRIVATE SCHOOL</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>TEREO COMMUNITY SCHOOL</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>NEWBERRY HOUSE MONTESSORI PRIM</td><td>SOMERSTE WEST</td><td>METRO EAST</td></tr>
+    <tr><td>VERGEZICHT PRIVATE SCHOOL</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>BEAUMONT PRIM.</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>DE HOOP LS.</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>SOMERSET-WES LS.</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>HOTTENTOTS-HOLLAND HS.</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>PAREL VALLEI HS.</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>DANIE ACKERMANN PRIM.</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>MACASSAR PRIM.</td><td>MACASSAR</td><td>METRO EAST</td></tr>
+    <tr><td>OKLAHOMASTRAAT PRIM.</td><td>MACASSAR</td><td>METRO EAST</td></tr>
+    <tr><td>MARVIN PARK PRIM.</td><td>MACASSAR</td><td>METRO EAST</td></tr>
+    <tr><td>FIRGROVE PRIM.</td><td>MACASSAR</td><td>METRO EAST</td></tr>
+    <tr><td>SIR LOWRY'S PASS PRIM.</td><td>SIR LOWRY'S PASS</td><td>METRO EAST</td></tr>
+    <tr><td>GORDON SEK.</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>MACASSAR SEK</td><td>MACASSAR</td><td>METRO EAST</td></tr>
+    <tr><td>ZANDVLIET HS.</td><td>MACASSAR</td><td>METRO EAST</td></tr>
+    <tr><td>SOMERSET-WES MET PRIM.</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>MASIPHUMELELE PRIM</td><td>KHAYELITSHA</td><td>METRO EAST</td></tr>
+    <tr><td>LORETO PRIM.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>A.C.J. PHAKADE PRIM</td><td>NOMZAMO</td><td>METRO EAST</td></tr>
+    <tr><td>MADRASATUR RAJAA STRAND HS</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>MONDEOR ECO SCHOOL</td><td>SOMERSET WEST</td><td>METRO EAST</td></tr>
+    <tr><td>SOLOMON QATYANA PRIM.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>SOMERSTRAND COLLEGE</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>UMNQOPHISO PRIM.</td><td>LWANDLE</td><td>METRO EAST</td></tr>
+    <tr><td>GORDONSBAAI LS.</td><td>GORDONS BAY</td><td>METRO EAST</td></tr>
+    <tr><td>HENDRIK LOUW LS.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>LOCHNERHOF LS.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>STRAND HS</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>TEMPERANCE TOWN PRIM.</td><td>GORDONS BAY</td><td>METRO EAST</td></tr>
+    <tr><td>RUSTHOF PRIM.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>DR. G.J. JOUBERT PRIM.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>SIMANYENE SEC.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>STRAND SEK.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>RUSTHOF SEK.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>KHANYOLWETHU SEC</td><td>LWANDLE</td><td>METRO EAST</td></tr>
+    <tr><td>STRAND MOS PRIM.</td><td>STRAND</td><td>METRO EAST</td></tr>
+    <tr><td>SILUKHANYO PRIM</td><td>NOMZAMO</td><td>METRO EAST</td></tr>
+    <tr><td>MELKBOS BAPTIST FELLOWSHIP COLLEGE</td><td>MELKBOSSTRAND</td><td>METRO NORTH</td></tr>
+    <tr><td>MELKBOSSTRAND PRIVATE SCHOOL</td><td>MELKBOSSTRAND</td><td>METRO NORTH</td></tr>
+    <tr><td>DASSENBERG WALDORF SCHOOL</td><td>PHILADELPHIA</td><td>METRO NORTH</td></tr>
+    <tr><td>PHILADELPHIA PRIM.</td><td>PHILADELPHIA</td><td>METRO NORTH</td></tr>
+    <tr><td>VAN RIEBEECKSTRAND LS.</td><td>MELKBOSSTRAND</td><td>METRO NORTH</td></tr>
+    <tr><td>MEULENHOF PRIM.</td><td>PHILADELPHIA</td><td>METRO NORTH</td></tr>
+    <tr><td>KLIPHEUWEL PRIM.</td><td>MALMESBURY</td><td>METRO NORTH</td></tr>
+    <tr><td>AVONDALE PRIM.</td><td>AVONDALE</td><td>METRO NORTH</td></tr>
+    <tr><td>BERZELIA PRIM.</td><td>PROTEA PARK</td><td>METRO NORTH</td></tr>
+    <tr><td>GROSVENOR PRIM.</td><td>SAXON-SEA</td><td>METRO NORTH</td></tr>
+    <tr><td>HERMESLAAN PRIM.</td><td>SAXON-SEA</td><td>METRO NORTH</td></tr>
+    <tr><td>KERRIA PRIM.</td><td>PROTEA PARK</td><td>METRO NORTH</td></tr>
+    <tr><td>PARKVIEW PRIM.</td><td>ATLANTIS</td><td>METRO NORTH</td></tr>
+    <tr><td>PROTEA PARK PRIM.</td><td>PROTEA PARK</td><td>METRO NORTH</td></tr>
+    <tr><td>REYGERSDAL PRIM.</td><td>ROBINVALE</td><td>METRO NORTH</td></tr>
+    <tr><td>SAXONSEA PRIM.</td><td>SAXON-SEA</td><td>METRO NORTH</td></tr>
+    <tr><td>WESFLEUR PRIM.</td><td>ATLANTIS</td><td>METRO NORTH</td></tr>
+    <tr><td>MAMRE PRIM.</td><td>MAMRE</td><td>METRO NORTH</td></tr>
+    <tr><td>ATLANTIS SEK.</td><td>ATLANTIS</td><td>METRO NORTH</td></tr>
+    <tr><td>SAXONSEA SEK.</td><td>SAXON-SEA</td><td>METRO NORTH</td></tr>
+    <tr><td>PROTEUS SEK.</td><td>PROTEA PARK</td><td>METRO NORTH</td></tr>
+    <tr><td>ROBINVALE HS</td><td>ROBINVALE</td><td>METRO NORTH</td></tr>
+    <tr><td>PELLA MOR PRIM.</td><td>MALMESBURY</td><td>METRO NORTH</td></tr>
+    <tr><td>VAATJIE MOR PRIM.</td><td>PHILADELPHIA</td><td>METRO NORTH</td></tr>
+    <tr><td>PIKETBERG CHRISTIAN SCHOOL</td><td>PIKETBERG</td><td>WEST COAST</td></tr>
+    <tr><td>MANZOMTHOMBO SEC.</td><td>MFULENI</td><td>METRO NORTH</td></tr>
+    </tbody>
+</table>
+
+<div class="row metro-details">
+  <div class="col-md-3 col-xs-6">
+    <h2>Metro Central</h2>
+    Contact person<br>
+    <a href="tel:123">123 456 7890</a><br>
+    <a href="mailto:abc@def.ghi">email@metro.gov.za</a><br>
+    100 Street name<br>
+    Suburb 7700
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <h2>Metro East</h2>
+    Contact person<br>
+    <a href="tel:123">123 456 7890</a><br>
+    <a href="mailto:abc@def.ghi">email@metro.gov.za</a><br>
+    100 Street name<br>
+    Suburb 7700
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <h2>Metro North</h2>
+    Contact person<br>
+    <a href="tel:123">123 456 7890</a><br>
+    <a href="mailto:abc@def.ghi">email@metro.gov.za</a><br>
+    100 Street name<br>
+    Suburb 7700
+  </div>
+  <div class="col-md-3 col-xs-6">
+    <h2>Metro South</h2>
+    Contact person<br>
+    <a href="tel:123">123 456 7890</a><br>
+    <a href="mailto:abc@def.ghi">email@metro.gov.za</a><br>
+    100 Street name<br>
+    Suburb 7700
+  </div>
+</div>
+
