@@ -15,7 +15,7 @@ did-you-know: According to the <a class="act" target="_blank" href="http://www.d
       <div class="title">Ensure your bin is put out on the correct day</div>
     </a>
     <div class="content">
-      {% for step in site.steps %}
+      {% for step in site.solid-waste %}
         {% if forloop.index == 1 %}
           {{ step.content }}
         {% endif %}
@@ -23,61 +23,4 @@ did-you-know: According to the <a class="act" target="_blank" href="http://www.d
     </div>
   </div>
 
-  <div class="comment"><b>If all schools reject your application</b>, follow this appeal process:</div>
-
-  <div class="single-step">
-    <a href="2-1" class="title-box">
-      <div class="circle">2.1</div>
-      <div class="title">Write a letter of appeal to the MEC for education</div>
-    </a>
-    <div class="content">
-      {% for step in site.steps %}
-        {% if forloop.index == 2 %}
-          {{ step.content }}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="single-step">
-    <a href="2-2" class="title-box">
-      <div class="circle">2.2</div>
-      <div class="title">Alternatively, write a letter of appeal to the District Director</div>
-    </a>
-    <div class="content">
-      {% for step in site.steps %}
-        {% if forloop.index == 3 %}
-          {{ step.content }}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="single-step">
-    <a href="3" class="title-box">
-      <div class="circle">3</div>
-      <div class="title">The MEC will launch an investigation into your case</div>
-    </a>
-    <div class="content">
-      {% for step in site.steps %}
-        {% if forloop.index == 4 %}
-          {{ step.content }}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="single-step">
-    <a href="4" class="title-box">
-      <div class="circle">4</div>
-      <div class="title">A meeting will be set up to discuss your child's needs</div>
-    </a>
-    <div class="content">
-      {% for step in site.steps %}
-        {% if forloop.index == 5 %}
-          {{ step.content }}
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
 </div>

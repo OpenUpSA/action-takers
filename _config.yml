@@ -31,9 +31,10 @@ collections:
   guides:
     output: true
     permalink: /:name/
-  steps:
+  access-education:
     output: true
-    permalink: /:categories/:slug/
+  solid-waste:
+    output: true
   who-can-help:
     output: true
     permalink: /:name/who-can-help/
