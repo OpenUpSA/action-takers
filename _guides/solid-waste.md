@@ -22,5 +22,19 @@ did-you-know: According to the <a class="act" target="_blank" href="http://www.d
       {% endfor %}
     </div>
   </div>
+  <div class="single-step">
+    <a href="2" class="title-box">
+      <div class="circle">2</div>
+      <div class="title">If you are putting your refuse out on the correct day and it is still not being collected, report the issue to the city</div>
+    </a>
+    <div class="content">
+      {% for step in site.solid-waste %}
+        {% if forloop.index == 2 %}
+          {{ step.content }}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
 
 </div>
