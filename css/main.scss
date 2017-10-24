@@ -363,7 +363,7 @@ nav.navbar-default {
       font-size: 17px;
     }
     .single-step {
-      .title-box {
+      .title-box, .title-box-external {
         background-color: #fff;
         color: $dark-gray;
         padding: 10px;
@@ -499,7 +499,7 @@ nav.navbar-default {
     text-decoration: underline;
     text-align: right;
     padding: 5px 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 18px;
     display: block;
     i {
@@ -727,5 +727,15 @@ nav.navbar-default {
 
       }
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .intro, .summary, .resources, .legal-info {
+    height: calc(100% - 10px);
   }
 }

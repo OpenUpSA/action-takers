@@ -35,6 +35,25 @@ did-you-know: According to the <a class="act" target="_blank" href="http://www.d
       {% endfor %}
     </div>
   </div>
+  <div class="single-step">
+    <a href="3" class="title-box">
+      <div class="circle">3</div>
+      <div class="title">If you have reported the fault and your refuse is still not being collected, enlist the assistance of your ward councillor</div>
+    </a>
+    <div class="content">
+      {% for step in site.solid-waste %}
+        {% if forloop.index == 3 %}
+          {{ step.content }}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="single-step">
+    <a href="who-can-help" class="title-box-external">
+      <div class="circle">4</div>
+      <div class="title">Still no luck after talking to your ward councillor? These organisations can assist</div>
+    </a>
+  </div>
 
 
 </div>
