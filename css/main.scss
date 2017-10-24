@@ -237,9 +237,9 @@ nav.navbar-default {
     margin-top: 10px;
     position: relative;
     color: #fff;
-    background-image: url("../img/education.jpg");
+    background-image: url("../img/solid-waste.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     padding: 0;
     img {
       position: absolute;
@@ -261,10 +261,13 @@ nav.navbar-default {
       .title {
         text-transform: uppercase;
         font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
       }
       .text {
         padding-bottom: 25px;
         font-size: 16px;
+        margin-bottom: 10px;
       }
       .find-out {
         background-color: rgba(255, 255, 255, 0.2);
