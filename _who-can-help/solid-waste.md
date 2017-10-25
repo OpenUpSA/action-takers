@@ -1,6 +1,6 @@
 ---
 layout: who-can-help
-simple-name: solid-waste
+name: solid-waste
 title: Solid Waste
 partners:
 - name: OpenUp

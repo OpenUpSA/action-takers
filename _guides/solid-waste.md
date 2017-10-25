@@ -2,7 +2,7 @@
 layout: guide
 title: What to do if your wheelie bin is not being emptied regularly
 description: A description about solid waste
-short-name: solid-waste
+name: solid-waste
 guide-summary: We have compiled this guide to help you out in those instances where solid waste is not being removed as expected
 did-you-know: According to the <a class="act" target="_blank" href="http://www.dwa.gov.za/Documents/sanitation/17005SC_POLICY_National%20Sanitation%20Policy%202016%20FINAL310117.pdf"> <i class="fa fa-fw fa-gavel" aria-hidden="true"></i> National Sanitation Policy, 2016</a> everyone in South Africa has the right to access to basic sanitation (including refuse / solid waste removal).
 ---
@@ -49,11 +49,32 @@ did-you-know: According to the <a class="act" target="_blank" href="http://www.d
     </div>
   </div>
   <div class="single-step">
-    <a href="who-can-help" class="title-box-external">
+    <a href="4" class="title-box">
       <div class="circle">4</div>
       <div class="title">Still no luck after talking to your ward councillor? These organisations can assist</div>
     </a>
+    <div class="content who-can-help">
+      <div class="partners">
+        {% for who in site.who-can-help %}
+          {% if who.name == "solid-waste" %}
+            {% for partner in who.partners %}
+              <div class="single-partner">
+                <div class="row">
+                  <div class="col-md-3 logo">
+                    <a target="_blank" href="{{ partner.url }}"><img src="{{ partner.image }}"></a>
+                  </div>
+                  <div class="col-md-9 summary">
+                    <div><a target="_blank" href="{{ partner.url }}"><i class="fa fa-fw fa-link" aria-hidden="true"></i>website</a></div>
+                    <div><a href="tel:{{ partner.number }}"><i class="fa fa-fw fa-phone" aria-hidden="true"></i>{{ partner.number }}</a></div>
+                    <div><a href="mailto:{{ partner.email }}"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i>{{ partner.email }}</a></div>
+                  </div>
+                </div>
+                <div class="description">{{ partner.description }}</div>
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
   </div>
-
-
 </div>

@@ -340,7 +340,7 @@ nav.navbar-default {
       }
     }
   }
-  .full-rights {
+  .full-rights, .btn-print {
     background-color: $orange;
     padding: 10px;
     color: #fff;
@@ -350,6 +350,9 @@ nav.navbar-default {
     &:hover {
       text-decoration: none;
     }
+  }
+  .btn-print {
+    margin-top: 5px;
   }
   .summary {
     padding: 0 10px;

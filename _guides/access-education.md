@@ -2,7 +2,7 @@
 layout: guide
 title: Access to education
 description: A description about access to education
-short-name: access-education
+name: access-education
 guide-summary: We have compiled this guide to help you to get your child educated if they have been denied access to education due to additional support needs.
 did-you-know: According to the <a class="act" target="_blank" href="https://www.acts.co.za/south-african-schools-act/index.html"> <i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Basic Education Laws Amendment Act, 2011</a> every child in South Africa has the right to an education. If your child has been denied access to education because they have special needs, you can challenge this.
 ---

@@ -1,6 +1,6 @@
 ---
 layout: who-can-help
-simple-name: access-education
+name: access-education
 title: Access to education
 partners:
 - name: OpenUp
