@@ -35,6 +35,3 @@ collections:
     output: true
   solid-waste:
     output: true
-  who-can-help:
-    output: true
-    permalink: /:name/who-can-help/

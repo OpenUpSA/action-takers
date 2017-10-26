@@ -53,28 +53,12 @@ did-you-know: According to the <a class="act" target="_blank" href="http://www.d
       <div class="circle">4</div>
       <div class="title">Still no luck after talking to your ward councillor? These organisations can assist</div>
     </a>
-    <div class="content who-can-help">
-      <div class="partners">
-        {% for who in site.who-can-help %}
-          {% if who.name == "solid-waste" %}
-            {% for partner in who.partners %}
-              <div class="single-partner">
-                <div class="row">
-                  <div class="col-md-3 logo">
-                    <a target="_blank" href="{{ partner.url }}"><img src="{{ partner.image }}"></a>
-                  </div>
-                  <div class="col-md-9 summary">
-                    <div><a target="_blank" href="{{ partner.url }}"><i class="fa fa-fw fa-link" aria-hidden="true"></i>website</a></div>
-                    <div><a href="tel:{{ partner.number }}"><i class="fa fa-fw fa-phone" aria-hidden="true"></i>{{ partner.number }}</a></div>
-                    <div><a href="mailto:{{ partner.email }}"><i class="fa fa-fw fa-envelope" aria-hidden="true"></i>{{ partner.email }}</a></div>
-                  </div>
-                </div>
-                <div class="description">{{ partner.description }}</div>
-              </div>
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
-      </div>
+    <div class="content">
+      {% for step in site.solid-waste %}
+        {% if forloop.index == 4 %}
+          {{ step.content }}
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>

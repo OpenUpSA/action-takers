@@ -284,7 +284,7 @@ nav.navbar-default {
   }
 }
 
-.single-guide-page, .step-detail-page, .generic, .who-can-help {
+.single-guide-page, .step-detail-page, .generic {
   .title-bar {
     text-align: center;
     margin-top: 10px;
@@ -356,7 +356,6 @@ nav.navbar-default {
   }
   .summary {
     padding: 0 10px;
-    margin-top: 25px;
   }
   .guide {
     background-color: $green;
@@ -369,7 +368,7 @@ nav.navbar-default {
       font-size: 17px;
     }
     .single-step {
-      .title-box, .title-box-external {
+      .title-box {
         background-color: #fff;
         color: $dark-gray;
         padding: 10px;
@@ -409,7 +408,7 @@ nav.navbar-default {
       }
       .content {
         background-color: #fff;
-        padding: 15px;
+        padding: 10px 10px 0 10px;
         display: none;
         .step-title {
           display: none;
@@ -419,19 +418,6 @@ nav.navbar-default {
     .comment {
       padding: 10px;
       font-size: 15px;
-    }
-  }
-  .who-can-help {
-    background-color: $blue;
-    color: #fff;
-    text-decoration: underline;
-    text-align: right;
-    padding: 5px 10px;
-    margin-top: 10px;
-    font-size: 18px;
-    display: block;
-    i {
-      margin-left: 10px;
     }
   }
   .act {
@@ -457,7 +443,7 @@ nav.navbar-default {
   }
   > .title, .summary, .intro, .resources, .legal-info, {
     padding: 5px 15px;
-    margin-top: 15px;
+    margin-bottom: 15px;
     line-height: 22px;
     a {
       text-decoration: underline;
@@ -475,6 +461,39 @@ nav.navbar-default {
         a {
           color: #fff;
         }
+      }
+    }
+  }
+  .who-can-help {
+    padding-bottom: 10px;
+    .single-partner {
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: $light-gray;
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+      .partner-logo {
+        img {
+          width: 100%;
+        }
+      }
+      .partner-summary {
+        padding: 15px;
+        div {
+          margin-bottom: 10px;
+          i {
+            margin-right: 5px;
+          }
+          a {
+            color: $dark-gray;
+            text-decoration: underline;
+          }
+        }
+      }
+      .partner-description {
+        margin-top: 10px;
+        color: $dark-gray;
       }
     }
   }
@@ -526,41 +545,6 @@ nav.navbar-default {
     left: 0;
     width: 100%;
     height: 100%;
-  }
-}
-
-.who-can-help {
-  .subtitle {
-    margin-top: 25px;
-    text-align: center;
-  }
-  .logo {
-    img {
-      width: 100%;
-    }
-  }
-  .partners {
-    margin-top: 20px;
-    .single-partner {
-      margin-top: 5px;
-      background-color: $light-gray;
-      padding: 20px 10px;
-      .summary {
-        font-size: 15px;
-        i {
-          margin-right: 5px;
-        }
-        div {
-          margin-top: 5px;
-          &:first-of-type {
-            margin-top: 0;
-          }
-        }
-      }
-      .description {
-        margin-top: 15px;
-      }
-    }
   }
 }
 
@@ -624,11 +608,14 @@ nav.navbar-default {
   .navbar-margin {
     padding: 30px 50px;
   }
-  .single-guide-page, .step-detail-page, .generic, .who-can-help {
+  .single-guide-page, .step-detail-page, .generic {
     .title-bar {
       text-align: left;
       font-weight: bold;
     }
+  }
+  a {
+    text-decoration: none !important;
   }
   .guide {
     .description {
@@ -672,9 +659,6 @@ nav.navbar-default {
     }
     .summary, .intro, .resources, .legal-info, {
       padding-bottom: 30px;
-      a {
-        text-decoration: none;
-      }
       .header, p {
         page-break-inside: avoid !important;
       }
@@ -689,8 +673,21 @@ nav.navbar-default {
       margin-bottom: 20px;
     }
   }
-  img {
-    filter: grayscale(100%);
+  .who-can-help {
+    .single-partner {
+      border-bottom: 1px solid $light-gray;
+      &:last-of-type {
+        border-bottom-width: 0;
+      }
+    }
+    .partner-logo {
+      width: 30%;
+      float: left;
+    }
+    .partner-summary {
+      width: 68%;
+      float: left;
+    }
   }
 }
 
