@@ -48,13 +48,39 @@ did-you-know: According to the <a class="act" target="_blank" href="http://www.d
     </div>
   </div>
   <div class="single-step">
-    <a href="4" class="title-box">
-      <div class="circle">4</div>
-      <div class="title">If you are putting your refuse out on the correct day and it is still not being collected or if you have a question about plastic bag refuse collection, get in touch with the City</div>
+    <a href="4.1" class="title-box">
+      <div class="circle">4.1</div>
+      <div class="title">If you are putting your refuse out on the correct day and it is still not being collected, contact the senior foreman</div>
     </a>
     <div class="content">
       {% for step in site.blue-bags %}
         {% if forloop.index == 4 %}
+          {{ step.content }}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="single-step">
+    <a href="4.1" class="title-box">
+      <div class="circle">4.2</div>
+      <div class="title">If you can't get hold of the senior foreman or you have but the problem still isn't resolved, inform the workers of the contractor</div>
+    </a>
+    <div class="content">
+      {% for step in site.blue-bags %}
+        {% if forloop.index == 5 %}
+          {{ step.content }}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="single-step">
+    <a href="4.1" class="title-box">
+      <div class="circle">4.3</div>
+      <div class="title">If you couldn't contact the foreman and the workers or if they were of no help, phone the City's call centre</div>
+    </a>
+    <div class="content">
+      {% for step in site.blue-bags %}
+        {% if forloop.index == 6 %}
           {{ step.content }}
         {% endif %}
       {% endfor %}
@@ -67,7 +93,7 @@ did-you-know: According to the <a class="act" target="_blank" href="http://www.d
     </a>
     <div class="content">
       {% for step in site.blue-bags %}
-        {% if forloop.index == 5 %}
+        {% if forloop.index == 7 %}
           {{ step.content }}
         {% endif %}
       {% endfor %}
