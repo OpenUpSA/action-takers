@@ -1,11 +1,30 @@
 ---
 ---
-$green: #9cb069;
-$blue: #3eb3c4;
-$yellow: #f6a623;
-$orange: #e77918;
-$light-gray: #efefef;
-$dark-gray: #4a4a4a;
+$green: #2e5955;
+$green-light: lighten($green, 10%);
+$green-dark: darken($green, 10%);
+$green-darker: darken($green, 20%);
+$green-darkest: darken($green, 30%);
+
+$blue: #6a79a5;
+$blue-light: lighten($blue, 10%);
+$blue-dark: darken($blue, 10%);
+$blue-darker: darken($blue, 20%);
+$blue-darkest: darken($blue, 30%);
+
+$red: #b9615c;
+$red-light: lighten($red, 10%);
+$red-dark: darken($red, 10%);
+$red-darker: darken($red, 20%);
+$red-darkest: darken($red, 30%);
+
+$light-gray: #d9d9e0;
+$dark-gray: #262626;
+
+$twitter: #17a3f2;
+$twitter-dark: darken($twitter, 10%);
+$facebook: #385999;
+$facebook-dark: darken($facebook, 10%);
 
 @font-face{ 
   font-family: 'Liberation Sans';
@@ -215,26 +234,32 @@ nav.navbar-default {
 }
 
 .landing {
-  h1, h2, h3, h4, h5 {
-    margin: 0;
+  section {
+    margin-bottom: 30px;
   }
-  .watch-latest {
-    display: block;
-    padding: 10px;
+  .definition {
     margin-top: 10px;
-    img {
-      width: 75px;
+    background-color: $blue;
+    color: #fff;
+    height: calc(100% - 10px);
+    a {
+      color: #fff;
     }
-    .cta {
-      width: calc(100% - 85px);
-      float: right;
-      margin-left: 10px;
-      font-size: 18px;
-      color: $dark-gray;
+    .header {
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 10px 20px;
+      background-color: $blue;
+      font-weight: bold;
+      border-bottom: 2px dotted #fff;
+    }
+    .content {
+      padding: 10px;
     }
   }
   .weekly-spotlight {
     margin-top: 10px;
+    height: calc(100% - 10px);
     position: relative;
     color: #fff;
     background-image: url("../img/solid-waste.jpg");
@@ -250,13 +275,19 @@ nav.navbar-default {
       text-transform: uppercase;
       font-size: 16px;
       padding: 10px 20px;
-      background-color: $blue;
-      width: 80%;
+      background-color: $red;
+      border-bottom: 2px dotted #fff;
+      width: 100%;
+      font-weight: bold;
+      .topic {
+        text-decoration: underline;
+      }
     }
     .content {
+      color: #fff;
       background-color: rgba(0,0,0,0.5);
       background-position: center center;
-      width: 80%;
+      width: 60%;
       padding: 10px 20px 30px 20px;
       .title {
         text-transform: uppercase;
@@ -278,6 +309,57 @@ nav.navbar-default {
         text-decoration: underline;
         i {
           margin-left: 5px;
+        }
+      }
+    }
+  }
+  .topics, .involved {
+    .block {
+      background-color: $red-dark;
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+      display: block;
+      height: calc(100% - 10px);
+      margin-bottom: 20px;
+      .topic-title {
+        font-size: 24px;
+      }
+      .message {
+        background-color: $red-darker;
+        padding: 5px 10px;
+        margin-top: 10px;
+        color: #fff;
+      }
+      &:hover {
+        text-decoration: none;
+        background-color: $red-darker;
+        color: #fff;
+      }
+      i {
+        font-size: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      &.pending {
+        color: rgba(38,38,38, 0.3);
+        .btn {
+          background-color: #f8f8f8;
+        }
+      }
+      &.twitter {
+        background-color: $twitter;
+        &:hover {
+          background-color: $twitter-dark;
+        }
+      }
+      &.facebook {
+        background-color: $facebook;
+        &:hover {
+          background-color: $facebook-dark;
         }
       }
     }
@@ -320,7 +402,7 @@ nav.navbar-default {
     width: 50%;
     float: left;
     i {
-      color: $yellow;
+      color: $red;
     }
   }
   .page-share {
@@ -341,7 +423,7 @@ nav.navbar-default {
     }
   }
   .full-rights, .btn-print {
-    background-color: $orange;
+    background-color: $red;
     padding: 10px;
     color: #fff;
     font-size: 16px;
@@ -423,7 +505,7 @@ nav.navbar-default {
   .act {
     color: $dark-gray;
     i {
-      color: $orange;
+      color: $red;
     }
     &:hover {
       color: $dark-gray;
@@ -450,7 +532,7 @@ nav.navbar-default {
     }
   }
   .summary {
-    background-color: $orange;
+    background-color: $red;
     color: #fff;
     ul {
       li {
@@ -512,7 +594,7 @@ nav.navbar-default {
     }
   }
   .legal-info {
-    background-color: $orange;
+    background-color: $red;
     color: #fff;
     a {
       color: #fff;
