@@ -6,7 +6,7 @@ $green-dark: darken($green, 10%);
 $green-darker: darken($green, 20%);
 $green-darkest: darken($green, 30%);
 
-$blue: #6a79a5;
+$blue: #1f5673;
 $blue-light: lighten($blue, 10%);
 $blue-dark: darken($blue, 10%);
 $blue-darker: darken($blue, 20%);
@@ -18,8 +18,8 @@ $red-dark: darken($red, 10%);
 $red-darker: darken($red, 20%);
 $red-darkest: darken($red, 30%);
 
-$light-gray: #d9d9e0;
-$dark-gray: #262626;
+$light-gray: #cfd2cd;
+$dark-gray: #545454;
 
 $twitter: #17a3f2;
 $twitter-dark: darken($twitter, 10%);
@@ -116,14 +116,14 @@ h4 {
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
   color: #fff;
-  background-color: $green;
+  background-color: $blue;
 }
 
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: #fff;
-    background-color: $green;
+    background-color: $blue;
     text-align: right;
   }
 }
@@ -140,7 +140,7 @@ nav.navbar-default {
       margin: 0 15px;
     }
     @media (min-width: 767px) {
-      background-color: $green;
+      background-color: $blue;
       font-size: 17px;  
       li a {
         padding: 5px 10px;
@@ -151,10 +151,10 @@ nav.navbar-default {
       }
       .dropdown.open a {
         color: #fff;
-        background-color: $green;
+        background-color: $blue;
       }
       .dropdown-menu {
-        background-color: $green;
+        background-color: $blue;
         padding: 0;
         border: none;
         border-radius: 0;
@@ -187,13 +187,13 @@ nav.navbar-default {
     font-size: 16px;
     color: #fff;
     float: right;
-    background-color: $green;
+    background-color: $blue;
     border: none;
     padding: 15px 30px;
   }
   .navbar-collapse {
     @media (max-width: 767px) {
-      background-color: $green;
+      background-color: $blue;
     }
     text-align: right;
     border-color: #fff;
@@ -236,6 +236,18 @@ nav.navbar-default {
 .landing {
   section {
     margin-bottom: 30px;
+  }
+  .find-out {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: solid 0.5px #fff;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 15px;
+    i {
+      margin-left: 5px;
+    }
   }
   .definition {
     margin-top: 10px;
@@ -287,7 +299,8 @@ nav.navbar-default {
       color: #fff;
       background-color: rgba(0,0,0,0.5);
       background-position: center center;
-      width: 60%;
+      width: 100%;
+      max-width: 350px;
       padding: 10px 20px 30px 20px;
       .title {
         text-transform: uppercase;
@@ -300,17 +313,6 @@ nav.navbar-default {
         font-size: 16px;
         margin-bottom: 10px;
       }
-      .find-out {
-        background-color: rgba(255, 255, 255, 0.2);
-        border: solid 0.5px #fff;
-        color: #fff;
-        padding: 7px 15px;
-        font-size: 16px;
-        text-decoration: underline;
-        i {
-          margin-left: 5px;
-        }
-      }
     }
   }
   .topics, .involved {
@@ -322,8 +324,11 @@ nav.navbar-default {
       display: block;
       height: calc(100% - 10px);
       margin-bottom: 20px;
+      background-size: cover;
+      background-position: bottom;
       .topic-title {
         font-size: 24px;
+        font-weight: bold;
       }
       .message {
         background-color: $red-darker;
@@ -362,6 +367,39 @@ nav.navbar-default {
           background-color: $facebook-dark;
         }
       }
+    }
+  }
+  .topics .block {
+    padding: 65px 25px;
+    &.water {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/water.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.education {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/education.jpg");
+      background-size: cover;
+      background-position: bottom;
+    }
+    &.solid-waste {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/solid-waste.jpg");
+      background-size: cover;
+      background-position: bottom;
+    }
+    &.housing {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/housing.jpg");
+      background-size: cover;
+      background-position: bottom;
+    }
+    &.environment {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/environment.jpg");
+      background-size: cover;
+      background-position: bottom;
+    }
+    &.safety {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/safety.jpg");
+      background-size: cover;
+      background-position: bottom;
     }
   }
 }
@@ -440,7 +478,7 @@ nav.navbar-default {
     padding: 0 10px;
   }
   .guide {
-    background-color: $green;
+    background-color: $blue;
     margin-top: 25px;
     padding: 5px;
     color: #fff;
@@ -463,7 +501,7 @@ nav.navbar-default {
           display: inline-block;
         }
         .circle {
-          background-color: $green;
+          background-color: $blue;
           height: 45px;
           width: 45px;
           border-radius: 100px;
