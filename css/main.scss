@@ -689,15 +689,59 @@ nav.navbar-default {
 }
 
 .about {
+  .what {
+    height: 100%;
+    background-color: $red;
+    margin-bottom: 10px;
+  }
+  .how {
+    margin-bottom: 10px;
+    background-color: $blue;
+  }
+  .involved { 
+    background-color: $green;
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    ul {
+      margin-left: 0;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .what, .how, .involved {
+    color: #fff;
+    .header {
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-bottom: 2px dotted #fff;
+    }
+    .content {
+      padding: 10px 20px;
+    }
+  }
   .partners {
+    margin-top: 40px;
     text-align: center;
+    h2 {
+      text-align: left;
+    }
     .single-partner {
       padding-bottom: 20px;
+      min-height: 225px;
       img {
         padding: 15px;
-        border: 1px solid $light-gray;
+        border-bottom: 2px dotted $light-gray;
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+      }
+      .role {
+        width: 100%;
       }
     }
   }
