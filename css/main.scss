@@ -256,6 +256,7 @@ nav.navbar-default {
     height: calc(100% - 10px);
     a {
       color: #fff;
+      text-decoration: underline;
     }
     .header {
       text-transform: uppercase;
@@ -267,6 +268,7 @@ nav.navbar-default {
     }
     .content {
       padding: 10px;
+      font-size: 16px;
     }
   }
   .weekly-spotlight {
@@ -291,9 +293,6 @@ nav.navbar-default {
       border-bottom: 2px dotted #fff;
       width: 100%;
       font-weight: bold;
-      .topic {
-        text-decoration: underline;
-      }
     }
     .content {
       color: #fff;
@@ -308,9 +307,9 @@ nav.navbar-default {
         margin-top: 10px;
         margin-bottom: 10px;
       }
-      .text {
-        padding-bottom: 25px;
-        font-size: 16px;
+      .subtitle {
+        font-size: 18px;
+        font-weight: bold;
         margin-bottom: 10px;
       }
     }
@@ -370,7 +369,15 @@ nav.navbar-default {
     }
   }
   .topics .block {
-    padding: 65px 25px;
+    min-height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+    .topic-text {
+      font-size: 26px;
+    }
     &.water {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/water.jpg");
       background-size: cover;
@@ -379,27 +386,62 @@ nav.navbar-default {
     &.education {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/education.jpg");
       background-size: cover;
-      background-position: bottom;
+      background-position: top;
     }
     &.solid-waste {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/solid-waste.jpg");
       background-size: cover;
-      background-position: bottom;
+      background-position: top;
     }
     &.housing {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/housing.jpg");
       background-size: cover;
-      background-position: bottom;
+      background-position: top;
     }
     &.environment {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/environment.jpg");
       background-size: cover;
-      background-position: bottom;
+      background-position: top;
+    }
+    &.health {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/health.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.sanitation {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sanitation.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.rates {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/rates.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.indigent-grants {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/indigent-grants.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.social-grants {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/social-grants.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.trading {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/trading.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.participation {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/participation.jpg");
+      background-size: cover;
+      background-position: top;
     }
     &.safety {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/safety.jpg");
       background-size: cover;
-      background-position: bottom;
+      background-position: top;
     }
   }
 }
