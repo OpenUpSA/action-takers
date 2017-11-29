@@ -1,11 +1,30 @@
 ---
 ---
-$green: #9cb069;
-$blue: #3eb3c4;
-$yellow: #f6a623;
-$orange: #e77918;
-$light-gray: #efefef;
-$dark-gray: #4a4a4a;
+$green: #2e5955;
+$green-light: lighten($green, 10%);
+$green-dark: darken($green, 10%);
+$green-darker: darken($green, 20%);
+$green-darkest: darken($green, 30%);
+
+$blue: #1f5673;
+$blue-light: lighten($blue, 10%);
+$blue-dark: darken($blue, 10%);
+$blue-darker: darken($blue, 20%);
+$blue-darkest: darken($blue, 30%);
+
+$red: #b9615c;
+$red-light: lighten($red, 10%);
+$red-dark: darken($red, 10%);
+$red-darker: darken($red, 20%);
+$red-darkest: darken($red, 30%);
+
+$light-gray: #cfd2cd;
+$dark-gray: #545454;
+
+$twitter: #17a3f2;
+$twitter-dark: darken($twitter, 10%);
+$facebook: #385999;
+$facebook-dark: darken($facebook, 10%);
 
 @font-face{ 
   font-family: 'Liberation Sans';
@@ -97,14 +116,14 @@ h4 {
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
   color: #fff;
-  background-color: $green;
+  background-color: $blue;
 }
 
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: #fff;
-    background-color: $green;
+    background-color: $blue;
     text-align: right;
   }
 }
@@ -121,7 +140,7 @@ nav.navbar-default {
       margin: 0 15px;
     }
     @media (min-width: 767px) {
-      background-color: $green;
+      background-color: $blue;
       font-size: 17px;  
       li a {
         padding: 5px 10px;
@@ -132,10 +151,10 @@ nav.navbar-default {
       }
       .dropdown.open a {
         color: #fff;
-        background-color: $green;
+        background-color: $blue;
       }
       .dropdown-menu {
-        background-color: $green;
+        background-color: $blue;
         padding: 0;
         border: none;
         border-radius: 0;
@@ -168,13 +187,13 @@ nav.navbar-default {
     font-size: 16px;
     color: #fff;
     float: right;
-    background-color: $green;
+    background-color: $blue;
     border: none;
     padding: 15px 30px;
   }
   .navbar-collapse {
     @media (max-width: 767px) {
-      background-color: $green;
+      background-color: $blue;
     }
     text-align: right;
     border-color: #fff;
@@ -215,26 +234,46 @@ nav.navbar-default {
 }
 
 .landing {
-  h1, h2, h3, h4, h5 {
-    margin: 0;
+  section {
+    margin-bottom: 30px;
   }
-  .watch-latest {
-    display: block;
-    padding: 10px;
-    margin-top: 10px;
-    img {
-      width: 75px;
+  .find-out {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: solid 0.5px #fff;
+    color: #fff;
+    padding: 7px 15px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 15px;
+    i {
+      margin-left: 5px;
     }
-    .cta {
-      width: calc(100% - 85px);
-      float: right;
-      margin-left: 10px;
-      font-size: 18px;
-      color: $dark-gray;
+  }
+  .definition {
+    margin-top: 10px;
+    background-color: $blue;
+    color: #fff;
+    height: calc(100% - 10px);
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .header {
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 10px 20px;
+      background-color: $blue;
+      font-weight: bold;
+      border-bottom: 2px dotted #fff;
+    }
+    .content {
+      padding: 10px;
+      font-size: 16px;
     }
   }
   .weekly-spotlight {
     margin-top: 10px;
+    height: calc(100% - 10px);
     position: relative;
     color: #fff;
     background-image: url("../img/solid-waste.jpg");
@@ -250,13 +289,17 @@ nav.navbar-default {
       text-transform: uppercase;
       font-size: 16px;
       padding: 10px 20px;
-      background-color: $blue;
-      width: 80%;
+      background-color: $red;
+      border-bottom: 2px dotted #fff;
+      width: 100%;
+      font-weight: bold;
     }
     .content {
+      color: #fff;
       background-color: rgba(0,0,0,0.5);
       background-position: center center;
-      width: 80%;
+      width: 100%;
+      max-width: 350px;
       padding: 10px 20px 30px 20px;
       .title {
         text-transform: uppercase;
@@ -264,22 +307,141 @@ nav.navbar-default {
         margin-top: 10px;
         margin-bottom: 10px;
       }
-      .text {
-        padding-bottom: 25px;
-        font-size: 16px;
+      .subtitle {
+        font-size: 18px;
+        font-weight: bold;
         margin-bottom: 10px;
       }
-      .find-out {
-        background-color: rgba(255, 255, 255, 0.2);
-        border: solid 0.5px #fff;
+    }
+  }
+  .topics, .involved {
+    .block {
+      background-color: $red-dark;
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+      display: block;
+      height: calc(100% - 10px);
+      margin-bottom: 20px;
+      background-size: cover;
+      background-position: bottom;
+      .topic-title {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .message {
+        background-color: $red-darker;
+        padding: 5px 10px;
+        margin-top: 10px;
         color: #fff;
-        padding: 7px 15px;
-        font-size: 16px;
-        text-decoration: underline;
-        i {
-          margin-left: 5px;
+      }
+      &:hover {
+        text-decoration: none;
+        background-color: $red-darker;
+        color: #fff;
+      }
+      i {
+        font-size: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      &.pending {
+        color: rgba(38,38,38, 0.3);
+        .btn {
+          background-color: #f8f8f8;
         }
       }
+      &.twitter {
+        background-color: $twitter;
+        &:hover {
+          background-color: $twitter-dark;
+        }
+      }
+      &.facebook {
+        background-color: $facebook;
+        &:hover {
+          background-color: $facebook-dark;
+        }
+      }
+    }
+  }
+  .topics .block {
+    min-height: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: bottom;
+    .topic-text {
+      font-size: 26px;
+    }
+    &.water {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/water.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.education {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/education.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.solid-waste {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/solid-waste.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.housing {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/housing.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.environment {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/environment.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.health {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/health.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.sanitation {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/sanitation.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.rates {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/rates.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.indigent-grants {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/indigent-grants.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.social-grants {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/social-grants.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.trading {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/trading.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.participation {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/participation.jpg");
+      background-size: cover;
+      background-position: top;
+    }
+    &.safety {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/safety.jpg");
+      background-size: cover;
+      background-position: top;
     }
   }
 }
@@ -312,23 +474,72 @@ nav.navbar-default {
 }
 
 .single-guide-page {
-  .rating, .page-share {
-    display: inline-block;
-    font-size: 15px;
-  }
-  .rating {
-    width: 50%;
-    float: left;
-    i {
-      color: $yellow;
+  .bread-rating {
+    padding-bottom: 10px;
+    .fa-angle-right {
+      margin: 0 5px;
+    }
+    .crumbs, .rating, .source {
+      @media (max-width: 992px) {
+        margin-bottom: 10px;
+      }
+    }
+    .source {
+      text-align: right;
+      @media (max-width: 992px) {
+        text-align: center;
+      }
+    }
+    @media (max-width: 992px) {
+      text-align: center;
     }
   }
-  .page-share {
-    width: 100%;
+  .guide-title {
     text-align: center;
-    font-size: 18px;
+    background-color: $blue;
+    color: #fff;
+    padding: 25px 0;
+    h1 {
+      margin: 0;
+    }
+    @media (min-width: 750px) {
+      margin-left: -30px;
+      margin-right: -30px;
+    }
+  }
+  .guide-meta {
+    text-align: center;
+    background-color: $red;
+    color: #fff;
+    padding: 10px;
     a {
-      color: $blue;
+      color: #fff;
+    }
+    margin-right: 0;
+    margin-left: 0;
+    @media (min-width: 750px) {
+      margin-left: -30px;
+      margin-right: -30px;
+    } 
+    .page-share {
+      i {
+        margin: 0 3px;
+        font-size: 18px;
+      }
+    }
+    .location, .language, .download, .page-share {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+  .whatsapp-bar {
+    padding: 10px;
+    background-color: $blue;
+    color: #fff;
+    text-align: center;
+    @media (min-width: 750px) {
+      margin-left: -30px;
+      margin-right: -30px;
     }
   }
   .did-you-know {
@@ -341,7 +552,7 @@ nav.navbar-default {
     }
   }
   .full-rights, .btn-print {
-    background-color: $orange;
+    background-color: $red;
     padding: 10px;
     color: #fff;
     font-size: 16px;
@@ -358,7 +569,7 @@ nav.navbar-default {
     padding: 0 10px;
   }
   .guide {
-    background-color: $green;
+    background-color: $blue;
     margin-top: 25px;
     padding: 5px;
     color: #fff;
@@ -381,7 +592,7 @@ nav.navbar-default {
           display: inline-block;
         }
         .circle {
-          background-color: $green;
+          background-color: $blue;
           height: 45px;
           width: 45px;
           border-radius: 100px;
@@ -423,7 +634,7 @@ nav.navbar-default {
   .act {
     color: $dark-gray;
     i {
-      color: $orange;
+      color: $red;
     }
     &:hover {
       color: $dark-gray;
@@ -450,7 +661,7 @@ nav.navbar-default {
     }
   }
   .summary {
-    background-color: $orange;
+    background-color: $red;
     color: #fff;
     ul {
       li {
@@ -512,7 +723,7 @@ nav.navbar-default {
     }
   }
   .legal-info {
-    background-color: $orange;
+    background-color: $red;
     color: #fff;
     a {
       color: #fff;
@@ -569,15 +780,59 @@ nav.navbar-default {
 }
 
 .about {
+  .what {
+    height: 100%;
+    background-color: $red;
+    margin-bottom: 10px;
+  }
+  .how {
+    margin-bottom: 10px;
+    background-color: $blue;
+  }
+  .involved { 
+    background-color: $green;
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    ul {
+      margin-left: 0;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .what, .how, .involved {
+    color: #fff;
+    .header {
+      padding: 10px 20px;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-bottom: 2px dotted #fff;
+    }
+    .content {
+      padding: 10px 20px;
+    }
+  }
   .partners {
+    margin-top: 40px;
     text-align: center;
+    h2 {
+      text-align: left;
+    }
     .single-partner {
       padding-bottom: 20px;
+      min-height: 225px;
       img {
         padding: 15px;
-        border: 1px solid $light-gray;
+        border-bottom: 2px dotted $light-gray;
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+      }
+      .role {
+        width: 100%;
       }
     }
   }
