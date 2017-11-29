@@ -12,11 +12,11 @@ $blue-dark: darken($blue, 10%);
 $blue-darker: darken($blue, 20%);
 $blue-darkest: darken($blue, 30%);
 
-$red: #ef6f34;
-$red-light: lighten($red, 10%);
-$red-dark: darken($red, 10%);
-$red-darker: darken($red, 20%);
-$red-darkest: darken($red, 30%);
+$orange: #ef6f34;
+$orange-light: lighten($orange, 10%);
+$orange-dark: darken($orange, 10%);
+$orange-darker: darken($orange, 20%);
+$orange-darkest: darken($orange, 30%);
 
 $light-gray: #e4e4e4;
 $dark-gray: #545454;
@@ -42,7 +42,7 @@ body {
   min-height: calc(100% - 53px);
   position: relative;
   padding-bottom: 60px;
-  background-color: $light-gray;
+  background-color: #f5f5f5;
 }
 
 .container {
@@ -108,6 +108,28 @@ h4 {
   }
 }
 
+.get-involved-block {
+  background-color: $light-gray;
+  padding: 5px 15px 15px 15px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: $orange;
+  border-color: $orange;
+  &:link, &:visited, &:hover, &:active {
+    border-color: $orange !important;
+    background-color: $orange !important;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 1000px;
@@ -129,7 +151,7 @@ h4 {
 }
 
 nav.navbar-default {
-  background-color: $light-gray;
+  background-color: #f5f5f5;
   border-bottom: 0px solid #fff;
   .container {
     border-bottom: 5px solid #fff;
@@ -237,18 +259,6 @@ nav.navbar-default {
   section {
     margin-bottom: 30px;
   }
-  .find-out {
-    background-color: rgba(255, 255, 255, 0.2);
-    border: solid 0.5px #fff;
-    color: #fff;
-    padding: 7px 15px;
-    font-size: 16px;
-    display: inline-block;
-    margin-top: 15px;
-    i {
-      margin-left: 5px;
-    }
-  }
   .definition {
     margin-top: 10px;
     background-color: $blue;
@@ -269,6 +279,9 @@ nav.navbar-default {
     .content {
       padding: 10px;
       font-size: 16px;
+      li {
+        margin-bottom: 8px;
+      }
     }
   }
   .weekly-spotlight {
@@ -278,7 +291,7 @@ nav.navbar-default {
     color: #fff;
     background-image: url("../img/solid-waste.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     padding: 0;
     img {
       position: absolute;
@@ -289,14 +302,14 @@ nav.navbar-default {
       text-transform: uppercase;
       font-size: 16px;
       padding: 10px 20px;
-      background-color: $red;
+      background-color: $orange;
       border-bottom: 2px dotted #fff;
       width: 100%;
       font-weight: bold;
     }
     .content {
       color: #fff;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,0,0,0.65);
       background-position: center center;
       width: 100%;
       max-width: 350px;
@@ -316,13 +329,13 @@ nav.navbar-default {
   }
   .topics, .involved {
     .block {
-      background-color: $red-dark;
+      background-color: $orange-dark;
       color: #fff;
       padding: 25px;
       text-align: center;
       display: block;
       height: calc(100% - 10px);
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       background-size: cover;
       background-position: bottom;
       .topic-title {
@@ -330,14 +343,14 @@ nav.navbar-default {
         font-weight: bold;
       }
       .message {
-        background-color: $red-darker;
+        background-color: $orange-darker;
         padding: 5px 10px;
         margin-top: 10px;
         color: #fff;
       }
       &:hover {
         text-decoration: none;
-        background-color: $red-darker;
+        background-color: $orange-darker;
         color: #fff;
       }
       i {
@@ -367,6 +380,25 @@ nav.navbar-default {
         }
       }
     }
+  }
+  .involved-wrap {
+    background-color: $light-gray;
+    padding: 10px;
+    @media (min-width: 750px) {
+      margin-left: -30px;
+      margin-right: -30px;
+      padding: 30px;
+    }
+  }
+  .involved {
+    .block {
+      .topic-title {
+        font-size: 18px;
+      }
+      i {
+        font-size: 28px;
+      }
+    } 
   }
   .topics .block {
     min-height: 150px;
@@ -484,6 +516,9 @@ nav.navbar-default {
         margin-bottom: 10px;
       }
     }
+    .rating {
+      color: gold;
+    }
     .source {
       text-align: right;
       @media (max-width: 992px) {
@@ -509,7 +544,7 @@ nav.navbar-default {
   }
   .guide-meta {
     text-align: center;
-    background-color: $red;
+    background-color: $orange;
     color: #fff;
     padding: 10px;
     a {
@@ -544,7 +579,7 @@ nav.navbar-default {
   }
   .did-you-know {
     margin-top: 25px;
-    padding: 5px 15px;
+    padding: 5px 15px 15px 15px;
     background-color: $light-gray;
     .title {
       margin: 10px 0;
@@ -554,18 +589,6 @@ nav.navbar-default {
     hr {
       margin: 10px -15px;
       border-top: 2px dotted #fff;
-    }
-  }
-  .full-rights {
-    background-color: $red;
-    padding: 10px;
-    color: #fff;
-    font-size: 16px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    display: inline-block;
-    &:hover {
-      text-decoration: none;
     }
   }
   .btn-print {
@@ -637,13 +660,12 @@ nav.navbar-default {
       font-size: 15px;
     }
   }
-  .act {
-    color: $dark-gray;
+  .rate {
+    text-align: right;
+    font-size: 18px;
+    padding: 20px 0;
     i {
-      color: $red;
-    }
-    &:hover {
-      color: $dark-gray;
+      color: gold;
     }
   }
 }
@@ -667,7 +689,7 @@ nav.navbar-default {
     }
   }
   .summary {
-    background-color: $red;
+    background-color: $orange;
     color: #fff;
     font-size: 18px;
     ul {
@@ -730,7 +752,7 @@ nav.navbar-default {
     }
   }
   .legal-info {
-    background-color: $red;
+    background-color: $orange;
     color: #fff;
     a {
       color: #fff;
@@ -789,7 +811,7 @@ nav.navbar-default {
 .about {
   .what {
     height: 100%;
-    background-color: $red;
+    background-color: $orange;
     margin-bottom: 10px;
   }
   .how {
