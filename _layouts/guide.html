@@ -46,24 +46,14 @@ layout: base
     <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> To get this guide on WhatsApp, message {{ page.short-title }} to <b>064 721 0958</b>
   </div>
 
-  <div class="row hidden-print">
-    <div class="col-md-6">
-      <div class="did-you-know">
-        <h2 class="title"><i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?</h2>
-        <div class="content">
-          {{ page.did-you-know }}
-        </div>
+  <div class="hidden-print">
+    <div class="did-you-know">
+      <h2 class="title"><i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?</h2>
+      <div class="content">
+        {{ page.did-you-know }}
       </div>
-      <a href="#" class="full-rights center-block"><i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Your full rights and responsibilities</a>
-      <a href="/pdf/{{ page.name }}.pdf" target="_blank" class="btn-print center-block"><i class="fa fa-fw fa-file-pdf-o" aria-hidden="true"></i> Download and print this guide</a>
     </div>
-    <div class="col-md-6">
-      {% if page.video %}   
-      <div class="video-wrapper">
-        <iframe src="{{ page.video }}" frameborder="0" allowfullscreen></iframe>
-      </div>
-      {% endif %}
-    </div>
+    <a href="#" class="full-rights center-block"><i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Your full rights and responsibilities</a>
   </div>
   
   <div class="summary hidden-print">
