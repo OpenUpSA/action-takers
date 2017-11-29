@@ -1,24 +1,24 @@
 ---
 ---
-$green: #2e5955;
+$green: #7ac74f;
 $green-light: lighten($green, 10%);
 $green-dark: darken($green, 10%);
 $green-darker: darken($green, 20%);
 $green-darkest: darken($green, 30%);
 
-$blue: #1f5673;
+$blue: #1a5f84;
 $blue-light: lighten($blue, 10%);
 $blue-dark: darken($blue, 10%);
 $blue-darker: darken($blue, 20%);
 $blue-darkest: darken($blue, 30%);
 
-$red: #b9615c;
+$red: #ef6f34;
 $red-light: lighten($red, 10%);
 $red-dark: darken($red, 10%);
 $red-darker: darken($red, 20%);
 $red-darkest: darken($red, 30%);
 
-$light-gray: #cfd2cd;
+$light-gray: #e4e4e4;
 $dark-gray: #545454;
 
 $twitter: #17a3f2;
@@ -543,21 +543,27 @@ nav.navbar-default {
     }
   }
   .did-you-know {
-    padding: 25px 10px 0 10px;
+    margin-top: 25px;
+    padding: 5px 15px;
+    background-color: $light-gray;
     .title {
-      margin-bottom: 5px;
-      i {
-        color: $blue;
-      }
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    hr {
+      margin: 10px -15px;
+      border-top: 2px dotted #fff;
     }
   }
-  .full-rights, .btn-print {
+  .full-rights {
     background-color: $red;
     padding: 10px;
     color: #fff;
     font-size: 16px;
-    text-align: center;
-    margin-top: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
     &:hover {
       text-decoration: none;
     }
@@ -654,7 +660,7 @@ nav.navbar-default {
   }
   > .title, .summary, .intro, .resources, .legal-info, {
     padding: 5px 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     line-height: 22px;
     a {
       text-decoration: underline;
@@ -663,6 +669,7 @@ nav.navbar-default {
   .summary {
     background-color: $red;
     color: #fff;
+    font-size: 18px;
     ul {
       li {
         margin-bottom: 10px;
@@ -993,7 +1000,9 @@ nav.navbar-default {
     display: flex;
     flex-wrap: wrap;
   }
-  .intro, .summary, .resources, .legal-info {
+  .summary {
     height: calc(100% - 10px);
+  }
+  .intro, .resources {
   }
 }
