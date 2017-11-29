@@ -1,5 +1,6 @@
 ---
 layout: guide
+short-title: Wheelie bins
 title: What to do if your wheelie bin is not being emptied regularly
 description: A description about solid waste
 name: wheelie-bins

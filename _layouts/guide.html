@@ -2,21 +2,48 @@
 layout: base
 ---
 <section class="single-guide-page {{ page.name }}">
-  <div class="title-bar">
-    <span class="title"><h1>{{ page.title }}</h1></span>
+  <div class="row bread-rating">
+    <div class="col-md-8 crumbs">
+      <span><a href="">Empowerement guides</a> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+      <span><a href="">Solid waste</a> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+      <span><strong>{{ page.short-title }}</strong></span>
+    </div>
+    <div class="col-md-2 rating">
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star" aria-hidden="true"></i>
+      <i class="fa fa-star-half-o" aria-hidden="true"></i>
+      <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+    <div class="col-md-2 source">
+      <i class="fa fa-asterisk" aria-hidden="true"></i> Official guide
+    </div>
   </div>
-  <a href="../" class="back hidden-print">
-    <i class="fa fa-chevron-left" aria-hidden="true"></i><span class="text">Back</span>
-  </a>
 
-  <div class="rating">
+  <div class="guide-title">
+    <h1>{{ page.title }}</h1>
   </div>
 
-  <div class="page-share hidden-print">
-    <a class="whatsapp hidden-md hidden-lg" href="whatsapp://send?text=http://actiontakers.openup.org.za{{ page.url }}"><i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i></a>
-    <a class="twitter" href=""><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
-    <a class="facebook" href=""><i class="fa fa-fw fa-facebook-official" aria-hidden="true"></i></a>
-    <a class="email" href=""><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
+  <div class="row guide-meta">
+    <div class="col-sm-3 col-xs-6 location">
+      <i class="fa fa-map-marker" aria-hidden="true"></i> Cape Town
+    </div>
+    <div class="col-sm-3 col-xs-6 language">
+      <i class="fa fa-globe" aria-hidden="true"></i> <a href="">Change language</a>
+    </div>
+    <div class="col-sm-3 col-xs-6 download">
+      <i class="fa fa-download" aria-hidden="true"></i> <a href="">Download guide</a>
+    </div>
+    <div class="col-sm-3 col-xs-6 page-share">
+      <a class="whatsapp hidden-md hidden-lg" href="whatsapp://send?text=http://actiontakers.openup.org.za{{ page.url }}"><i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i></a>
+      <a class="twitter" href=""><i class="fa fa-fw fa-twitter" aria-hidden="true"></i></a>
+      <a class="facebook" href=""><i class="fa fa-fw fa-facebook-official" aria-hidden="true"></i></a>
+      <a class="email" href=""><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div class="whatsapp-bar">
+    <i class="fa fa-fw fa-whatsapp" aria-hidden="true"></i> To get this guide on WhatsApp, message {{ page.short-title }} to <b>064 721 0958</b>
   </div>
 
   <div class="row hidden-print">
