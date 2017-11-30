@@ -1,6 +1,6 @@
 ---
 ---
-$green: #7ac74f;
+$green: #9CB069;
 $green-light: lighten($green, 10%);
 $green-dark: darken($green, 10%);
 $green-darker: darken($green, 20%);
@@ -544,7 +544,7 @@ nav.navbar-default {
   }
   .guide-meta {
     text-align: center;
-    background-color: $orange;
+    background-color: $green;
     color: #fff;
     padding: 0px;
     a {
@@ -622,13 +622,13 @@ nav.navbar-default {
         }
         .circle {
           background-color: $blue;
-          height: 45px;
-          width: 45px;
-          border-radius: 100px;
+          height: 30px;
+          width: 30px;
+          border-radius: 2px;
           text-align: center;
-          line-height: 45px;
+          line-height: 30px;
           color: #fff;
-          font-size: 20px;
+          font-size: 15px;
         }
         .title {
           font-weight: bold;
@@ -743,7 +743,7 @@ nav.navbar-default {
     color: gray;
     font-size: small;
     a {
-      color: #fff;
+      color: #FF6B6B;
     }
   }
   .resources {
