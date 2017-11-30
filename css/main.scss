@@ -26,7 +26,7 @@ $twitter-dark: darken($twitter, 10%);
 $facebook: #385999;
 $facebook-dark: darken($facebook, 10%);
 
-@font-face{ 
+@font-face{
   font-family: 'Liberation Sans';
   src: url('../fonts/LiberationSans.woff') format('woff');
 }
@@ -163,7 +163,7 @@ nav.navbar-default {
     }
     @media (min-width: 767px) {
       background-color: $blue;
-      font-size: 17px;  
+      font-size: 17px;
       li a {
         padding: 5px 10px;
         margin: 10px;
@@ -398,7 +398,7 @@ nav.navbar-default {
       i {
         font-size: 28px;
       }
-    } 
+    }
   }
   .topics .block {
     min-height: 150px;
@@ -451,12 +451,12 @@ nav.navbar-default {
       background-position: top;
     }
     &.indigent-grants {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/indigent-grants.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/grant.jpg");
       background-size: cover;
       background-position: top;
     }
     &.social-grants {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/social-grants.jpg");
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/grant.jpg");
       background-size: cover;
       background-position: top;
     }
@@ -555,7 +555,7 @@ nav.navbar-default {
     @media (min-width: 750px) {
       margin-left: -30px;
       margin-right: -30px;
-    } 
+    }
     .page-share {
       i {
         margin: 0 3px;
@@ -634,7 +634,7 @@ nav.navbar-default {
           font-weight: bold;
           margin-left: 10px;
           width: calc(100% - 60px);
-          vertical-align: middle; 
+          vertical-align: middle;
         }
         .cta {
           text-align: right;
@@ -817,7 +817,7 @@ nav.navbar-default {
     margin-bottom: 10px;
     background-color: $blue;
   }
-  .involved { 
+  .involved {
     background-color: $green;
     a {
       color: #fff;
