@@ -7,7 +7,7 @@ name: wheelie-bins
 did-you-know: <ul class="fa-ul"><li><i class="fa-li fa fa-gavel" aria-hidden="true"></i> According to the <a target="_blank" href="http://www.dwa.gov.za/Documents/sanitation/17005SC_POLICY_National%20Sanitation%20Policy%202016%20FINAL310117.pdf"> National Sanitation Policy, 2016</a> everyone in South Africa has the right to access to basic sanitation (including refuse / solid waste removal).</li><li><i class="fa-li fa fa-trash" aria-hidden="true"></i> In Cape Town, the <a href="http://www.capetown.gov.za/Departments/Solid%20Waste%20Management%20Department" target=_blank>Department of Solid Waste</a> is responsible for the collection and disposal of waste, area cleaning, preventing waste and pollution, and minimising waste.<li><i class="fa-li fa fa-phone" aria-hidden="true"></i> You can phone the department at <a href="tel:0860103089">0860 103 089</a></li><li><i class="fa-li fa fa-envelope" aria-hidden="true"></i>Emailing them is also possible at <a href="mailto:wastewise.user@capetown.gov.za">wastewise.user@capetown.gov.za</a></li></ul>
 ---
 <div class="guide">
-  <div class="description">Follow this guide discover what to do if your black wheelie bin is not being collected on a regular basis. <b>Click on a step for support and resources to help you take action</b>.</div>
+  <div class="description">Follow this guide to discover what to do if your black wheelie bin is not being collected on a regular basis. <b class="hidden-print">Click on a step for support and resources to help you take action.</b></div>
 
   <div class="single-step">
     <a href="1" class="title-box">
