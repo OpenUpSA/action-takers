@@ -648,7 +648,7 @@ nav.navbar-default {
       }
       .content {
         background-color: #fff;
-        padding: 10px 10px 0 10px;
+        padding: 10px;
         display: none;
         .step-title {
           display: none;
@@ -682,11 +682,13 @@ nav.navbar-default {
   }
   > .title, .summary, .intro, .resources, .legal-info, {
     padding: 5px 15px;
-    margin-bottom: 10px;
     line-height: 22px;
     a {
       text-decoration: underline;
     }
+  }
+  .intro {
+    margin-bottom: 10px;
   }
   .summary {
     background-color: $orange;
@@ -950,17 +952,6 @@ nav.navbar-default {
       .content {
         display: block !important;
         padding: 0 !important;
-        box-direction: reverse;
-        .col-md-5 {
-          display: flex !important;
-          flex: 1 !important;
-          order: 1 !important;
-        }
-        .col-md-7 {
-          display: flex !important;
-          flex: 2 !important;
-          order: 2 !important;
-        }
       }
       .title-box {
         padding: 0 !important;
@@ -1044,12 +1035,6 @@ nav.navbar-default {
         background-color: $light-gray !important;
         color: $dark-gray !important;
       }
-      &.previous {
-
-      }
-      &.next {
-
-      }
     }
   }
 }
@@ -1058,10 +1043,5 @@ nav.navbar-default {
   .flex {
     display: flex;
     flex-wrap: wrap;
-  }
-  .summary {
-    height: calc(100% - 10px);
-  }
-  .intro, .resources {
   }
 }
