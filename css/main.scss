@@ -533,7 +533,7 @@ nav.navbar-default {
     text-align: center;
     background-color: $blue;
     color: #fff;
-    padding: 25px 0;
+    padding: 10px 0;
     h1 {
       margin: 0;
     }
@@ -546,7 +546,7 @@ nav.navbar-default {
     text-align: center;
     background-color: $orange;
     color: #fff;
-    padding: 10px;
+    padding: 0px;
     a {
       color: #fff;
     }
@@ -568,8 +568,8 @@ nav.navbar-default {
     }
   }
   .whatsapp-bar {
-    padding: 10px;
-    background-color: $blue;
+    padding: 0px;
+    background-color: $blue-light;
     color: #fff;
     text-align: center;
     @media (min-width: 750px) {
@@ -739,8 +739,9 @@ nav.navbar-default {
     }
   }
   .intro {
-    background-color: $dark-gray;
-    color: #fff;
+    background-color: $light-gray;
+    color: gray;
+    font-size: small;
     a {
       color: #fff;
     }
@@ -877,7 +878,7 @@ nav.navbar-default {
     font-family: sans-serif;
   }
   h1 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   h2 {
@@ -924,12 +925,12 @@ nav.navbar-default {
     }
   }
   .guide {
-    margin-top: 5px !important;
+    margin-top: 3px !important;
     .description {
       padding: 0 !important;
     }
     .single-step {
-      padding: 5px;
+      padding: 0px;
       margin-top: 5px;
       border-bottom: 1px solid #000 !important;
       .cta {
@@ -938,13 +939,13 @@ nav.navbar-default {
       .header {
         font-weight: bold;
         margin-top: 0;
-        font-size: 22px;
+        font-size: 15px;
       }
       .circle {
         border: 1px solid #000;
       }
       .title {
-        font-size: 22px;
+        font-size: 15px;
       }
       .step-title {
         display: none;

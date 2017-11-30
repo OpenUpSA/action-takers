@@ -1,9 +1,10 @@
 ---
 layout: guide
+short-title: Blue bags
 title: What to do if your blue garbage bags are not collected regularly
 description: A description about solid waste
 name: blue-bags
-did-you-know: <li>According to the <a class="act" target="_blank" href="http://www.dwa.gov.za/Documents/sanitation/17005SC_POLICY_National%20Sanitation%20Policy%202016%20FINAL310117.pdf"> <i class="fa fa-fw fa-gavel" aria-hidden="true"></i> National Sanitation Policy, 2016</a> everyone in South Africa has the right to access to basic sanitation (including refuse / solid waste removal).</li> <li>In Cape Town, the <a href="http://www.capetown.gov.za/Departments/Solid%20Waste%20Management%20Department" target=_blank>Department of Solid Waste</a> is responsible for the collection and disposal of waste, area cleaning, preventing waste and pollution, and minimising waste.<br> Contact the department <br><i class="fa fa-fw fa-phone" aria-hidden="true"></i>0860 103 089 <br><i class="fa fa-fw fa-envelope" aria-hidden="true"></i>wastewise.user@capetown.gov.za</li>
+did-you-know: <li>According to the <a class="act" target="_blank" href="http://www.dwa.gov.za/Documents/sanitation/17005SC_POLICY_National%20Sanitation%20Policy%202016%20FINAL310117.pdf"> <i class="fa fa-fw fa-gavel" aria-hidden="true"></i> National Sanitation Policy, 2016</a> everyone in South Africa has the right to access to basic sanitation (including refuse / solid waste removal).</li> <li>In Cape Town, the <a href="http://www.capetown.gov.za/Departments/Solid%20Waste%20Management%20Department" target=_blank>Department of Solid Waste</a> is responsible for the collection and disposal of waste, area cleaning, preventing waste and pollution, and minimising waste.<br> Contact the department <br><i class="fa fa-fw fa-phone" aria-hidden="true"></i>0860 103 089 <br><i class="fa fa-fw fa-envelope" aria-hidden="true"></i>wastewise.user@capetown.gov.za</li><br>
 
 ---
 <div class="guide">
@@ -100,17 +101,17 @@ did-you-know: <li>According to the <a class="act" target="_blank" href="http://w
       {% endfor %}
     </div>
   </div>
-  <!-- <div class="single-step">
+  <div class="single-step">
     <a href="6" class="title-box">
       <div class="circle">6</div>
       <div class="title">Is your refuse still not collected after talking to your ward councillor? These organisations can assist</div>
     </a>
     <div class="content">
       {% for step in site.blue-bags %}
-        {% if forloop.index == 6 %}
+        {% if forloop.index == 8 %}
           {{ step.content }}
         {% endif %}
       {% endfor %}
     </div>
-  </div> -->
+  </div> 
 </div>
