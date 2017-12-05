@@ -32,8 +32,5 @@ collections:
     output: true
     permalink: /:name/
   access-education:
-    output: true
   wheelie-bins:
-    output: true
   blue-bags:
-    output: true
