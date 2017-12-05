@@ -111,10 +111,11 @@ h4 {
 .get-involved-block {
   background-color: $light-gray;
   padding: 5px 15px 15px 15px;
+  border-radius: 2px;
 }
 
 .btn {
-  border-radius: 0;
+  border-radius: 2px;
 }
 
 .btn-primary {
@@ -158,6 +159,7 @@ nav.navbar-default {
   }
   .navbar-nav {
     margin: 0 -15px;
+    border-radius: 0 0 2px 2px;
     @media (min-width: 750px) {
       margin: 0 15px;
     }
@@ -264,6 +266,7 @@ nav.navbar-default {
     background-color: $blue;
     color: #fff;
     height: calc(100% - 10px);
+    border-radius: 2px;
     a {
       color: #fff;
       text-decoration: underline;
@@ -275,6 +278,7 @@ nav.navbar-default {
       background-color: $blue;
       font-weight: bold;
       border-bottom: 2px dotted #fff;
+      border-radius: 2px 2px 0 0;
     }
     .content {
       padding: 10px;
@@ -293,6 +297,7 @@ nav.navbar-default {
     background-size: cover;
     background-position: top;
     padding: 0;
+    border-radius: 2px;
     img {
       position: absolute;
       z-index: -1;
@@ -306,6 +311,7 @@ nav.navbar-default {
       border-bottom: 2px dotted #fff;
       width: 100%;
       font-weight: bold;
+      border-radius: 2px 2px 0 0;
     }
     .content {
       color: #fff;
@@ -314,6 +320,7 @@ nav.navbar-default {
       width: 100%;
       max-width: 350px;
       padding: 10px 20px 30px 20px;
+      border-radius: 2px;
       .title {
         text-transform: uppercase;
         font-size: 20px;
@@ -338,6 +345,7 @@ nav.navbar-default {
       margin-bottom: 10px;
       background-size: cover;
       background-position: bottom;
+      border-radius: 2px;
       .topic-title {
         font-size: 24px;
         font-weight: bold;
@@ -581,6 +589,7 @@ nav.navbar-default {
     margin-top: 25px;
     padding: 5px 15px 15px 15px;
     background-color: $light-gray;
+    border-radius: 2px;
     .title {
       margin: 10px 0;
       font-size: 18px;
@@ -603,16 +612,18 @@ nav.navbar-default {
     padding: 5px;
     color: #fff;
     font-size: 16px;
+    border-radius: 2px;
     .description {
       padding: 10px;
       font-size: 17px;
     }
     .single-step {
+      border-color: #fff;
+      border-radius: 2px;
       .title-box {
         background-color: #fff;
         color: $dark-gray;
         padding: 10px;
-        margin-top: 5px;
         display: block;
         &:hover, &:active, &:focus {
           text-decoration: none;
@@ -635,6 +646,7 @@ nav.navbar-default {
           margin-left: 10px;
           width: calc(100% - 60px);
           vertical-align: middle;
+          color: $dark-gray;
         }
         .cta {
           text-align: right;
@@ -680,9 +692,10 @@ nav.navbar-default {
     margin: 10px -15px;
     border-top: 2px dotted #fff;
   }
-  > .title, .summary, .intro, .resources, .legal-info, {
+  > .title, .summary, .intro {
     padding: 5px 15px;
     line-height: 22px;
+    border-radius: 2px;
     a {
       text-decoration: underline;
     }
@@ -707,16 +720,19 @@ nav.navbar-default {
   }
   .who-can-help {
     padding-bottom: 10px;
+    color: $dark-gray;
     .single-partner {
       padding: 10px;
       margin-bottom: 10px;
       background-color: $light-gray;
+      border-radius: 2px;
       &:last-of-type {
         margin-bottom: 0px;
       }
       .partner-logo {
         img {
           width: 100%;
+          padding: 10px;
         }
       }
       .partner-summary {
@@ -835,6 +851,7 @@ nav.navbar-default {
   }
   .what, .how, .involved {
     color: #fff;
+    border-radius: 2px;
     .header {
       padding: 10px 20px;
       text-transform: uppercase;
@@ -969,7 +986,7 @@ nav.navbar-default {
     .comment {
       margin-top: 20px;
     }
-    .summary, .intro, .resources, .legal-info, {
+    .summary, .intro {
       padding: 0 !important;
       .header, p {
         page-break-inside: avoid !important;
@@ -977,11 +994,11 @@ nav.navbar-default {
       }
     }
   }
-  .summary, .intro, .resources {
+  .summary, .intro {
     padding-bottom: 20px;
     border-bottom-width: 0;
   }
-  .intro, .summary, .legal-info {
+  .intro, .summary {
     .header {
       margin-bottom: 20px;
     }
