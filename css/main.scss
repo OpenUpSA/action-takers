@@ -897,6 +897,12 @@ nav.navbar-default {
     display: flex;
     flex-wrap: wrap;
   }
+  .navbar-margin {
+    margin: 0;
+  }
+  body {
+    padding-bottom: 0 !important;
+  }
   body, h1, h2, h3, h4 {
     font-family: sans-serif;
   }
@@ -937,25 +943,31 @@ nav.navbar-default {
     text-decoration: none !important;
   }
   .print-logo {
+    padding-top: 10px;
+    padding-left: 10px;
     padding-right: 35px;
   }
+  .collapse {
+    display: block;
+  }
   .guide-title {
-    padding: 0 !important;
+    padding: 5px 10px !important;
+    background-color: #ddd !important;
     h1 {
       padding-bottom: 10px !important;
-      border-bottom: 1px solid #000 !important;
       font-size: 26px;
     }
   }
   .guide {
     margin-top: 3px !important;
     .description {
-      padding: 0 !important;
+      display: none !important;
     }
     .single-step {
       padding: 0px;
       margin-top: 5px;
-      border-bottom: 1px solid #000 !important;
+      margin-left: -5px;
+      margin-right: -5px;
       .cta {
         display: none;
       }
@@ -965,10 +977,16 @@ nav.navbar-default {
         font-size: 15px;
       }
       .circle {
-        border: 1px solid #000;
+        background-color: #aaa !important;
+        color: #fff !important;
+        font-weight: bold;
+      }
+      .panel-body {
+        border-top-width: 0px !important;
+        padding: 10px 0 !important;
       }
       .title {
-        font-size: 15px;
+        font-weight: bold !important;
       }
       .step-title {
         display: none;
@@ -978,35 +996,50 @@ nav.navbar-default {
         padding: 0 !important;
       }
       .title-box {
-        padding: 0 !important;
-        margin-bottom: 15px;
+        padding: 10px !important;
+        background-color: #eee !important;
         &::after {
           display: none;
         }
         .title {
           width: 90% !important;
-          font-weight: normal !important;
+          font-size: 17px;
         }
       }
+
     }
     .comment {
       margin-top: 20px;
     }
-    .summary, .intro {
-      padding: 0 !important;
-      .header, p {
-        page-break-inside: avoid !important;
-        font-weight: normal !important;
+  }
+  .intro, .summary {
+    padding: 0 !important;
+    .header {
+      width: 22% !important;
+      display: inline-block !important;
+      float: left;
+      margin-right: 1%;
+      font-weight: bold !important;
+    }
+    .content {
+      width: 77% !important;
+      display: inline-block !important; 
+      float: left;
+      ul {
+        margin-left: 25px !important;
       }
     }
   }
-  .summary, .intro {
-    padding-bottom: 20px;
-    border-bottom-width: 0;
+  .intro {
+    *,
+    *:before,
+    *:after {
+      color: #666 !important;
+    }
   }
-  .intro, .summary {
-    .header {
-      margin-bottom: 20px;
+  .summary {
+    .content, .header {
+      margin-top: 10px !important; 
     }
   }
   .who-can-help {
