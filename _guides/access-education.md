@@ -1,10 +1,23 @@
 ---
 layout: guide
+short-title: Access to education
 title: Access to education
-description: A description about access to education
+description: A guide on how to overcome barriers to learning and get your child the education they deserve
 name: access-education
-did-you-know: According to the <a class="act" target="_blank" href="https://www.acts.co.za/south-african-schools-act/index.html"> <i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Basic Education Laws Amendment Act, 2011</a> every child in South Africa has the right to an education. If your child has been denied access to education because they have special needs, you can challenge this.
 ---
+<div class="hidden-print">
+  <div class="did-you-know">
+    <div class="title">
+      <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?
+    </div>
+    <hr>
+    <div class="content">
+      <div>According to the <a class="act" target="_blank" href="https://www.acts.co.za/south-african-schools-act/index.html"> <i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Basic Education Laws Amendment Act, 2011</a> every child in South Africa has the right to an education. If your child has been denied access to education because they have special needs, you can challenge this.</div>
+      <a href="#" class="btn btn-primary"><i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Your full rights and responsibilities</a>
+    </div>
+  </div>
+</div>
+
 <div class="guide">
   <div class="description">Follow this guide to overcome barriers to learning and get your child the education they deserve. <b>Click on a step for support and resources to help you take action</b>.</div>
 
