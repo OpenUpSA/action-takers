@@ -956,6 +956,7 @@ nav.navbar-default {
       display: none !important;
     }
     .single-step {
+      page-break-inside: avoid !important;
       padding: 0px;
       margin-top: 5px;
       margin-left: -5px;
