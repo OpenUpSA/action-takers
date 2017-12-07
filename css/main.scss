@@ -664,14 +664,6 @@ nav.navbar-default {
           }
         }
       }
-      .content {
-        background-color: #fff;
-        padding: 10px;
-        display: none;
-        .step-title {
-          display: none;
-        }
-      }
     }
     .comment {
       padding: 10px;
@@ -1023,7 +1015,7 @@ nav.navbar-default {
     }
     .content {
       width: 77% !important;
-      display: inline-block !important; 
+      display: inline-block !important;
       float: left;
       ul {
         margin-left: 25px !important;
@@ -1039,7 +1031,7 @@ nav.navbar-default {
   }
   .summary {
     .content, .header {
-      margin-top: 10px !important; 
+      margin-top: 10px !important;
     }
   }
   .who-can-help {
