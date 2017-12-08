@@ -415,6 +415,10 @@ nav.navbar-default {
     justify-content: center;
     background-size: cover;
     background-position: bottom;
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
     .topic-text {
       font-size: 26px;
     }
@@ -483,6 +487,9 @@ nav.navbar-default {
       background-size: cover;
       background-position: top;
     }
+  }
+  #more {
+    margin-top: 50px;
   }
 }
 
@@ -786,6 +793,57 @@ nav.navbar-default {
     i {
       margin-left: 10px;
     }
+  }
+}
+
+.single-category {
+  .single-guide {
+    margin-top: 10px;
+    height: calc(100% - 10px);
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-position: top;
+    padding: 0;
+    border-radius: 2px;
+    @media (min-width: 767px) {
+      min-height: 200px;
+    }
+    h2  {
+      margin-top: 0;
+    }
+    &.blue-bags {
+      background-image: url("../img/blue-bags.jpg");
+    }
+    &.wheelie-bins {
+      background-image: url("../img/wheelie-bin.jpg");
+      background-position: bottom;
+    }
+  }
+  .content {
+    color: #fff;
+    background-color: rgba(0,0,0,0.65);
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 2px;
+    @media (min-width: 767px) {
+      min-height: 200px;
+    }
+    .title {
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+  .row {
+    margin-bottom: 30px;
   }
 }
 
