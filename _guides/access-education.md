@@ -4,6 +4,8 @@ short-title: Access to education
 title: Access to education
 description: A guide on how to overcome barriers to learning and get your child the education they deserve
 name: access-education
+category-link: education
+category: Education
 ---
 <div class="hidden-print">
   <div class="did-you-know">

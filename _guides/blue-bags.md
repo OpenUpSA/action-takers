@@ -4,6 +4,8 @@ short-title: Blue bags
 title: Blue bags
 description: A guide on what to do if your blue garbage bags are not being collected on a regular basis
 name: blue-bags
+category-link: solid-waste
+category: Solid Waste
 ---
 <div class="hidden-print">
   <div class="did-you-know">
