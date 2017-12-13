@@ -1170,7 +1170,7 @@ nav.navbar-default {
       h1 {
         padding-top: 10px;
         font-size: 26px;
-        width: 60%;
+        width: 50%;
         float: right;
         display: inline-block;
       }
@@ -1214,6 +1214,12 @@ nav.navbar-default {
               padding-left: 7px;
             }
           }
+        }
+        .partner-logo {
+          width: 100%;
+        }
+        .partner-summary {
+          padding: 0;
         }
       }
     }
