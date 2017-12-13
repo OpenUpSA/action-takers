@@ -1115,6 +1115,18 @@ nav.navbar-default {
   }
 }
 
+.rights-responsibilities {
+  .single-rights {
+    margin-bottom: 20px;
+    h2 {
+      margin-top: 0;
+    }
+    padding: 15px;
+    border-radius: 4px;
+    background-color: $light-gray;
+  }
+}
+
 // for mobile PDFs only - add or remove mobile-print class in _layouts/guide.html
 @media print {
   .mobile-print {

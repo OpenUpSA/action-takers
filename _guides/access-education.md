@@ -15,7 +15,7 @@ category: Education
     <hr>
     <div class="content">
       <div>According to the <a class="act" target="_blank" href="https://www.acts.co.za/south-african-schools-act/index.html"> <i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Basic Education Laws Amendment Act, 2011</a> every child in South Africa has the right to an education. If your child has been denied access to education because they have special needs, you can challenge this.</div>
-      <a href="#" class="btn btn-primary"><i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Your full rights and responsibilities</a>
+      <a href="../rights-responsibilities.html" class="btn btn-primary"><i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Your full rights and responsibilities</a>
     </div>
   </div>
 </div>
