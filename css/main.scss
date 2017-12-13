@@ -433,6 +433,17 @@ nav.navbar-default {
     justify-content: center;
     background-size: cover;
     background-position: bottom;
+    position: relative;
+    border-radius: 2px;
+    .count {
+      background-color: $green;
+      color: #fff;
+      padding: 3px 6px;
+      border-radius: 2px;
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+    }
     &.disabled {
       cursor: not-allowed;
       opacity: 0.5;
