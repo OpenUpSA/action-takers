@@ -17,7 +17,7 @@ title: Action Takers
 email: your-email@example.com
 description: Actions Takers is a community of civic-minded people who understand the role of public participation in our democracy and use that power to ensure their voices are heard.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://actiontakers.co.za" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 logo: /img/logo.png

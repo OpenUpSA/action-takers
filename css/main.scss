@@ -852,6 +852,18 @@ nav.navbar-default {
       background-image: url("../img/access-education.jpg");
       background-position: bottom;
     }
+    &.disconnected-electricity {
+      background-image: url("../img/disconnected-electricity.jpg");
+      background-position: center;
+    }
+    &.obstruction-from-entering {
+      background-image: url("../img/obstruction-from-entering.jpg");
+      background-position: bottom;
+    }
+    &.risk-of-eviction {
+      background-image: url("../img/risk-of-eviction.jpg");
+      background-position: center;
+    }
   }
   .content {
     color: #fff;
