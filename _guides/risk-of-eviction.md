@@ -7,23 +7,24 @@ name: risk-of-eviction
 category-link: housing
 category: Housing
 ---
-<div class="hidden-print">
-  <div class="did-you-know">
-    <div class="title">
-      <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?
+<div class="did-you-know">
+  <div class="title">
+    <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?
+  </div>
+  <hr>
+  <div class="content">
+    <ul class="fa-ul">
+      <li>
+        <i class="fa-li fa fa-gavel" aria-hidden="true"></i> <a target="_blank" href="http://myconstitution.co.za/en/02.html#housing">Section 26(3) of the Constitution</a> states that “No one may be evicted from their home, or have their home demolished, without an order of court made after considering all the relevant circumstances. No legislation may permit arbitrary evictions.” Everyone in South Africa has the right to access to adequate housing.
+      </li>
+      <li>
+        <i class="fa-li fa fa-gavel" aria-hidden="true"></i> <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/notice_no__789_of_1998">The Prevention of Illegal Eviction From and Unlawful Occupation of Land Act 19 of 1998 (PIE)</a> act sets out the procedure and requirements to be followed in a lawful eviction. It also sets out the circumstances that the Magistrate should consider before ordering an eviction.
+      </li>
+    </ul>
+    <div class="extra">
+      ...
     </div>
-    <hr>
-    <div class="content">
-      <ul class="fa-ul">
-        <li>
-          <i class="fa-li fa fa-gavel" aria-hidden="true"></i> <a target="_blank" href="http://myconstitution.co.za/en/02.html#housing">Section 26(3) of the Constitution</a> states that “No one may be evicted from their home, or have their home demolished, without an order of court made after considering all the relevant circumstances. No legislation may permit arbitrary evictions.” Everyone in South Africa has the right to access to adequate housing.
-        </li>
-        <li>
-          <i class="fa-li fa fa-gavel" aria-hidden="true"></i> <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/notice_no__789_of_1998">The Prevention of Illegal Eviction From and Unlawful Occupation of Land Act 19 of 1998 (PIE)</a> act sets out the procedure and requirements to be followed in a lawful eviction. It also sets out the circumstances that the Magistrate should consider before ordering an eviction.
-        </li>
-      </ul>
-      <a href="../rights-responsibilities.html" class="btn btn-primary"><i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Your full rights and responsibilities</a>
-    </div>
+    <a class="btn btn-primary show-extra"><i class="fa fa-caret-down" aria-hidden="true"></i> Your full rights and responsibilities</a>
   </div>
 </div>
 

@@ -21,7 +21,7 @@ category: Solid Waste
         <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Your municipality is responsible for ensuring adequate services are delivered to all residents
       </li>
     </ul>
-    <ul class="fa-ul extra visible-print">
+    <ul class="fa-ul extra">
       <li>
         <i class="fa-li fa fa-trash" aria-hidden="true"></i> In Cape Town, the <a href="http://www.capetown.gov.za/Departments/Solid%20Waste%20Management%20Department" target="_blank">Department of Solid Waste</a> is responsible for the collection and disposal of waste, area cleaning, preventing waste and pollution, and minimising waste.
       </li>
@@ -32,7 +32,7 @@ category: Solid Waste
         <i class="fa-li fa fa-envelope" aria-hidden="true"></i>Emailing them is also possible at <a href="mailto:wastewise.user@capetown.gov.za">wastewise.user@capetown.gov.za</a>
       </li>
     </ul>
-    <a href="../rights-responsibilities.html" class="btn btn-primary show-extra hidden-print"><i class="fa fa-caret-down" aria-hidden="true"></i> Your full rights and responsibilities</a>
+    <a class="btn btn-primary show-extra"><i class="fa fa-caret-down" aria-hidden="true"></i> Your full rights and responsibilities</a>
   </div>
 </div>
 

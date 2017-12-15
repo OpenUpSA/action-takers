@@ -7,17 +7,18 @@ name: access-education
 category-link: education
 category: Education
 ---
-<div class="hidden-print">
-  <div class="did-you-know">
-    <div class="title">
-      <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?
-    </div>
-    <hr>
-    <div class="content">
-      <div>According to the <a class="act" target="_blank" href="https://www.acts.co.za/south-african-schools-act/index.html"> <i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Basic Education Laws Amendment Act, 2011</a> every child in South Africa has the right to an education. If your child has been denied access to education because they have special needs, you can challenge this.</div>
-      <a href="../rights-responsibilities.html" class="btn btn-primary"><i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Your full rights and responsibilities</a>
-    </div>
+<div class="did-you-know">
+  <div class="title">
+    <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?
   </div>
+  <hr>
+  <div class="content">
+    According to the <a class="act" target="_blank" href="https://www.acts.co.za/south-african-schools-act/index.html"> <i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Basic Education Laws Amendment Act, 2011</a> every child in South Africa has the right to an education. If your child has been denied access to education because they have special needs, you can challenge this.
+  </div>
+  <div class="extra">
+    ...
+  </div>
+  <a class="btn btn-primary show-extra"><i class="fa fa-caret-down" aria-hidden="true"></i> Your full rights and responsibilities</a>
 </div>
 
 <div class="guide">

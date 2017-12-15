@@ -32,7 +32,7 @@ category: Solid Waste
         <i class="fa-li fa fa-envelope" aria-hidden="true"></i>Emailing them is also possible at <a href="mailto:wastewise.user@capetown.gov.za">wastewise.user@capetown.gov.za</a>
       </li>
     </ul>
-    <a href="../rights-responsibilities.html" class="btn btn-primary show-extra"><i class="fa fa-caret-down" aria-hidden="true"></i> Your full rights and responsibilities</a>
+    <a class="btn btn-primary show-extra"><i class="fa fa-caret-down" aria-hidden="true"></i> Your full rights and responsibilities</a>
   </div>
 </div>
 

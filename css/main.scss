@@ -1062,6 +1062,14 @@ nav.navbar-default {
       font-size: 26px;
     }
   }
+  .did-you-know {
+    .extra {
+      display: block !important;
+    }
+    .btn {
+      display: none;
+    }
+  }
   .guide {
     margin-top: 3px !important;
     .description {

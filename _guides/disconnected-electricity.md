@@ -2,28 +2,31 @@
 layout: guide
 short-title: Disconnected electricity
 title: Disconnected Electricity
-description: A guide on how a landlord may disconnect your electricity as a way to try to force you out of your home and steps on how you can respond. 
+description: A guide on how a landlord may disconnect your electricity as a way to try to force you out of your home and steps on how you can respond.
 name: disconnected-electricity
 category-link: housing
 category: Housing
 ---
-<div class="hidden-print">
-  <div class="did-you-know">
-    <div class="title">
-      <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?
+<div class="did-you-know">
+  <div class="title">
+    <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?
+  </div>
+  <hr>
+  <div class="content">
+    <ul class="fa-ul">
+      <li>
+        <i class="fa-li fa fa-gavel"></i>According to the Rental Housing Act and the Unfair Practice Regulations, your electricity cannot be cut off, UNLESS:
+      </li>
+    	<ol>
+    	  <li>There is an emergency</li>
+    	  <li>The landlord needs to do maintenance</li>
+    	  <li>You are in arrears and fail to pay your arrears within 7 days of the landlord letting you know that you should. </li>
+    	</ol>
+    </ul>
+    <div class="extra">
+      ...
     </div>
-    <hr>
-    <div class="content">
-      <ul class="fa-ul">
-        <li><i class="fa-li fa fa-gavel"></i>According to the Rental Housing Act and the Unfair Practice Regulations, your electricity cannot be cut off, UNLESS:</li>
-		<ol>
-		  <li>There is an emergency</li>
-		  <li>The landlord needs to do maintenance</li>
-		  <li>You are in arrears and fail to pay your arrears within 7 days of the landlord letting you know that you should. </li>
-		</ol>  
-      </ul>
-      <a href="../rights-responsibilities.html" class="btn btn-primary"><i class="fa fa-fw fa-gavel" aria-hidden="true"></i> Your full rights and responsibilities</a>
-    </div>
+    <a class="btn btn-primary show-extra"><i class="fa fa-caret-down" aria-hidden="true"></i> Your full rights and responsibilities</a>
   </div>
 </div>
 
