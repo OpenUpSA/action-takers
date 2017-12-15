@@ -634,6 +634,15 @@ nav.navbar-default {
       font-size: 18px;
       font-weight: bold;
     }
+    .fa-ul {
+      margin-bottom: 0;
+    }
+    .extra {
+      display: none;
+    }
+    li {
+      padding-bottom: 5px;
+    }
     hr {
       margin: 10px -15px;
       border-top: 2px dotted #fff;
