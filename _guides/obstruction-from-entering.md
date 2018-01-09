@@ -9,7 +9,7 @@ category: Housing
 ---
 <div class="did-you-know">
   <div class="title">
-    <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?
+    <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Know your rights
   </div>
   <hr>
   <div class="content">
@@ -22,7 +22,11 @@ category: Housing
       </li>
     </ul>
     <div class="extra">
-      ...
+      <ul class="fa-ul"> 
+        <li>
+          <i class="fa-li fa fa-gavel" aria-hidden="true"></i>A landlord or land owner cannot intimidate you to leave the property or force you to move out. This is illegal in terms of the <a target="_blank" href="http://myconstitution.co.za/en/02.html#housing">Constitution</a>, <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/notice_no__789_of_1998">PIE Act</a>, <a target="_blank" href="https://www.acts.co.za/rental-housing-act-1999/index.html">The Rental Housing Act</a> and the Unfair Practice Regulations. 
+        </li>  
+      </ul>  
     </div>
     <a class="btn btn-primary show-extra"><i class="fa fa-caret-down" aria-hidden="true"></i> Your full rights and responsibilities</a>
   </div>
@@ -92,6 +96,23 @@ category: Housing
       <div class="panel-body">
         {% for step in site.obstruction-from-entering %}
           {% if forloop.index == 4 %}
+            {{ step.content }}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+    <div class="panel single-step">
+    <div class="panel-heading title-box" role="tab" id="headingFive">
+      <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+        <div class="circle">5</div>
+        <div class="title">Who can provide legal assistance?</div>
+      </div>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+        {% for step in site.obstruction-from-entering %}
+          {% if forloop.index == 5 %}
             {{ step.content }}
           {% endif %}
         {% endfor %}

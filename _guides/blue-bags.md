@@ -9,7 +9,7 @@ category: Solid Waste
 ---
 <div class="did-you-know">
   <div class="title">
-    <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?
+    <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Know your rights
   </div>
   <hr>
   <div class="content">
