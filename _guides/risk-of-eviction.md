@@ -9,7 +9,7 @@ category: Housing
 ---
 <div class="did-you-know">
   <div class="title">
-    <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Did you know?
+    <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Know your rights
   </div>
   <hr>
   <div class="content">
@@ -22,7 +22,17 @@ category: Housing
       </li>
     </ul>
     <div class="extra">
-      ...
+      <ul class="fa-ul">
+        <li>
+          <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Section 4 of <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/4__eviction_of_unlawful_occupi">PIE</a> states what should be in a section 4(2) notice, namely:
+            <ul>
+              <li>That the notice is being instituted in terms of s4 (1) for an eviction</li>
+			  <li>The date and time of the court proceedings</li>
+			  <li>Set out the grounds for the proposed eviction</li>
+			  <li>State that you have the right to defend the case and apply for legal aid</li>
+			</ul>
+		</li>
+	  </ul>	 	  
     </div>
     <a class="btn btn-primary show-extra"><i class="fa fa-caret-down" aria-hidden="true"></i> Your full rights and responsibilities</a>
   </div>
