@@ -9,13 +9,13 @@
 * Create a new category listing page in the project root - e.g. `housing.html`
 
 ### Add a new guide and steps
-* Add the new guide collection to `_config.yml'
+* Add the new guide collection to `_config.yml`
  * Remember to restart your server to see any config changes made
 * Add the new guide to the category list page
-* Create the guide folder in the project root - e.g. _risk-of-eviction
-* Create the guide steps in this folder - e.g. 1.md 
+* Create the guide folder in the project root - e.g. `_risk-of-eviction`
+* Create the guide steps in this folder - e.g. `1.md` 
  * Note: pay careful attention to which guide step you are editing - it's easy to get confused with the names, so best double check the folder the file lives in
-* Create the guide file in _guides - e.g. risk-of-eviction.md
+* Create the guide file in _guides - e.g. `risk-of-eviction.md`
  * Note: name this carefully - it must match the name of the collection in the config file
  * Pay careful attention to the frontmatter 
   * short-title: used for whatsapp key word
