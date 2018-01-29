@@ -95,7 +95,7 @@ category: Housing
     <div class="panel-heading title-box" role="tab" id="headingFour">
       <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
         <div class="circle">4</div>
-        <div class="title">File a notice to opposing and file an opposing affidavit</div>
+        <div class="title">File a notice to oppose and file an opposing affidavit</div>
       </div>
     </div>
     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
