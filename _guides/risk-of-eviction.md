@@ -15,6 +15,9 @@ category: Housing
   <div class="content">
     <ul class="fa-ul">
       <li>
+        <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Everyone has the right to adequate housing and the state is obligated to take reasonable measures to satisfy that right.
+      </li>  
+      <li>
         <i class="fa-li fa fa-gavel" aria-hidden="true"></i> <a target="_blank" href="http://myconstitution.co.za/en/02.html#housing">Section 26(3) of the Constitution</a> states that “No one may be evicted from their home, or have their home demolished, without an order of court made after considering all the relevant circumstances. No legislation may permit arbitrary evictions.” Everyone in South Africa has the right to access to adequate housing.
       </li>
       <li>
@@ -180,13 +183,30 @@ category: Housing
     <div class="panel-heading title-box" role="tab" id="headingNine">
       <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
         <div class="circle">9</div>
-        <div class="title">Receive a court order/report</div>
+        <div class="title">Receive a court order</div>
       </div>
     </div>
     <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
       <div class="panel-body">
         {% for step in site.risk-of-eviction %}
           {% if forloop.index == 9 %}
+            {{ step.content }}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+    <div class="panel single-step">
+    <div class="panel-heading title-box" role="tab" id="headingTen">
+      <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+        <div class="circle">10</div>
+        <div class="title">Find out who can assist</div>
+      </div>
+    </div>
+    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+      <div class="panel-body">
+        {% for step in site.risk-of-eviction %}
+          {% if forloop.index == 10 %}
             {{ step.content }}
           {% endif %}
         {% endfor %}
