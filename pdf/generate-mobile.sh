@@ -1,0 +1,6 @@
+wkhtmltopdf -g --page-height 3400px --page-width 320px -L 2mm -R 2mm -T 2mm -B 2mm http://127.0.0.1:4000/access-education/ --print-media-type access-education-mobile.pdf
+wkhtmltopdf -g --page-height 10200px --page-width 320px -L 2mm -R 2mm -T 2mm -B 2mm http://127.0.0.1:4000/risk-of-eviction/ --print-media-type risk-of-eviction-mobile.pdf
+wkhtmltopdf -g --page-height 5000px --page-width 320px -L 2mm -R 2mm -T 2mm -B 2mm http://127.0.0.1:4000/obstruction-from-entering/ --print-media-type obstruction-from-entering-mobile.pdf
+wkhtmltopdf -g --page-height 2000px --page-width 320px -L 2mm -R 2mm -T 2mm -B 2mm http://127.0.0.1:4000/disconnected-electricity/ --print-media-type disconnected-electricity-mobile.pdf
+wkhtmltopdf -g --page-height 3700px --page-width 320px -L 2mm -R 2mm -T 2mm -B 2mm http://127.0.0.1:4000/blue-bags/ --print-media-type blue-bags-mobile.pdf
+wkhtmltopdf -g --page-height 2000px --page-width 320px -L 2mm -R 2mm -T 2mm -B 2mm http://127.0.0.1:4000/wheelie-bins/ --print-media-type wheelie-bins-mobile.pdf
