@@ -166,7 +166,7 @@ category: Housing
     <div class="panel-heading title-box" role="tab" id="headingEight">
       <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
         <div class="circle">8</div>
-        <div class="title">Attend the court hearing</div>
+        <div class="title">Argument in court</div>
       </div>
     </div>
     <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
