@@ -29,7 +29,7 @@ category: Housing
 </div>
 
 <div class="guide panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="description">If your your landlord is using intimidation to try and force you out of your home, here's what you can do. <b class="hidden-print">Click on a step for support and resources to help you take action.</b></div>
+  <div class="description">If your landlord is using intimidation to try and force you out of your home, here's what you can do. <b class="hidden-print">Click on a step for support and resources to help you take action.</b></div>
   <div class="panel single-step">
     <div class="panel-heading title-box" role="tab" id="headingOne">
       <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
