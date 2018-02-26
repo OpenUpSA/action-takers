@@ -34,4 +34,6 @@ $(".did-you-know .content .show-extra").click(function(e) {
 });
 
 // scroll to an object
-
+$(".panel-collapse").on('shown.bs.collapse', function () {
+  scrollToDiv($(this).prev().attr("id"))
+})
