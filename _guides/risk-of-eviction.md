@@ -16,7 +16,7 @@ category: Housing
     <ul class="fa-ul">
       <li>
         <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Everyone has the right to adequate housing and the state is obligated to take reasonable measures to satisfy that right.
-      </li>  
+      </li>
       <li>
         <i class="fa-li fa fa-gavel" aria-hidden="true"></i> <a target="_blank" href="http://myconstitution.co.za/en/02.html#housing">Section 26(3) of the Constitution</a> states that “No one may be evicted from their home, or have their home demolished, without an order of court made after considering all the relevant circumstances. No legislation may permit arbitrary evictions.” Everyone in South Africa has the right to access to adequate housing.
       </li>
@@ -28,16 +28,15 @@ category: Housing
       <ul class="fa-ul">
         <li>
           <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Section 4 of <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/4__eviction_of_unlawful_occupi">PIE</a> states what should be in a section 4(2) notice, namely:
-            <ul>
-              <li>That the notice is being instituted in terms of s4 (1) for an eviction</li>
-			  <li>The date and time of the court proceedings</li>
-			  <li>Set out the grounds for the proposed eviction</li>
-			  <li>State that you have the right to defend the case and apply for legal aid</li>
-			</ul>
-		</li>
-	  </ul>	 	  
+          <ul>
+            <li>That the notice is being instituted in terms of s4 (1) for an eviction</li>
+    			  <li>The date and time of the court proceedings</li>
+    			  <li>Set out the grounds for the proposed eviction</li>
+    			  <li>State that you have the right to defend the case and apply for legal aid</li>
+    			</ul>
+    		</li>
+  	  </ul>
     </div>
-    <a class="btn btn-primary show-extra"><i class="fa fa-caret-down" aria-hidden="true"></i> Your full rights and responsibilities</a>
   </div>
 </div>
 
@@ -213,4 +212,10 @@ category: Housing
       </div>
     </div>
   </div>
+</div>
+
+<div class="credit">
+  These guides were developed with support from <a target="_blank" href="http://nu.org.za/">NU</a> and <a target="_blank" href="http://reclaimthecity.org.za/">Reclaim the City</a>.
+  <a target="_blank" href="http://nu.org.za"><img src="/img/nu.png"></a>
+  <a target="_blank" href="http://reclaimthecity.org.za"><img src="/img/rct.jpg"></a>
 </div>

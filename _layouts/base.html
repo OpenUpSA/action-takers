@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 
+
   {% include head.html %}
 
   <body>
+
     {% include header.html %}
-    
+
     {{ content }}
 
     {% include footer.html %}
@@ -23,6 +25,14 @@
 
       ga('create', 'UA-93649482-6', 'auto');
       ga('send', 'pageview');
+    </script>
+
+    <script>
+      function scrollToDiv(id){
+        $('html,body').animate({
+         scrollTop: $("#" + id).offset().top},
+         'slow');
+      }
     </script>
 
   </body>

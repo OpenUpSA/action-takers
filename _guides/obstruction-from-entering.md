@@ -26,7 +26,7 @@ category: Housing
         (d) " engage in oppressive or unconscionable conduct towards the tenant;" <br>
         (f) "conduct any activity which unreasonably interferes with or limits the rights of the tenant or which is expressly prohibited under the lease, the Act and these regulations, any ordinance, health or safety regulations or any other law;"
       </li>
-    </ul>  
+    </ul>
   </div>
 </div>
 

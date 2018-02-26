@@ -32,3 +32,6 @@ $(".did-you-know .content .show-extra").click(function(e) {
   $(".extra").slideToggle(200);
   $("i", this).toggleClass("fa-caret-up");
 });
+
+// scroll to an object
+
