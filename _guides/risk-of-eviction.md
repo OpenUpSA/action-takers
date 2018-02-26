@@ -216,6 +216,12 @@ category: Housing
 
 <div class="credit">
   These guides were developed with support from <a target="_blank" href="http://nu.org.za/">NU</a> and <a target="_blank" href="http://reclaimthecity.org.za/">Reclaim the City</a>.
-  <a target="_blank" href="http://nu.org.za"><img src="/img/nu.png"></a>
-  <a target="_blank" href="http://reclaimthecity.org.za"><img src="/img/rct.jpg"></a>
+  <div class="row">
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+      <a target="_blank" href="http://nu.org.za"><img src="/img/nu.png"></a>
+    </div>
+    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+      <a target="_blank" href="http://reclaimthecity.org.za"><img src="/img/rct.jpg"></a>
+    </div>
+  </div>
 </div>
