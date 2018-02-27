@@ -48,9 +48,9 @@ category: Housing
         <div class="extra">
           <ul class="fa-ul">
             <li>
-              <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Section 4 of <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/4__eviction_of_unlawful_occupi">PIE</a> states what should be in a section 4(2) notice, namely:
+              <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Section 4 of <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/4__eviction_of_unlawful_occupi">PIE</a> states what should be in a Section 4(2) notice, namely:
               <ul>
-                <li>That the notice is being instituted in terms of s4 (1) for an eviction</li>
+                <li>That the notice is being instituted in terms of Section 4(1) for an eviction</li>
                 <li>The date and time of the court proceedings</li>
                 <li>Set out the grounds for the proposed eviction</li>
                 <li>State that you have the right to defend the case and apply for legal aid</li>
