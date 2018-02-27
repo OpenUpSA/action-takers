@@ -7,35 +7,58 @@ name: risk-of-eviction
 category-link: housing
 category: Housing
 ---
-<div class="did-you-know">
-  <div class="title">
-    <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Know your rights
+<div class="row flex">
+  <div class="col-sm-3">
+    <div class="credit">
+      <div class="title">
+        <i class="fa fa-life-ring fa-fw" aria-hidden="true"></i> Support
+      </div>
+      <hr>
+      <div class="row hidden-print">
+        <div class="col-xs-12">
+          These guides were developed with support from <a target="_blank" href="http://nu.org.za/">NU</a> and <a target="_blank" href="http://reclaimthecity.org.za/">Reclaim the City</a>.
+        </div>
+        <div class="col-xs-6">
+          <a target="_blank" href="http://nu.org.za"><img src="/img/nu.png"></a>
+        </div>
+        <div class="col-xs-6">
+          <a target="_blank" href="http://reclaimthecity.org.za"><img src="/img/rct.jpg"></a>
+        </div>
+      </div>
+    </div>
   </div>
-  <hr>
-  <div class="content">
-    <ul class="fa-ul">
-      <li>
-        <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Everyone has the right to adequate housing and the state is obligated to take reasonable measures to satisfy that right.
-      </li>
-      <li>
-        <i class="fa-li fa fa-gavel" aria-hidden="true"></i> <a target="_blank" href="http://myconstitution.co.za/en/02.html#housing">Section 26(3) of the Constitution</a> states that “No one may be evicted from their home, or have their home demolished, without an order of court made after considering all the relevant circumstances. No legislation may permit arbitrary evictions.” Everyone in South Africa has the right to access to adequate housing.
-      </li>
-      <li>
-        <i class="fa-li fa fa-gavel" aria-hidden="true"></i> <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/notice_no__789_of_1998">The Prevention of Illegal Eviction From and Unlawful Occupation of Land Act 19 of 1998 (PIE)</a> sets out the procedure and requirements to be followed in a lawful eviction. It also sets out the circumstances that the Magistrate should consider before ordering an eviction.
-      </li>
-    </ul>
-    <div class="extra">
-      <ul class="fa-ul">
-        <li>
-          <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Section 4 of <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/4__eviction_of_unlawful_occupi">PIE</a> states what should be in a section 4(2) notice, namely:
-          <ul>
-            <li>That the notice is being instituted in terms of s4 (1) for an eviction</li>
-    			  <li>The date and time of the court proceedings</li>
-    			  <li>Set out the grounds for the proposed eviction</li>
-    			  <li>State that you have the right to defend the case and apply for legal aid</li>
-    			</ul>
-    		</li>
-  	  </ul>
+  <div class="col-sm-9">
+    <div class="did-you-know">
+      <div class="title">
+        <i class="fa fa-question-circle fa-fw" aria-hidden="true"></i> Know your rights
+      </div>
+      <hr>
+      <div class="content">
+        <ul class="fa-ul">
+          <li>
+            <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Everyone has the right to adequate housing and the state is obligated to take reasonable measures to satisfy that right.
+          </li>
+          <li>
+            <i class="fa-li fa fa-gavel" aria-hidden="true"></i> <a target="_blank" href="http://myconstitution.co.za/en/02.html#housing">Section 26(3) of the Constitution</a> states that “No one may be evicted from their home, or have their home demolished, without an order of court made after considering all the relevant circumstances. No legislation may permit arbitrary evictions.” Everyone in South Africa has the right to access to adequate housing.
+          </li>
+          <li>
+            <i class="fa-li fa fa-gavel" aria-hidden="true"></i> <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/notice_no__789_of_1998">The Prevention of Illegal Eviction From and Unlawful Occupation of Land Act 19 of 1998 (PIE)</a> sets out the procedure and requirements to be followed in a lawful eviction. It also sets out the circumstances that the Magistrate should consider before ordering an eviction.
+          </li>
+        </ul>
+        <div class="extra">
+          <ul class="fa-ul">
+            <li>
+              <i class="fa-li fa fa-gavel" aria-hidden="true"></i>Section 4 of <a target="_blank" href="https://www.acts.co.za/prevention-of-illegal-eviction-from-and-unlawful-occupation-of-land-act-1998/4__eviction_of_unlawful_occupi">PIE</a> states what should be in a section 4(2) notice, namely:
+              <ul>
+                <li>That the notice is being instituted in terms of s4 (1) for an eviction</li>
+                <li>The date and time of the court proceedings</li>
+                <li>Set out the grounds for the proposed eviction</li>
+                <li>State that you have the right to defend the case and apply for legal aid</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -210,18 +233,6 @@ category: Housing
           {% endif %}
         {% endfor %}
       </div>
-    </div>
-  </div>
-</div>
-
-<div class="credit">
-  These guides were developed with support from <a target="_blank" href="http://nu.org.za/">NU</a> and <a target="_blank" href="http://reclaimthecity.org.za/">Reclaim the City</a>.
-  <div class="row hidden-print">
-    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-      <a target="_blank" href="http://nu.org.za"><img src="/img/nu.png"></a>
-    </div>
-    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-      <a target="_blank" href="http://reclaimthecity.org.za"><img src="/img/rct.jpg"></a>
     </div>
   </div>
 </div>

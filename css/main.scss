@@ -724,7 +724,22 @@ nav.navbar-default {
     }
   }
   .credit {
+    margin-top: 25px;
+    padding: 5px 15px 15px 15px;
+    border: 1px solid $light-gray;
+    border-radius: 2px;
+    height: calc(100% - 25px);
+    .title {
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    hr {
+      margin: 10px -15px;
+      border-top: 2px dotted $light-gray;
+    }
     img {
+      margin-top: 10px;
       padding: 10%;
       width: 100%;
     }
