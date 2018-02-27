@@ -896,6 +896,15 @@ nav.navbar-default {
   }
 }
 
+.alert-housing {
+  text-align: center;
+  margin-top:  20px;
+  img {
+    max-width: 100px;
+    padding: 10px;
+  }
+}
+
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
