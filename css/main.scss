@@ -731,11 +731,13 @@ nav.navbar-default {
     height: calc(100% - 25px);
     .title {
       margin: 10px 0;
+      margin-bottom: 9px;
       font-size: 18px;
       font-weight: bold;
     }
     hr {
       margin: 10px -15px;
+      margin-top: 9px;
       border-top: 2px dotted $light-gray;
     }
     img {
@@ -788,34 +790,10 @@ nav.navbar-default {
     .single-partner {
       padding: 10px;
       margin-bottom: 10px;
-      background-color: $light-gray;
       border-radius: 2px;
-      &:last-of-type {
-        margin-bottom: 0px;
-      }
-      .partner-logo {
-        img {
-          width: 100%;
-          padding: 10px;
-        }
-      }
-      .partner-summary {
-        padding: 15px;
-        div {
-          margin-bottom: 10px;
-          i {
-            margin-right: 5px;
-          }
-          a {
-            color: $dark-gray;
-            text-decoration: underline;
-          }
-        }
-      }
-      .partner-description {
-        margin-top: 10px;
-        color: $dark-gray;
-      }
+      width: 45% !important;
+      border-bottom-width: 0px !important;
+      display: inline-block !important;
     }
   }
   .intro {
@@ -1049,6 +1027,7 @@ nav.navbar-default {
   hr {
     display: none;
   }
+
   .navbar-margin {
     padding: 0;
   }
@@ -1083,7 +1062,22 @@ nav.navbar-default {
       font-size: 26px;
     }
   }
+  .credit {
+    font-size: 1.2em !important;
+    .col-image, img {
+      max-width: 200px;
+    }
+    .title {
+      font-size: 1.2em !important;
+    }
+  }
   .did-you-know {
+    .title {
+      font-size: 1.5em !important;
+    }
+    .content {
+      font-size: 1.2em !important;
+    }
     .extra {
       display: block !important;
     }
@@ -1108,7 +1102,8 @@ nav.navbar-default {
       .header {
         font-weight: bold;
         margin-top: 0;
-        font-size: 15px;
+        display: block !important;
+        width: 100% !important;
       }
       .circle {
         background-color: #aaa !important;
@@ -1118,6 +1113,10 @@ nav.navbar-default {
       .panel-body {
         border-top-width: 0px !important;
         padding: 10px 0 !important;
+        margin-left: 10px !important;
+        .header {
+          font-size: 1.5em !important;
+        }
       }
       .title {
         font-weight: bold !important;
@@ -1132,12 +1131,12 @@ nav.navbar-default {
       .title-box {
         padding: 10px !important;
         background-color: #eee !important;
+        font-size: 1.5em;
         &::after {
           display: none;
         }
         .title {
           width: 90% !important;
-          font-size: 17px;
         }
       }
 
@@ -1148,6 +1147,7 @@ nav.navbar-default {
   }
   .intro, .summary {
     padding: 0 !important;
+    font-size: 1.2em;
     .header {
       width: 22% !important;
       display: inline-block !important;
@@ -1156,8 +1156,7 @@ nav.navbar-default {
       font-weight: bold !important;
     }
     .content {
-      width: 77% !important;
-      display: inline-block !important;
+      display: block !important;
       float: left;
       ul {
         margin-left: 25px !important;
@@ -1168,7 +1167,10 @@ nav.navbar-default {
     *,
     *:before,
     *:after {
-      color: #666 !important;
+      color: #333 !important;
+    }
+    p {
+      font-size: 1.2em;
     }
   }
   .summary {
@@ -1182,14 +1184,6 @@ nav.navbar-default {
       &:last-of-type {
         border-bottom-width: 0;
       }
-    }
-    .partner-logo {
-      width: 30%;
-      float: left;
-    }
-    .partner-summary {
-      width: 68%;
-      float: left;
     }
   }
 }
