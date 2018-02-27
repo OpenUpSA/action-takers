@@ -790,10 +790,6 @@ nav.navbar-default {
     .single-partner {
       padding: 10px;
       margin-bottom: 10px;
-      border-radius: 2px;
-      width: 45% !important;
-      border-bottom-width: 0px !important;
-      display: inline-block !important;
     }
   }
   .intro {
@@ -1144,6 +1140,14 @@ nav.navbar-default {
     .comment {
       margin-top: 20px;
     }
+    .intro.who-can-help {
+      .single-partner {
+        width: 48% !important;
+        display: inline-block !important;
+        border-bottom: 1px solid $light-gray !important;
+        border-bottom-width: 1px !important;
+      }
+    }
   }
   .intro, .summary {
     padding: 0 !important;
@@ -1176,14 +1180,6 @@ nav.navbar-default {
   .summary {
     .content, .header {
       margin-top: 10px !important;
-    }
-  }
-  .who-can-help {
-    .single-partner {
-      border-bottom: 1px solid $light-gray;
-      &:last-of-type {
-        border-bottom-width: 0;
-      }
     }
   }
 }
@@ -1237,9 +1233,6 @@ nav.navbar-default {
           margin-top: 7px !important;
         }
         .title {
-          float: right;
-          margin-left: 0 !important;
-          padding-left: 5px;
           font-size: 24px !important;
           width: 89% !important;
         }
@@ -1265,6 +1258,17 @@ nav.navbar-default {
         .partner-summary {
           padding: 0;
         }
+        .panel-body {
+          margin-left: 0px !important;
+        }
+      }
+    }
+    .intro.who-can-help {
+      .single-partner {
+        width: 98% !important;
+        max-width: 98% !important;
+        border-bottom: 1px solid $light-gray !important;
+        border-bottom-width: 1px !important;
       }
     }
   }
