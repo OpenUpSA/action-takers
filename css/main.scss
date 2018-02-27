@@ -1068,9 +1068,15 @@ nav.navbar-default {
     }
   }
   .credit {
+    .col-text {
+      display: inline-block;
+      width: 50%;
+    }
     font-size: 1.2em !important;
     .col-image, img {
-      max-width: 200px;
+      margin-top: -10px !important;
+      max-width: 150px;
+      display: inline-block;
     }
     .title {
       font-size: 1.2em !important;
@@ -1181,9 +1187,6 @@ nav.navbar-default {
     *:before,
     *:after {
       color: #333 !important;
-    }
-    p {
-      font-size: 1.2em;
     }
   }
   .summary {

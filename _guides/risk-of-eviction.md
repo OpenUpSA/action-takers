@@ -15,7 +15,7 @@ category: Housing
       </div>
       <hr>
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 col-text">
           These guides were developed with support from <a target="_blank" href="http://nu.org.za/">NU</a> and <a target="_blank" href="http://reclaimthecity.org.za/">Reclaim the City</a>.
         </div>
         <div class="col-xs-6 col-image">
