@@ -235,5 +235,4 @@ category: Housing
       </div>
     </div>
   </div>
-  </div>
 </div>
