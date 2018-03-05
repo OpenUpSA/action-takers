@@ -868,6 +868,22 @@ nav.navbar-default {
       background-image: url("../img/risk-of-eviction.jpg");
       background-position: center;
     }
+    &.disconnected-water {
+      background-image: url("../img/water.jpg");
+      background-position: top;
+    }
+    &.damaged {
+      background-image: url("../img/damaged.jpg");
+      background-position: center;
+    }
+    &.intimidation {
+      background-image: url("../img/intimidation.jpg");
+      background-position: center;
+    }
+    &.complaint-housing-tribunal {
+      background-image: url("../img/complaint-housing-tribunal.jpg");
+      background-position: center;
+    }
   }
   .content {
     color: #fff;
@@ -1188,7 +1204,7 @@ nav.navbar-default {
     *:after {
       color: #333 !important;
     }
-    p {
+    .header {
       font-size: 1.5em;
     }
   }
@@ -1254,7 +1270,9 @@ nav.navbar-default {
         .intro, .summary {
           font-size: 25px !important;
           .header, .content {
-            font-size: 25px !important;
+            p {
+              font-size: 25px !important;
+            }
             width: 100% !important;
             padding-left: 10px !important;
             padding-right: 10px !important;

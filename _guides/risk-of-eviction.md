@@ -150,7 +150,7 @@ category: Housing
       </div>
     </div>
   </div>
-    <div class="panel single-step">
+  <div class="panel single-step">
     <div class="panel-heading title-box" role="tab" id="headingSix">
       <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
         <div class="circle">6</div>
@@ -167,7 +167,7 @@ category: Housing
       </div>
     </div>
   </div>
-    <div class="panel single-step">
+  <div class="panel single-step">
     <div class="panel-heading title-box" role="tab" id="headingSeven">
       <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
         <div class="circle">7</div>
@@ -184,7 +184,7 @@ category: Housing
       </div>
     </div>
   </div>
-    <div class="panel single-step">
+  <div class="panel single-step">
     <div class="panel-heading title-box" role="tab" id="headingEight">
       <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
         <div class="circle">8</div>
@@ -201,7 +201,7 @@ category: Housing
       </div>
     </div>
   </div>
-    <div class="panel single-step">
+  <div class="panel single-step">
     <div class="panel-heading title-box" role="tab" id="headingNine">
       <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
         <div class="circle">9</div>
@@ -218,7 +218,7 @@ category: Housing
       </div>
     </div>
   </div>
-    <div class="panel single-step">
+  <div class="panel single-step">
     <div class="panel-heading title-box" role="tab" id="headingTen">
       <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
         <div class="circle">10</div>
@@ -234,5 +234,6 @@ category: Housing
         {% endfor %}
       </div>
     </div>
+  </div>
   </div>
 </div>
