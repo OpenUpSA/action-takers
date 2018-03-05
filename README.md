@@ -32,7 +32,7 @@
 
 [`wkhtmltopdf`](https://github.com/wkhtmltopdf/wkhtmltopdf/), *Webkit required*
 
-`wkhtmltopdf -g -T 2mm -B 2mm -L 2mm -R 2mm actiontakers.co.za/... --print-media-type output.pdf`
+`wkhtmltopdf -g -T 2mm -B 5mm -L 2mm -R 2mm actiontakers.co.za/... --print-media-type --footer-center [page]/[topage] output.pdf`
 
 There are two bash scripts in `/pdf`. Run them from that directory and they will generate the PDFs of the guides listed in those scripts. **Note:** The heights of the mobile PDFs may not be correct.
 
