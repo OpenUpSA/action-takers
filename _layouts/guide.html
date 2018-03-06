@@ -63,39 +63,42 @@ layout: base
   </div>
 
   <div class="guide panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    <div class="description">{{ page.description }}. <b class="hidden-print">Click on a step for support and resources to help you take action.</b></div>
+    <div class="description"><b class="hidden-print">Click on a step for support and resources to help you take action.</b></div>
     {% assign guidename = page.name %}
-      {% assign steps = site.steps | where: "guide", guidename %}
-        {% for step in steps %}
-          <div class="panel single-step">
-            <div class="panel-heading title-box" role="tab" id="heading-{{ forloop.index }}">
-              <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
-                <div class="circle">{{ forloop.index }}</div>
-                <div class="title">{{ step.title }}</div>
-              </div>
-            </div>
-            <div id="collapse-{{ forloop.index }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ forloop.index }}">
-              <div class="panel-body">
-                <div class="intro">
-                  <div class="header"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Who is this for?</div>
-                  <hr>
-                  <div class="content">
-                    <p>{{ step.for }}</p>
-                  </div>
-                </div>
-                <div class="summary">
-                  <div class="header"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> What you need to know</div>
-                  <hr>
-                  <div class="content">
-                    <ul class="fa-ul">
-                      {{ step.content  | markdownify }}
-                    </ul>
-                  </div>
-                </div>
-              </div>
+    {% assign steps = site.steps | where: "guide", guidename %}
+    {% for step in steps %}
+    <div class="panel single-step">
+      <div class="panel-heading title-box" role="tab" id="heading-{{ forloop.index }}">
+        <div role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ forloop.index }}" aria-expanded="true" aria-controls="collapse-{{ forloop.index }}">
+          <div class="circle">{{ forloop.index }}</div>
+          <div class="title">{{ step.title }}</div>
+        </div>
+      </div>
+      <div id="collapse-{{ forloop.index }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-{{ forloop.index }}">
+        <div class="panel-body">
+          <div class="intro">
+            <div class="header"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Who is this for?</div>
+            <hr>
+            <div class="content">
+              <p>{{ step.for }}</p>
             </div>
           </div>
+          <div class="summary">
+            <div class="header"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> What you need to know</div>
+            <hr>
+            <div class="content">
+              <ul class="fa-ul">
+                {{ step.content  | markdownify }}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     {% endfor %}
+
+    {% include who-can-help/{{ page.name }}.html %}
+
   </div>
 
   {% include rating.html %}

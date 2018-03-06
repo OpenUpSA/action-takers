@@ -1,0 +1,17 @@
+---
+---
+<div class="intro who-can-help">
+  <div class="content">
+    <div class="row flex">
+      {% for partner in page.partners %}
+      <div class="col-md-6 single-partner">
+        <h4>{{ partner.title }}</h4>
+        {{ partner.address }}<br>
+        {{ partner.suburb }}<br>
+        {{ partner.city }}<br>
+        <a href="tel:{{ partner.phone }}">{{ partner.phone }}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
