@@ -30,5 +30,8 @@ plugins_dir:
 collections:
   risk-of-eviction:
     output: true
+    title: "Risk of eviction"
+    description: "A guide on what to do if you are at risk of being evicted"
+    category: housing
   steps:
     output: true
