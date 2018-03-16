@@ -856,6 +856,10 @@ nav.navbar-default {
       background-image: url("../img/access-education.jpg");
       background-position: bottom;
     }
+    &.older-learner {
+      background-image: url("../img/older-learner.jpg");
+      background-position: bottom;
+    }
     &.disconnected-electricity {
       background-image: url("../img/disconnected-electricity.jpg");
       background-position: center;
@@ -891,10 +895,9 @@ nav.navbar-default {
     width: 100%;
     max-width: 300px;
     padding: 20px;
-    border-radius: 2px;
-    @media (min-width: 767px) {
-      min-height: 200px;
-    }
+    border-radius: 2px 0 0 2px;
+    min-height: 200px;
+    height: 100%;
     .title {
       text-transform: uppercase;
       font-size: 20px;

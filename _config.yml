@@ -28,17 +28,10 @@ plugins_dir:
   - jekyll-feed
 
 collections:
-  guides:
-    output: true
-    permalink: /:name/
-  access-education:
-  wheelie-bins:
-  blue-bags:
   risk-of-eviction:
-  obstruction-from-entering:
-  disconnected-electricity:
-  disconnected-water:
-  intimidation:
-  damaged:
-  complaint-housing-tribunal:
-  older-learner:
+    output: true
+    title: "Risk of eviction"
+    description: "A guide on what to do if you are at risk of being evicted"
+    category: housing
+  steps:
+    output: true

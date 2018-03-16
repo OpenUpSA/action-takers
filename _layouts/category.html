@@ -1,0 +1,63 @@
+---
+layout: base
+---
+<div class="row bread-rating hidden-print">
+  <div class="col-md-8 crumbs">
+    <span><a href="/">Empowerment guides</a> <i class="fa fa-angle-right" aria-hidden="true"></i></span>
+    <span><strong>{{ page.title }}</strong></span>
+  </div>
+</div>
+
+<div class="alert alert-danger alert-housing" role="alert">
+  <h1>Are you being evicted? Is your landlord treating your unfairly? Do you worry about being made homeless?</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Join us!</h2>
+      <p>Be part of building a strong movement of people fighting unlawful evictions and calling for affortable housing!</p>
+      <p><b>Come to the Advice Assembly and be part of Reclaim The City.</b></p>
+    </div>
+    <div class="col-md-6">
+      <h2>Who?</h2>
+      <a target="_blank" href="http://reclaimthecity.org.za/"><img src="/img/rct.jpg"></a>
+      <a target="_blank" href="http://nu.org.za"><img src="/img/nu.png"></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Where?</h2>
+      <p>The Advice Assembly is held every week in Woodstock and Sea Point.</p>
+      <p>Join us at the Woodstock Hospital on Mountain Road. The building has been renamed by housing activists as “Cissie Gool House” (“CGH”).</p>
+      <p>OR</p>
+      <p>Sea Point Methodist Church on Main Road. This is next to Laughtons.</p>
+    </div>
+    <div class="col-md-6">
+      <h2>When?</h2>
+      <p>Every Tuesday 7PM - 9PM</p>
+      <h3>Contact us</h3>
+      <ul class="list-unstyled">
+        <li><a target="_blank" class="alert-link" href="https://www.facebook.com/ReclaimCT/">Facebook</a></li>
+        <li><a target="_blank" class="alert-link" href="https://twitter.com/ReclaimCT">Twitter</a></li>
+        <li><a class="alert-link" href="mailto:adviceassemblies@gmail.com">adviceassemblies@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section class="single-category">
+  <h1>{{ page.title }}</h1>
+  <div class="row flex">
+  {% for collection in site.collections %}
+    {% if collection.category == page.simple-name %}
+    <div class="col-sm-6">
+      <div class="single-guide {{ collection.label }}">
+        <div class="content">
+          <h2>{{ collection.title }}</h2>
+          <p>{{ collection.description }}</p>
+          <a class="btn btn-primary" href="{{ collection.label }}">Explore guide<i class="fa fa-fw fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+</section>
