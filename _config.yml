@@ -38,5 +38,10 @@ collections:
     title: "Access to Education"
     description: "A guide on how to overcome barriers to learning and get your child the education they deserve"
     category: education
+  blue-bags:
+    output: true
+    title: "Blue bags"
+    description: "A guide on what to do if your blue garbage bags are not being collected on a regular basis"
+    category: solid-waste
   steps:
     output: true
