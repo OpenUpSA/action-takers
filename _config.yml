@@ -33,5 +33,10 @@ collections:
     title: "Risk of eviction"
     description: "A guide on what to do if you are at risk of being evicted"
     category: housing
+  access-education:
+    output: true
+    title: "Access to Education"
+    description: "A guide on how to overcome barriers to learning and get your child the education they deserve"
+    category: education
   steps:
     output: true
