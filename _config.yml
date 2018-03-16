@@ -33,6 +33,11 @@ collections:
     title: "Risk of eviction"
     description: "A guide on what to do if you are at risk of being evicted"
     category: housing
+  complaint-housing-tribunal:
+    output: true
+    title: "Filing a complaint at the rental housing tribunal"
+    description: "A guide on how to file a complaint at the rental housing tribunal if you are having a dispute with your landlord or tenant"
+    category: housing
   access-education:
     output: true
     title: "Access to Education"
