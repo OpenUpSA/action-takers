@@ -2,7 +2,7 @@
 layout: guide
 short-title: Disconnected Electricity
 title: My landlord has disconnected my electricity
-description: If you think your landlord may have disconnected your electricity as a way to try to force you out of your home, here's what you can do
+description: A guide explaining steps to take and how to respond when a landlord disconnect your electricity as a way to try to force you out of your home
 name: disconnected-electricity
 category-name: housing
 category: Housing
