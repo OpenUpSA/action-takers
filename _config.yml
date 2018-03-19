@@ -53,9 +53,9 @@ collections:
     title: "My landlord is intimidating me to force me out of my home"
     description: "A guide explaining how a tenant can deal with a landlord who is using intimidation to force them out of their home."
     category: housing
-  obstruction-from-entering:
+  stopped-from-entering:
     output: true
-    title: "Obstruction from entering"
+    title: "Stopped from entering"
     description: "A guide on what to do if you are being prevented, by your landlord, from entering your home"
     category: housing
   risk-of-eviction:
