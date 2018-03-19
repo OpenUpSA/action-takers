@@ -50,8 +50,8 @@ collections:
     category: housing
   intimidation:
     output: true
-    title: "My landlord has disconnected my water"
-    description: "A guide explaining how a landlord may disconnect your water as a way to try to force you out of your home and steps on how you can respond"
+    title: "My landlord is intimidating me to force me out of my home"
+    description: "A guide explaining how a tenant can deal with a landlord who is using intimidation to force them out of their home."
     category: housing
   obstruction-from-entering:
     output: true
