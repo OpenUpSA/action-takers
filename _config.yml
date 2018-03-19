@@ -28,25 +28,60 @@ plugins_dir:
   - jekyll-feed
 
 collections:
-  risk-of-eviction:
-    output: true
-    title: "Risk of eviction"
-    description: "A guide on what to do if you are at risk of being evicted"
-    category: housing
   complaint-housing-tribunal:
     output: true
     title: "Filing a complaint at the rental housing tribunal"
     description: "A guide on how to file a complaint at the rental housing tribunal if you are having a dispute with your landlord or tenant"
+    category: housing
+  damaged:
+    output: true
+    title: "My home has been damaged or broken"
+    description: "A guide explaining how a landlord may cause damage to your home in the process of trying to evict you and steps on how you can respond"
+    category: housing
+  disconnected-electricity:
+    output: true
+    title: "My landlord has disconnected my electricity"
+    description: "A guide explaining how a landlord may disconnect your electricity as a way to try to force you out of your home and steps on how you can respond"
+    category: housing
+  disconnected-water:
+    output: true
+    title: "My landlord has disconnected my water"
+    description: "A guide explaining how a landlord may disconnect your water as a way to try to force you out of your home and steps on how you can respond"
+    category: housing
+  intimidation:
+    output: true
+    title: "My landlord has disconnected my water"
+    description: "A guide explaining how a landlord may disconnect your water as a way to try to force you out of your home and steps on how you can respond"
+    category: housing
+  obstruction-from-entering:
+    output: true
+    title: "Obstruction from entering"
+    description: "A guide on what to do if you are being prevented, by your landlord, from entering your home"
+    category: housing
+  risk-of-eviction:
+    output: true
+    title: "Risk of eviction"
+    description: "A guide on what to do if you are at risk of being evicted"
     category: housing
   access-education:
     output: true
     title: "Access to Education"
     description: "A guide on how to overcome barriers to learning and get your child the education they deserve"
     category: education
+  older-learner:
+    output: true
+    title: "I'm an older learner transitioning to secondary schooling"
+    description: "A guide on what to do if you are the parent or guardian of an older learner and having trouble getting them into a secondary school"
+    category: education
   blue-bags:
     output: true
     title: "Blue bags"
     description: "A guide on what to do if your blue garbage bags are not being collected on a regular basis"
+    category: solid-waste
+  wheelie-bins:
+    output: true
+    title: "Black wheelie bins"
+    description: "A guide on what to do if your black wheelie bin is not being collected on a regular basis"
     category: solid-waste
   steps:
     output: true
