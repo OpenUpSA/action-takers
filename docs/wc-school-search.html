@@ -4,10 +4,10 @@ simple-name: home
 ---
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src=""></script>
 
 <script>
-  $(document).ready(function(){
+  $.getScript("https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js", function(){
     $("#school-search").DataTable( {
       "oLanguage": {
         "sSearch": "Search by school name or suburb:",

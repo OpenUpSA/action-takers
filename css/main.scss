@@ -1334,9 +1334,13 @@ nav.navbar-default {
       border-radius: 0;
       color: #fff !important;
       border: none;
+      padding: 10px;
+      margin-top: 20px;
       &:hover, &.current {
         background: none !important;
         background-color: $dark-gray !important;
+        cursor: pointer;
+        text-decoration: none;
       }
       &.disabled {
         background-color: $light-gray !important;
