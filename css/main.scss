@@ -1329,13 +1329,13 @@ nav.navbar-default {
     }
   }
   #school-search_paginate {
+    margin-top: 20px;
     .paginate_button {
       background-color: $green;
       border-radius: 0;
       color: #fff !important;
       border: none;
       padding: 10px;
-      margin-top: 20px;
       &:hover, &.current {
         background: none !important;
         background-color: $dark-gray !important;
