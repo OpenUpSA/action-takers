@@ -888,6 +888,10 @@ nav.navbar-default {
       background-image: url("../img/complaint-housing-tribunal.jpg");
       background-position: center;
     }
+    &.child-support-grant {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/child-support-grant.jpg");
+      background-position: center;
+    }
   }
   .content {
     color: #fff;

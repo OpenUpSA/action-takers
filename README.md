@@ -4,7 +4,6 @@
 
 ### Add a new category
 * Ensure the category is shown in the correct section on the landing page `index.html` - if it was shown to be 'in development', ensure you remove it from that section and add it to the 'guides by topic' section
-* If a new guide for an existing category is added, increment the guide count to reflect the correct number
 * If a new menu item is required, ensure you add it in `header.html`
 * Create a new category listing page in the project root - e.g. `housing.html`, adding the relevant metadata of the new category
 

@@ -83,5 +83,10 @@ collections:
     title: "Black wheelie bins"
     description: "A guide on what to do if your black wheelie bin is not being collected on a regular basis"
     category: solid-waste
+  child-support-grant:
+    output: true
+    title: "Applying for the Child Support grant"
+    description: "A guide on how to apply for the Child Support grant"
+    category: social-grants
   steps:
     output: true
