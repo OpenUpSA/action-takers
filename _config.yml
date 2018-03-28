@@ -85,8 +85,8 @@ collections:
     category: solid-waste
   child-support-grant:
     output: true
-    title: "Applying for the Child Support grant"
-    description: "A guide on how to apply for the Child Support grant"
+    title: "Applying for the Child Support Grant"
+    description: "A guide on how to apply for the Child Support Grant"
     category: social-grants
   steps:
     output: true
