@@ -90,3 +90,6 @@ collections:
     category: social-grants
   steps:
     output: true
+
+plugins:
+  - jekyll-redirect-from
